@@ -45,7 +45,7 @@
 
 ## 赞助和捐赠
 
-**微信(WeChat)** || **支付宝(Alipay)**
+**微信(WeChat)** or **支付宝(Alipay)**
 
 ![微信(WeChat)](../Image/WeChat.png)                ![支付宝(Alipay)](../Image/Alipay.png)
 
@@ -99,6 +99,6 @@ This is a desktop widget with a Minecraft style, similar to the Windows taskbar,
 
 ## Sponsorships and Donations
 
-**WeChat** || **Alipay**
+**WeChat** or **Alipay**
 
 ![微信(WeChat)](../Image/WeChat.png)                ![支付宝(Alipay)](../Image/Alipay.png)
