@@ -43,11 +43,19 @@
 - 这个软件是我日以继夜地开发的，投入了大量的时间和精力。我无法保证未来是否会继续修补，这完全取决于运气和我的时间安排。
 - 如果您认为我的帮助对您有益，并且希望继续得到我的支持和帮助，您可以考虑赞助我。您的赞助将有助于我继续提供高质量的服务和支持。感谢您的支持和关注。
 
+## 联系方式
+
+-  球球: 请通过 2636427505 联系我。
+-  球球email: 请发送邮件至 [2636427505@qq.com](mailto:2636427505@qq.com) 联系我。
+-  B站: **是Kapa呀**
+-  ......
+
 ## 赞助和捐赠
 
-**微信(WeChat)** || **支付宝(Alipay)**
+**微信(WeChat)**  **支付宝(Alipay)**
+注:如果图片加载不出，请启用加速器，否则图片加载不出
 
-![微信(WeChat)](../Image/WeChat.png)                ![支付宝(Alipay)](../Image/Alipay.png)
+![微信(WeChat)](Image/WeChat.png)                ![支付宝(Alipay)](Image/Alipay.png)
 
 ---
 
@@ -56,7 +64,7 @@
 
 This is a desktop widget with a Minecraft style, similar to the Windows taskbar, that can be used to save and launch various programs. Although it doesn't have all the functions of the Windows taskbar, it can be considered a simplified version. Additionally, I've added some extra features to this tool, such as program file search and scheduled breaks. If you're interested, why not give it a try!
 
-## Disclaimer
+## Statement
 
 *This software is open-source and free to use. I strongly oppose any individual or organization using this software for commercial purposes and charging fees. Should you encounter anyone charging for this software in any form, please do not trust them.*
 
@@ -97,8 +105,15 @@ This is a desktop widget with a Minecraft style, similar to the Windows taskbar,
 - This software is the result of my continuous effort, investing a lot of time and energy. I can't guarantee future updates, as that will entirely depend on luck and my schedule.
 - If you find my work helpful and wish to continue receiving my support, please consider sponsoring me. Your sponsorship will help me continue to provide high-quality services and support. Thank you for your support and attention.
 
+## Contact Information
+- QQ: Please contact me at 2636427505.
+- QQ email: Please send an email to 2636427505@qq.com to contact me.
+- Bilibili: It's Kapa
+- ......
+
 ## Sponsorships and Donations
 
-**WeChat** || **Alipay**
+**WeChat** or **Alipay**
+Note: If the image does not load, please enable the accelerator, otherwise the image will not load.
 
-![微信(WeChat)](../Image/WeChat.png)                ![支付宝(Alipay)](../Image/Alipay.png)
+![微信(WeChat)](Image/WeChat.png)                ![支付宝(Alipay)](Image/Alipay.png)
