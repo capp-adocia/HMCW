@@ -36,11 +36,11 @@
 
 ## 运行截图
 
-1. 物品栏 <div align=right> ![物品栏](Image/objectBar.png =300*300)
-2. 背包 <div align=right> ![背包](Image/backpack.png =300*300)
-3. 物品栏和背包 ![物品栏和背包](Image/full.png =300*300)
-4. 设置 ![设置](Image/settings.png =300*300)
-5. 进度 ![进度](Image/achievement.png =300*300)
+1. 物品栏![物品栏](Image/objectBar.png)
+2. 背包![背包](Image/backpack.png)
+3. 物品栏和背包![物品栏和背包](Image/full.png)
+4. 设置![设置](Image/settings.png)
+5. 进度![进度](Image/achievement.png =20*20)
 
 ## 开发感想
 
