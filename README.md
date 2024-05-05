@@ -45,7 +45,7 @@
 
 ## 赞助和捐赠
 
-**微信(WeChat)**  or  **支付宝(Alipay)**
+**微信(WeChat)**  **支付宝(Alipay)**
 
 ![微信(WeChat)](https://github.com/capp-adocia/HMCW/blob/main/Image/WeChat.png)                ![支付宝(Alipay)](https://github.com/capp-adocia/HMCW/blob/main/Image/Alipay.png)
 
