@@ -47,7 +47,7 @@
 
 **微信(WeChat)**  **支付宝(Alipay)**
 
-![微信(WeChat)](Image/WeChat.png)                ![支付宝(Alipay)](https://github.com/capp-adocia/HMCW/blob/main/Image/Alipay.png)
+![微信(WeChat)](Image/WeChat.png)                ![支付宝(Alipay)](Image/Alipay.png)
 
 ---
 
@@ -101,4 +101,4 @@ This is a desktop widget with a Minecraft style, similar to the Windows taskbar,
 
 **WeChat** or **Alipay**
 
-![微信(WeChat)](https://github.com/capp-adocia/HMCW/blob/main/Image/WeChat.png)                ![支付宝(Alipay)](https://github.com/capp-adocia/HMCW/blob/main/Image/Alipay.png)
+![微信(WeChat)](Image/WeChat.png)                ![支付宝(Alipay)](Image/Alipay.png)
