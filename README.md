@@ -34,6 +34,14 @@
 >> 5. 选项... 调节定时器。
 >> 6. 关于 就是你现在看到的这个(滑稽)。
 
+## 运行截图
+
+1. 物品栏 ![物品栏](Image/objectBar.png)
+2. 物品栏和背包 ![物品栏和背包](Image/achievement.png)
+3. 背包 ![背包](Image/backpack.png)
+4. 设置 ![设置](Image/settings.png)
+5. 进度 ![进度](Image/achievement.png)
+
 ## 开发感想
 
 - 虽然我这个看上去是一款用于与桌面程序交互的软件，可其实主要功能是定时器，不知道为什么我那么喜欢定时器，我在此之前写过三个小小的定时器程序，但没办法使人有使用它们的欲望，但今天这个软件，对于我一个很久不玩mc的人来说都有无穷的探索欲望，我相信这款软件的开发理念绝对不会差。
@@ -95,6 +103,14 @@ This is a desktop widget with a Minecraft style, similar to the Windows taskbar,
 >> 4. Statistics gather some interesting data.
 >> 5. Options... adjust the timer settings.
 >> 6. About displays the current information you are reading (jokingly).
+
+## Run screenshot
+
+1. Inventory ![Inventory](Image/objectBar.png)
+2. Inventory and Backpack ![Inventory and Backpack](Image/achievement.png)
+3. Backpack ![Backpack](Image/backpack.png)
+4. Settings ![Settings](Image/settings.png)
+5. Achievement ![Achievement](Image/achievement.png)
 
 ## Developer Reflections
 
