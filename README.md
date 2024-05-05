@@ -56,7 +56,7 @@
 
 This is a desktop widget with a Minecraft style, similar to the Windows taskbar, that can be used to save and launch various programs. Although it doesn't have all the functions of the Windows taskbar, it can be considered a simplified version. Additionally, I've added some extra features to this tool, such as program file search and scheduled breaks. If you're interested, why not give it a try!
 
-## Disclaimer
+## Statement
 
 *This software is open-source and free to use. I strongly oppose any individual or organization using this software for commercial purposes and charging fees. Should you encounter anyone charging for this software in any form, please do not trust them.*
 
