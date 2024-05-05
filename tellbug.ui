@@ -1,0 +1,1064 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TellBug</class>
+ <widget class="QWidget" name="TellBug">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>947</width>
+    <height>737</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgba(29, 29, 29, 0.5);</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <item row="0" column="0">
+    <widget class="QWidget" name="widget" native="true">
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="mouseTracking">
+      <bool>true</bool>
+     </property>
+     <property name="tabletTracking">
+      <bool>true</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(184, 184, 184);</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_4">
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <item row="0" column="1">
+       <widget class="QWidget" name="widget_2" native="true">
+        <property name="minimumSize">
+         <size>
+          <width>600</width>
+          <height>577</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>600</width>
+          <height>577</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgba(255, 230, 246,0);</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_2">
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <item row="0" column="0" colspan="3">
+          <widget class="QWidget" name="BillboardUp" native="true">
+           <property name="minimumSize">
+            <size>
+             <width>600</width>
+             <height>290</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>600</width>
+             <height>290</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(249, 255, 230);</string>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_3">
+            <item row="0" column="0">
+             <widget class="QWidget" name="widget_3" native="true">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(118, 118, 118);
+color:white;</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_7">
+               <item row="2" column="1" colspan="2">
+                <widget class="QPushButton" name="submitButton">
+                 <property name="minimumSize">
+                  <size>
+                   <width>280</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>280</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>14</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>提交</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="3">
+                <spacer name="horizontalSpacer_7">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeType">
+                  <enum>QSizePolicy::Minimum</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>128</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item row="2" column="0">
+                <spacer name="horizontalSpacer_4">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeType">
+                  <enum>QSizePolicy::Minimum</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>110</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item row="0" column="0" rowspan="2" colspan="2">
+                <widget class="QWidget" name="widget_5" native="true">
+                 <layout class="QGridLayout" name="gridLayout_6">
+                  <property name="leftMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="topMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="rightMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>0</number>
+                  </property>
+                  <item row="0" column="0">
+                   <widget class="QLabel" name="label">
+                    <property name="minimumSize">
+                     <size>
+                      <width>50</width>
+                      <height>35</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>50</width>
+                      <height>35</height>
+                     </size>
+                    </property>
+                    <property name="sizeIncrement">
+                     <size>
+                      <width>0</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>14</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgba(233, 255, 251,0.6);
+border-radius:10px;
+color:black;
+                               border-left:4px solid rgb(184, 184, 185);
+                               border-top:4px solid rgb(184, 184, 185);
+                               border-right:4px solid rgb(88, 88, 88);
+                              border-bottom:4px solid rgb(88, 88, 88);</string>
+                    </property>
+                    <property name="text">
+                     <string>名字</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="1">
+                   <widget class="QLineEdit" name="nameEdit">
+                    <property name="minimumSize">
+                     <size>
+                      <width>50</width>
+                      <height>35</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>190</width>
+                      <height>35</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>14</pointsize>
+                      <fontweight>Medium</fontweight>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgb(233, 255, 251);
+color:white;</string>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="0">
+                   <widget class="QLabel" name="label_4">
+                    <property name="minimumSize">
+                     <size>
+                      <width>50</width>
+                      <height>35</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>50</width>
+                      <height>35</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>14</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgba(233, 255, 251,0.6);
+border-radius:10px;
+color:black;
+                               border-left:4px solid rgb(184, 184, 185);
+                               border-top:4px solid rgb(184, 184, 185);
+                               border-right:4px solid rgb(88, 88, 88);
+                              border-bottom:4px solid rgb(88, 88, 88);</string>
+                    </property>
+                    <property name="text">
+                     <string>邮箱</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="1">
+                   <widget class="QLineEdit" name="mailEdit">
+                    <property name="minimumSize">
+                     <size>
+                      <width>50</width>
+                      <height>35</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>190</width>
+                      <height>35</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>14</pointsize>
+                      <fontweight>Medium</fontweight>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgb(233, 255, 251);
+color:white;</string>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="0">
+                   <widget class="QLabel" name="label_6">
+                    <property name="minimumSize">
+                     <size>
+                      <width>50</width>
+                      <height>35</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>50</width>
+                      <height>35</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>14</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgba(233, 255, 251,0.6);
+border-radius:10px;
+color:black;
+                               border-left:4px solid rgb(184, 184, 185);
+                               border-top:4px solid rgb(184, 184, 185);
+                               border-right:4px solid rgb(88, 88, 88);
+                              border-bottom:4px solid rgb(88, 88, 88);</string>
+                    </property>
+                    <property name="text">
+                     <string>密码</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="1">
+                   <widget class="QLineEdit" name="passWordEdit">
+                    <property name="minimumSize">
+                     <size>
+                      <width>50</width>
+                      <height>35</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>190</width>
+                      <height>35</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>14</pointsize>
+                      <fontweight>Medium</fontweight>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgb(233, 255, 251);
+color:white;</string>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="0">
+                   <widget class="QLabel" name="label_3">
+                    <property name="minimumSize">
+                     <size>
+                      <width>50</width>
+                      <height>35</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>50</width>
+                      <height>35</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>14</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgba(233, 255, 251,0.6);
+border-radius:10px;
+color:black;
+                               border-left:4px solid rgb(184, 184, 185);
+                               border-top:4px solid rgb(184, 184, 185);
+                               border-right:4px solid rgb(88, 88, 88);
+                              border-bottom:4px solid rgb(88, 88, 88);</string>
+                    </property>
+                    <property name="text">
+                     <string>年龄</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="1">
+                   <widget class="QComboBox" name="comboBox">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>40</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>14</pointsize>
+                      <fontweight>Medium</fontweight>
+                     </font>
+                    </property>
+                    <property name="tabletTracking">
+                     <bool>true</bool>
+                    </property>
+                    <property name="iconSize">
+                     <size>
+                      <width>43</width>
+                      <height>44</height>
+                     </size>
+                    </property>
+                    <item>
+                     <property name="text">
+                      <string/>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>5岁</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>6岁</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>7岁</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>8岁</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>9岁</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>10岁</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>11岁</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>12岁</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>13岁</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>14岁</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>15岁</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>16岁</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>17岁</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>18岁</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>19岁</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>20岁</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>21岁</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>22岁</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>23岁</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>24岁</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>25岁</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>26岁</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>27岁</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>28岁</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>29岁</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>30岁</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>31岁</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>32岁</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>33岁</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>34岁</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>35岁</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>36岁</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>37岁</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>38岁</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>39岁</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>40岁</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>41岁</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>42岁</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>43岁</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>44岁</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>45岁</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>46岁</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>47岁</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>48岁</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>49岁</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>50岁</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>51岁</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>52岁</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>53岁</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>54岁</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>55岁</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>56岁</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>57岁</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>58岁</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>59岁</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>60岁</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>61岁</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>62岁</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>63岁</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>64岁</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>65岁</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>66岁</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>67岁</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>68岁</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>69岁</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>70岁</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                  <item row="4" column="0">
+                   <widget class="QLabel" name="label_2">
+                    <property name="minimumSize">
+                     <size>
+                      <width>50</width>
+                      <height>35</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>50</width>
+                      <height>35</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>14</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgba(233, 255, 251,0.6);
+border-radius:10px;
+color:black;
+                               border-left:4px solid rgb(184, 184, 185);
+                               border-top:4px solid rgb(184, 184, 185);
+                               border-right:4px solid rgb(88, 88, 88);
+                              border-bottom:4px solid rgb(88, 88, 88);</string>
+                    </property>
+                    <property name="text">
+                     <string>性别</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="1">
+                   <widget class="QWidget" name="widget_4" native="true">
+                    <property name="minimumSize">
+                     <size>
+                      <width>162</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>100</width>
+                      <height>16777215</height>
+                     </size>
+                    </property>
+                    <layout class="QGridLayout" name="gridLayout_5">
+                     <property name="leftMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="topMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="bottomMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="spacing">
+                      <number>0</number>
+                     </property>
+                     <item row="0" column="0">
+                      <widget class="QRadioButton" name="maleRadioButton">
+                       <property name="text">
+                        <string>Boy</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="0" column="1">
+                      <widget class="QRadioButton" name="femaleRadioButton">
+                       <property name="text">
+                        <string>Girl</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item row="1" column="2" colspan="2">
+                <widget class="QPlainTextEdit" name="plainTextEdit">
+                 <property name="font">
+                  <font>
+                   <pointsize>15</pointsize>
+                   <fontweight>Medium</fontweight>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(233, 255, 251);
+color:white;</string>
+                 </property>
+                 <property name="plainText">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="2" colspan="2">
+                <widget class="QLabel" name="label_5">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>30</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>12</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgba(233, 255, 251,0.6);
+border-radius:10px;
+color:black;
+                               border-left:4px solid rgb(184, 184, 185);
+                               border-top:4px solid rgb(184, 184, 185);
+                               border-right:4px solid rgb(88, 88, 88);
+                              border-bottom:4px solid rgb(88, 88, 88);</string>
+                 </property>
+                 <property name="text">
+                  <string>提交bug吧</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignCenter</set>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QWidget" name="BillboardDown" native="true">
+           <property name="minimumSize">
+            <size>
+             <width>50</width>
+             <height>290</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>50</width>
+             <height>290</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(249, 255, 230);</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="2">
+          <spacer name="horizontalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>272</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="1" column="0">
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>272</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <spacer name="horizontalSpacer_5">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Minimum</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>100</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="0" column="0">
+       <spacer name="horizontalSpacer_6">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>132</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="0" column="3">
+       <widget class="QPushButton" name="backButton">
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>60</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>100</width>
+          <height>60</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(255, 253, 253);</string>
+        </property>
+        <property name="text">
+         <string>完成</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="4">
+       <spacer name="horizontalSpacer_3">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Minimum</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>16</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

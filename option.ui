@@ -1,0 +1,1024 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Option</class>
+ <widget class="QWidget" name="Option">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>850</width>
+    <height>560</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgba(29, 29, 29, 0.5);</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <item row="0" column="0">
+    <widget class="QWidget" name="widget_5" native="true">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_5">
+      <item row="1" column="1">
+       <widget class="QWidget" name="widget" native="true">
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgba(255, 255, 255,0);</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_2">
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <property name="horizontalSpacing">
+          <number>0</number>
+         </property>
+         <property name="verticalSpacing">
+          <number>10</number>
+         </property>
+         <item row="5" column="0">
+          <widget class="QLabel" name="label_2">
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(255, 255, 255,0);
+color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>休息时长 5分钟到1小时</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_10">
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(255, 255, 255,0);
+color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>晚餐时间  4点 到8点</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QWidget" name="widget_7" native="true">
+           <property name="minimumSize">
+            <size>
+             <width>281</width>
+             <height>51</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>281</width>
+             <height>51</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border: 2px solid rgb(0, 1, 2);</string>
+           </property>
+           <widget class="QSlider" name="mealTimeSlider">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>279</width>
+              <height>48</height>
+             </rect>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>279</width>
+              <height>48</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>279</width>
+              <height>48</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QSlider::groove:horizontal {
+    height: 48px;                   /* 设置轨道的高度 */
+    margin: 0px 0px;                 /* 设置轨道的外边距 */
+  background-color:  rgb(44, 44, 44);     /* 设置轨道的背景颜色 */
+}
+QSlider::handle:horizontal {
+    /* 滑块样式 */
+    width: 20px;                   /* 设置滑块的宽度 */
+    height: 40px;                  /* 设置滑块的高度 */
+    background-color: rgb(106, 108, 107);     /* 设置滑块的背景颜色 */
+    margin: 46px 0px;               /* 设置滑块的垂直居中 */	
+	border: 1px solid rgb(190, 190, 190);
+}</string>
+            </property>
+            <property name="minimum">
+             <number>1200</number>
+            </property>
+            <property name="maximum">
+             <number>3600</number>
+            </property>
+            <property name="singleStep">
+             <number>60</number>
+            </property>
+            <property name="pageStep">
+             <number>600</number>
+            </property>
+            <property name="value">
+             <number>1200</number>
+            </property>
+            <property name="sliderPosition">
+             <number>1200</number>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="invertedAppearance">
+             <bool>false</bool>
+            </property>
+            <property name="invertedControls">
+             <bool>false</bool>
+            </property>
+            <property name="tickPosition">
+             <enum>QSlider::NoTicks</enum>
+            </property>
+           </widget>
+           <widget class="QLabel" name="mealTimeLabel">
+            <property name="geometry">
+             <rect>
+              <x>64</x>
+              <y>10</y>
+              <width>161</width>
+              <height>15</height>
+             </rect>
+            </property>
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>15</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>15</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 255, 255);
+background-color: rgba(255, 255, 255,0);
+border:0;</string>
+            </property>
+            <property name="text">
+             <string>用餐时间</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QWidget" name="widget_6" native="true">
+           <property name="minimumSize">
+            <size>
+             <width>281</width>
+             <height>51</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>281</width>
+             <height>51</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border: 2px solid rgb(0, 1, 2);</string>
+           </property>
+           <widget class="QSlider" name="dinnerSlider">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>279</width>
+              <height>48</height>
+             </rect>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>279</width>
+              <height>48</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>279</width>
+              <height>48</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QSlider::groove:horizontal {
+    height: 48px;                   /* 设置轨道的高度 */
+    margin: 0px 0px;                 /* 设置轨道的外边距 */
+  background-color:  rgb(44, 44, 44);     /* 设置轨道的背景颜色 */
+}
+QSlider::handle:horizontal {
+    /* 滑块样式 */
+    width: 20px;                   /* 设置滑块的宽度 */
+    height: 40px;                  /* 设置滑块的高度 */
+    background-color: rgb(106, 108, 107);     /* 设置滑块的背景颜色 */
+    margin: 46px 0px;               /* 设置滑块的垂直居中 */	
+	border: 1px solid rgb(190, 190, 190);
+}</string>
+            </property>
+            <property name="minimum">
+             <number>57600</number>
+            </property>
+            <property name="maximum">
+             <number>72000</number>
+            </property>
+            <property name="singleStep">
+             <number>60</number>
+            </property>
+            <property name="pageStep">
+             <number>600</number>
+            </property>
+            <property name="sliderPosition">
+             <number>57600</number>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="invertedAppearance">
+             <bool>false</bool>
+            </property>
+            <property name="invertedControls">
+             <bool>false</bool>
+            </property>
+            <property name="tickPosition">
+             <enum>QSlider::NoTicks</enum>
+            </property>
+           </widget>
+           <widget class="QLabel" name="dinnerLabel">
+            <property name="geometry">
+             <rect>
+              <x>61</x>
+              <y>10</y>
+              <width>161</width>
+              <height>15</height>
+             </rect>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>15</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>15</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 255, 255);
+background-color: rgba(255, 255, 255,0);
+border:0;</string>
+            </property>
+            <property name="text">
+             <string>晚餐</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </widget>
+         </item>
+         <item row="5" column="1">
+          <widget class="QWidget" name="widget_9" native="true">
+           <property name="minimumSize">
+            <size>
+             <width>281</width>
+             <height>51</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>281</width>
+             <height>51</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border: 2px solid rgb(0, 1, 2);</string>
+           </property>
+           <widget class="QSlider" name="breakTimeSlider">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>279</width>
+              <height>48</height>
+             </rect>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>279</width>
+              <height>48</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>279</width>
+              <height>48</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QSlider::groove:horizontal {
+    height: 48px;                   /* 设置轨道的高度 */
+    margin: 0px 0px;                 /* 设置轨道的外边距 */
+  background-color:  rgb(44, 44, 44);     /* 设置轨道的背景颜色 */
+}
+QSlider::handle:horizontal {
+    /* 滑块样式 */
+    width: 20px;                   /* 设置滑块的宽度 */
+    height: 40px;                  /* 设置滑块的高度 */
+    background-color: rgb(106, 108, 107);     /* 设置滑块的背景颜色 */
+    margin: 46px 0px;               /* 设置滑块的垂直居中 */	
+	border: 1px solid rgb(190, 190, 190);
+}</string>
+            </property>
+            <property name="minimum">
+             <number>300</number>
+            </property>
+            <property name="maximum">
+             <number>3600</number>
+            </property>
+            <property name="singleStep">
+             <number>60</number>
+            </property>
+            <property name="pageStep">
+             <number>600</number>
+            </property>
+            <property name="value">
+             <number>300</number>
+            </property>
+            <property name="sliderPosition">
+             <number>300</number>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="invertedAppearance">
+             <bool>false</bool>
+            </property>
+            <property name="invertedControls">
+             <bool>false</bool>
+            </property>
+            <property name="tickPosition">
+             <enum>QSlider::NoTicks</enum>
+            </property>
+           </widget>
+           <widget class="QLabel" name="breakTimeLabel">
+            <property name="geometry">
+             <rect>
+              <x>64</x>
+              <y>10</y>
+              <width>161</width>
+              <height>15</height>
+             </rect>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>15</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>15</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 255, 255);
+background-color: rgba(255, 255, 255,0);
+border:0;</string>
+            </property>
+            <property name="text">
+             <string>休息时间</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QWidget" name="widget_2" native="true">
+           <property name="minimumSize">
+            <size>
+             <width>281</width>
+             <height>51</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>281</width>
+             <height>51</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border: 2px solid rgb(0, 1, 2);</string>
+           </property>
+           <widget class="QSlider" name="breakfastSlider">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>279</width>
+              <height>48</height>
+             </rect>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>279</width>
+              <height>48</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>279</width>
+              <height>48</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>9</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QSlider::groove:horizontal {
+    height: 48px;                   /* 设置轨道的高度 */
+    margin: 0px 0px;                 /* 设置轨道的外边距 */
+  background-color:  rgb(44, 44, 44);     /* 设置轨道的背景颜色 */
+}
+QSlider::handle:horizontal {
+    /* 滑块样式 */
+    width: 20px;                   /* 设置滑块的宽度 */
+    height: 40px;                  /* 设置滑块的高度 */
+    background-color: rgb(106, 108, 107);     /* 设置滑块的背景颜色 */
+    margin: 46px 0px;               /* 设置滑块的垂直居中 */	
+	border: 1px solid rgb(190, 190, 190);
+}</string>
+            </property>
+            <property name="minimum">
+             <number>25200</number>
+            </property>
+            <property name="maximum">
+             <number>32400</number>
+            </property>
+            <property name="singleStep">
+             <number>60</number>
+            </property>
+            <property name="pageStep">
+             <number>600</number>
+            </property>
+            <property name="sliderPosition">
+             <number>25200</number>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="invertedAppearance">
+             <bool>false</bool>
+            </property>
+            <property name="invertedControls">
+             <bool>false</bool>
+            </property>
+            <property name="tickPosition">
+             <enum>QSlider::NoTicks</enum>
+            </property>
+           </widget>
+           <widget class="QLabel" name="breakfastLabel">
+            <property name="geometry">
+             <rect>
+              <x>96</x>
+              <y>10</y>
+              <width>91</width>
+              <height>15</height>
+             </rect>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>15</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>15</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 255, 255);
+background-color: rgba(255, 255, 255,0);
+border:0;</string>
+            </property>
+            <property name="text">
+             <string>早餐</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="QWidget" name="widget_8" native="true">
+           <property name="minimumSize">
+            <size>
+             <width>281</width>
+             <height>51</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>281</width>
+             <height>51</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border: 2px solid rgb(0, 1, 2);</string>
+           </property>
+           <widget class="QSlider" name="workTimeSlider">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>279</width>
+              <height>48</height>
+             </rect>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>279</width>
+              <height>48</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>279</width>
+              <height>48</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QSlider::groove:horizontal {
+    height: 48px;                   /* 设置轨道的高度 */
+    margin: 0px 0px;                 /* 设置轨道的外边距 */
+  background-color:  rgb(44, 44, 44);     /* 设置轨道的背景颜色 */
+}
+QSlider::handle:horizontal {
+    /* 滑块样式 */
+    width: 20px;                   /* 设置滑块的宽度 */
+    height: 40px;                  /* 设置滑块的高度 */
+    background-color: rgb(106, 108, 107);     /* 设置滑块的背景颜色 */
+    margin: 46px 0px;               /* 设置滑块的垂直居中 */	
+	border: 1px solid rgb(190, 190, 190);
+}</string>
+            </property>
+            <property name="minimum">
+             <number>1800</number>
+            </property>
+            <property name="maximum">
+             <number>10800</number>
+            </property>
+            <property name="singleStep">
+             <number>30</number>
+            </property>
+            <property name="pageStep">
+             <number>600</number>
+            </property>
+            <property name="value">
+             <number>1800</number>
+            </property>
+            <property name="sliderPosition">
+             <number>1800</number>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="invertedAppearance">
+             <bool>false</bool>
+            </property>
+            <property name="invertedControls">
+             <bool>false</bool>
+            </property>
+            <property name="tickPosition">
+             <enum>QSlider::NoTicks</enum>
+            </property>
+           </widget>
+           <widget class="QLabel" name="workTimeLabel">
+            <property name="geometry">
+             <rect>
+              <x>64</x>
+              <y>10</y>
+              <width>161</width>
+              <height>15</height>
+             </rect>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>15</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>15</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 255, 255);
+background-color: rgba(255, 255, 255,0);
+border:0;</string>
+            </property>
+            <property name="text">
+             <string>工作时间</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QWidget" name="widget_3" native="true">
+           <property name="minimumSize">
+            <size>
+             <width>281</width>
+             <height>51</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>281</width>
+             <height>51</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border: 2px solid rgb(0, 1, 2);</string>
+           </property>
+           <widget class="QSlider" name="lunchSlider">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>279</width>
+              <height>48</height>
+             </rect>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>279</width>
+              <height>48</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>279</width>
+              <height>48</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QSlider::groove:horizontal {
+    height: 48px;                   /* 设置轨道的高度 */
+    margin: 0px 0px;                 /* 设置轨道的外边距 */
+  background-color:  rgb(44, 44, 44);     /* 设置轨道的背景颜色 */
+}
+QSlider::handle:horizontal {
+    /* 滑块样式 */
+    width: 20px;                   /* 设置滑块的宽度 */
+    height: 40px;                  /* 设置滑块的高度 */
+    background-color: rgb(106, 108, 107);     /* 设置滑块的背景颜色 */
+    margin: 46px 0px;               /* 设置滑块的垂直居中 */	
+	border: 1px solid rgb(190, 190, 190);
+}</string>
+            </property>
+            <property name="minimum">
+             <number>39600</number>
+            </property>
+            <property name="maximum">
+             <number>46800</number>
+            </property>
+            <property name="singleStep">
+             <number>60</number>
+            </property>
+            <property name="pageStep">
+             <number>600</number>
+            </property>
+            <property name="value">
+             <number>39652</number>
+            </property>
+            <property name="sliderPosition">
+             <number>39652</number>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="invertedAppearance">
+             <bool>false</bool>
+            </property>
+            <property name="invertedControls">
+             <bool>false</bool>
+            </property>
+            <property name="tickPosition">
+             <enum>QSlider::NoTicks</enum>
+            </property>
+           </widget>
+           <widget class="QLabel" name="lunchLabel">
+            <property name="geometry">
+             <rect>
+              <x>61</x>
+              <y>10</y>
+              <width>161</width>
+              <height>15</height>
+             </rect>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>15</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>15</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 255, 255);
+background-color: rgba(255, 255, 255,0);
+border:0;</string>
+            </property>
+            <property name="text">
+             <string>午餐</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_6">
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(255, 255, 255,0);
+color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>早餐时间 从 7 点到 9点</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QLabel" name="label">
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(255, 255, 255,0);
+color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>工作时长 半小时 到3小时</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_9">
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(255, 255, 255,0);
+color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>午餐时间 从 11 点到 13点</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="label_11">
+           <property name="font">
+            <font>
+             <pointsize>12</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(255, 255, 255,0);
+color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>用餐时长 20min-1小时</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QPushButton" name="backButton">
+        <property name="minimumSize">
+         <size>
+          <width>600</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>600</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>完成</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>104</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="0" column="1">
+       <widget class="QWidget" name="widget_4" native="true">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgba(255, 255, 255,0);</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_3">
+         <item row="0" column="1">
+          <widget class="QCheckBox" name="startCheckBox">
+           <property name="minimumSize">
+            <size>
+             <width>90</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>16</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(255, 255, 255,0);
+color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>启用</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="4" column="1">
+       <spacer name="verticalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="1" column="0">
+       <spacer name="horizontalSpacer_3">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>104</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

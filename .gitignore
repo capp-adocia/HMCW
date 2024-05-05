@@ -1,0 +1,6 @@
+build/
+debug/
+release/
+debug/
+*.qmake.stash
+*.qtc_clangd
