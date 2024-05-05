@@ -17,7 +17,6 @@
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QScrollArea>
-#include <QtWidgets/QSpacerItem>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -30,11 +29,8 @@ public:
     QScrollArea *scrollArea;
     QWidget *scrollAreaWidgetContents;
     QWidget *widget_6;
-    QGridLayout *gridLayout_2;
     QLabel *searchIconLabel;
-    QSpacerItem *horizontalSpacer;
     QPushButton *queryButton;
-    QSpacerItem *horizontalSpacer_2;
     QPushButton *hideButton;
     QLineEdit *lineEdit;
     QPushButton *SearchButton;
@@ -117,10 +113,9 @@ public:
 "border-right: 2px solid rgb(254, 254, 254);\n"
 "border-top-right-radius: 18px;\n"
 "border-bottom-left-radius: 18px;"));
-        gridLayout_2 = new QGridLayout(widget_6);
-        gridLayout_2->setObjectName("gridLayout_2");
         searchIconLabel = new QLabel(widget_6);
         searchIconLabel->setObjectName("searchIconLabel");
+        searchIconLabel->setGeometry(QRect(11, 11, 75, 75));
         searchIconLabel->setMinimumSize(QSize(75, 75));
         searchIconLabel->setStyleSheet(QString::fromUtf8("border-top-right-radius: 40px;\n"
 "border-bottom-left-radius: 40px;\n"
@@ -129,41 +124,27 @@ public:
 "border-bottom:  2px solid rgb(254, 254, 254);\n"
 "border-right: 2px solid rgb(254, 254, 254);\n"
 ""));
-
-        gridLayout_2->addWidget(searchIconLabel, 0, 0, 2, 1);
-
-        horizontalSpacer = new QSpacerItem(40, 20, QSizePolicy::Policy::Minimum, QSizePolicy::Policy::Minimum);
-
-        gridLayout_2->addItem(horizontalSpacer, 0, 1, 1, 1);
-
         queryButton = new QPushButton(widget_6);
         queryButton->setObjectName("queryButton");
+        queryButton->setGeometry(QRect(136, 12, 110, 30));
         queryButton->setMinimumSize(QSize(110, 30));
         queryButton->setMaximumSize(QSize(110, 30));
         QFont font;
         font.setPointSize(10);
         queryButton->setFont(font);
         queryButton->setStyleSheet(QString::fromUtf8("color:white;"));
-
-        gridLayout_2->addWidget(queryButton, 0, 2, 1, 2);
-
-        horizontalSpacer_2 = new QSpacerItem(40, 20, QSizePolicy::Policy::Minimum, QSizePolicy::Policy::Minimum);
-
-        gridLayout_2->addItem(horizontalSpacer_2, 0, 4, 1, 1);
-
         hideButton = new QPushButton(widget_6);
         hideButton->setObjectName("hideButton");
+        hideButton->setGeometry(QRect(300, 11, 72, 72));
         hideButton->setMinimumSize(QSize(72, 72));
         hideButton->setMaximumSize(QSize(72, 72));
         QFont font1;
         font1.setPointSize(14);
         hideButton->setFont(font1);
         hideButton->setStyleSheet(QString::fromUtf8("color:white;"));
-
-        gridLayout_2->addWidget(hideButton, 0, 5, 2, 1);
-
         lineEdit = new QLineEdit(widget_6);
         lineEdit->setObjectName("lineEdit");
+        lineEdit->setGeometry(QRect(89, 52, 125, 30));
         lineEdit->setMinimumSize(QSize(0, 30));
         lineEdit->setMaximumSize(QSize(16777215, 30));
         QFont font2;
@@ -172,20 +153,15 @@ public:
         lineEdit->setStyleSheet(QString::fromUtf8("color:white;\n"
 "border-radius: 10px;"));
         lineEdit->setAlignment(Qt::AlignHCenter|Qt::AlignTop);
-
-        gridLayout_2->addWidget(lineEdit, 1, 1, 1, 2);
-
         SearchButton = new QPushButton(widget_6);
         SearchButton->setObjectName("SearchButton");
-        SearchButton->setMinimumSize(QSize(0, 0));
-        SearchButton->setMaximumSize(QSize(16777215, 16777215));
+        SearchButton->setGeometry(QRect(220, 54, 70, 26));
+        SearchButton->setMinimumSize(QSize(70, 0));
+        SearchButton->setMaximumSize(QSize(70, 16777215));
         SearchButton->setFont(font);
         SearchButton->setStyleSheet(QString::fromUtf8("color:white;\n"
 "border-top-right-radius: 0px;\n"
 "border-bottom-left-radius: 0px;"));
-
-        gridLayout_2->addWidget(SearchButton, 1, 3, 1, 2);
-
         widget_7 = new QWidget(widget_3);
         widget_7->setObjectName("widget_7");
         widget_7->setGeometry(QRect(15, 110, 10, 506));
@@ -508,7 +484,7 @@ public:
         queryButton->setText(QCoreApplication::translate("Backpack", "q u e r y", nullptr));
         hideButton->setText(QCoreApplication::translate("Backpack", "\345\205\263\351\227\255", nullptr));
         lineEdit->setText(QString());
-        SearchButton->setText(QCoreApplication::translate("Backpack", "S e a r c h", nullptr));
+        SearchButton->setText(QCoreApplication::translate("Backpack", "Search", nullptr));
         characterLabel->setText(QString());
         label_3->setText(QCoreApplication::translate("Backpack", "==>", nullptr));
         ExeFrameIcon->setText(QString());

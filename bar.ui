@@ -1239,6 +1239,9 @@ background-color: rgba(0, 0, 0, 0);
                 <height>60</height>
                </size>
               </property>
+              <property name="cursor">
+               <cursorShape>OpenHandCursor</cursorShape>
+              </property>
               <property name="styleSheet">
                <string notr="true">background-color:rgb(213, 213, 213);
 border: 6px solid rgb(154, 154, 154);

@@ -400,6 +400,7 @@ public:
         tool->setObjectName("tool");
         tool->setMinimumSize(QSize(60, 60));
         tool->setMaximumSize(QSize(60, 60));
+        tool->setCursor(QCursor(Qt::OpenHandCursor));
         tool->setStyleSheet(QString::fromUtf8("background-color:rgb(213, 213, 213);\n"
 "border: 6px solid rgb(154, 154, 154);\n"
 "border-top: 10px solid rgb(154, 154, 154);\n"

@@ -2,5 +2,7 @@ build/
 debug/
 release/
 debug/
+save/
 *.qmake.stash
 *.qtc_clangd
+*.ini

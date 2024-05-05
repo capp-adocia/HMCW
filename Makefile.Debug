@@ -132,7 +132,9 @@ OBJECTS       = debug/achievementframe.o \
 		debug/moc_rest.o \
 		debug/moc_signalmanger.o
 
-DIST          = ico.rc Frame\achievementframe.h \
+DIST          = Image/寰俊鍥剧墖_20240505105514.jpg \
+		Image/寰俊鍥剧墖_20240505105521.jpg \
+		ico.rc Frame\achievementframe.h \
 		Frame\customframe.h \
 		Frame\objectframe.h \
 		Frame\storageframe.h \
@@ -231,10 +233,12 @@ debug/qrc_res.cpp: res.qrc \
 		Image/half_health.png \
 		Image/switchExeFrameIcon.png \
 		Image/soilBackground.png \
+		Image/Alipay.png \
 		Image/BillboardDown.png \
 		Image/whiteBorderEmpty_health.png \
 		Image/BillboardUp.png \
 		Image/darkWhiteBorder.png \
+		Image/WeChat.png \
 		Image/errorTips.png \
 		Image/hungry.png \
 		Image/HMCW.ico \
@@ -3826,6 +3830,8 @@ debug/moc_bar.cpp: ObjectBar/bar.h \
 		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qfiledialog.h \
 		D:/Qt/6.7.0/mingw_64/include/QtWidgets/QProgressBar \
 		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qprogressbar.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/QSystemTrayIcon \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qsystemtrayicon.h \
 		debug/moc_predefs.h \
 		D:/Qt/6.7.0/mingw_64/bin/moc.exe
 	D:\Qt\6.7.0\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/26364/Documents/QT_APP/DeskBar/debug/moc_predefs.h -ID:/Qt/6.7.0/mingw_64/mkspecs/win32-g++ -IC:/Users/26364/Documents/QT_APP/DeskBar -ID:/Qt/6.7.0/mingw_64/include -ID:/Qt/6.7.0/mingw_64/include/QtWidgets -ID:/Qt/6.7.0/mingw_64/include/QtGui -ID:/Qt/6.7.0/mingw_64/include/QtCore -ID:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -ID:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -ID:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -ID:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -ID:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -ID:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include ObjectBar\bar.h -o debug\moc_bar.cpp
@@ -8258,6 +8264,8 @@ debug/bar.o: ObjectBar/bar.cpp ObjectBar/bar.h \
 		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qfiledialog.h \
 		D:/Qt/6.7.0/mingw_64/include/QtWidgets/QProgressBar \
 		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qprogressbar.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/QSystemTrayIcon \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qsystemtrayicon.h \
 		ui_bar.h \
 		D:/Qt/6.7.0/mingw_64/include/QtCore/QVariant \
 		D:/Qt/6.7.0/mingw_64/include/QtWidgets/QGridLayout \
@@ -9135,7 +9143,9 @@ debug/main.o: main.cpp ObjectBar/bar.h \
 		D:/Qt/6.7.0/mingw_64/include/QtWidgets/QFileDialog \
 		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qfiledialog.h \
 		D:/Qt/6.7.0/mingw_64/include/QtWidgets/QProgressBar \
-		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qprogressbar.h
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qprogressbar.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/QSystemTrayIcon \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qsystemtrayicon.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\main.o main.cpp
 
 debug/qrc_res.o: debug/qrc_res.cpp 

@@ -23,31 +23,31 @@ Rest::Rest(QWidget *parent)
     setFocusPolicy(Qt::ClickFocus);
 
     connect(&SignalManager::instance(),&SignalManager::breakfastTime,[=]{
-        breakfastTimeTips->StartTips(":/Image/darkWhiteBorder.png","早餐到!","该吃早餐了");
+        breakfastTimeTips->StartTips(":/Image/empty_hungry.png","早餐到!","该吃早餐了");
     // 重置状态
         game_2048Page->resetGameState();
         this->show();
         // qDebug()<<"早餐到";
     });
     connect(&SignalManager::instance(),&SignalManager::lunchTime,[=]{
-        lunchTimeTips->StartTips(":/Image/darkWhiteBorder_half.png","午餐到!","该吃午餐了");
+        lunchTimeTips->StartTips(":/Image/empty_hungry.png","午餐到!","该吃午餐了");
         game_2048Page->resetGameState();
         this->show();
         // qDebug()<<"午餐到";
     });
     connect(&SignalManager::instance(),&SignalManager::dinnerTime,[=]{
-        dinnerTimeTips->StartTips(":/Image/empty_health.png","晚餐到!","该吃晚餐了");
+        dinnerTimeTips->StartTips(":/Image/empty_hungry.png","晚餐到!","该吃晚餐了");
         game_2048Page->resetGameState();
         this->show();
         // qDebug()<<"晚餐到";
     });
     connect(&SignalManager::instance(),&SignalManager::stopBreakfast,[=]{
-        stopBreakfastTips->StartTips(":/Image/empty_hungry.png","早餐结束了!","吃的美");
+        stopBreakfastTips->StartTips(":/Image/hungry.png","早餐结束了!","吃的美");
         this->close();
         // qDebug()<<"早餐结束了";
     });
     connect(&SignalManager::instance(),&SignalManager::stopLunch,[=]{
-        stopLunchTips->StartTips(":/Image/health.png","午餐结束了!","肚子好圆呢");
+        stopLunchTips->StartTips(":/Image/hungry.png","午餐结束了!","肚子好圆呢");
         this->close();
         // qDebug()<<"午餐结束了";
     });
@@ -57,13 +57,13 @@ Rest::Rest(QWidget *parent)
         // qDebug()<<"晚餐结束了";
     });
     connect(&SignalManager::instance(),&SignalManager::stopWork,[=]{
-        stopWorkTips->StartTips(":/Image/whiteBorder.png","工作结束了!","开始休息吧");
+        stopWorkTips->StartTips(":/Image/empty_health.png","工作结束了!","开始休息吧");
         game_2048Page->resetGameState();
         this->show();
         // qDebug()<<"工作结束了 开始休息吧";
     });
     connect(&SignalManager::instance(),&SignalManager::stopBreak,[=]{
-        stopBreakTips->StartTips(":/Image/darkWhiteBorder.png","休息结束了!","开始工作吧");
+        stopBreakTips->StartTips(":/Image/health.png","休息结束了!","开始工作吧");
         this->close();
         // qDebug()<<"休息结束了 开始工作吧";
     });

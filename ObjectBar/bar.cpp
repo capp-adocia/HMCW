@@ -84,8 +84,11 @@ Bar::Bar(QWidget *parent)
 
     trayIcon->setContextMenu(trayIconMenu);
 
-    connect(restoreAction, &QAction::triggered, this, [=]() {
-        toggleFullScreen();
+    connect(restoreAction, &QAction::triggered, this, [=](){
+        ui->health_bar->show();
+        for(QFrame* frame:frames) frame->show();
+        setFixedSize(BarWidget);
+        this->isHideObjectBar = false;
         this->showNormal();  // 恢复显示窗口
 
     });
@@ -184,6 +187,15 @@ void Bar::keyPressEvent(QKeyEvent *event)
     }
 
     QWidget::keyPressEvent(event);
+}
+
+void Bar::closeEvent(QCloseEvent *event)
+{
+    if (trayIcon->isVisible())
+    {
+        hide();  // 隐藏窗口
+        event->ignore();  // 忽略关闭事件
+    }
 }
 
 void Bar::createPixmap(){

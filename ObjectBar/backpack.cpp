@@ -69,7 +69,7 @@ Backpack::Backpack(QWidget *parent)
         this->hide();// 隐藏窗口
     });
     // 设置 ui->lineEdit 控件的提示文字
-    ui->lineEdit->setPlaceholderText("请输入您想要查询的文件名...");
+    ui->lineEdit->setPlaceholderText("请输入文件名...");
 
     // 绘制图标
     QPixmap pixmap(":/Image/queryIcon.png");
@@ -340,7 +340,7 @@ void Backpack::FilterIcon(const QString &fileName)
         }
         else{
             // 如果没有匹配的就弹出提示框 启用提示
-            notFoundMatchTips->StartTips(":/Image/health.png","没有匹配的文件名!","〒▽〒",false);
+            notFoundMatchTips->StartTips(":/Image/errorTips.png","没有匹配的文件名!","〒▽〒",false);
         }
         settings.endArray();
     }
@@ -350,8 +350,8 @@ void Backpack::ClickStartQuery() // 点击query查询按钮后在ui->scrollAreaW
 {
     // 使用模态框来提醒用户确认更新exe信息 如果true就更新
     QMessageBox msgBox;
-    msgBox.setWindowTitle("提示");
-    msgBox.setInformativeText("请问是否要更新显示应用程序文件?");
+    msgBox.setWindowTitle("提示!");
+    msgBox.setInformativeText("请问是否要更新显示应用程序文件?\n注意这个过程至少需要5分钟，请不要关闭程序");
     msgBox.setStandardButtons(QMessageBox::Ok | QMessageBox::Cancel);
     msgBox.setDefaultButton(QMessageBox::Ok);
     int ret = msgBox.exec();

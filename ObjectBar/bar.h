@@ -44,6 +44,7 @@ protected:
     bool eventFilter(QObject *obj, QEvent *event) override; // 拖拽窗口
     void mousePressEvent(QMouseEvent *event) override; // 左键点击显示
     void keyPressEvent(QKeyEvent *event) override; // 键盘事件，点击E可以切换物品栏或人物物品栏，点击H可以切换物品栏的显示或隐藏
+    void closeEvent(QCloseEvent *event) override; // 关闭窗口后只是缩小到最小化状态
 private slots:
     void onFrameClicked(CustomFrame *frame);
     void toggleFullScreen();
