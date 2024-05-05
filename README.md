@@ -40,7 +40,7 @@
 2. 背包![背包](Image/backpack.png)
 3. 物品栏和背包![物品栏和背包](Image/full.png)
 4. 设置![设置](Image/settings.png)
-5. 进度![进度](Image/achievement.png =20*20)
+5. 进度![进度](Image/achievement.png)
 
 ## 开发感想
 
@@ -106,11 +106,11 @@ This is a desktop widget with a Minecraft style, similar to the Windows taskbar,
 
 ## Run screenshot
 
-1. Inventory ![Inventory](Image/objectBar.png)
-2. Backpack ![Backpack](Image/backpack.png)
-3. Inventory and Backpack ![Inventory and Backpack](Image/full.png)
-4. Settings ![Settings](Image/settings.png)
-5. Achievement ![Achievement](Image/achievement.png)
+1. Inventory![Inventory](Image/objectBar.png)
+2. Backpack![Backpack](Image/backpack.png)
+3. Inventory and Backpack![Inventory and Backpack](Image/full.png)
+4. Settings![Settings](Image/settings.png)
+5. Achievement![Achievement](Image/achievement.png)
 
 ## Developer Reflections
 
