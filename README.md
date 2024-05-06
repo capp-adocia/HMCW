@@ -124,7 +124,7 @@ This is a desktop widget with a Minecraft style, similar to the Windows taskbar,
 ## Contact Information
 - QQ: Please contact me at 2636427505.
 - QQ email: Please send an email to [2636427505@qq.com](https://mail.qq.com/) to contact me.
-- Bilibili: It's Kapa
+- Bilibili: **是Kapa呀**
 - ......
 
 ## Sponsorships and Donations
