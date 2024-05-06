@@ -518,6 +518,9 @@
           <pointsize>15</pointsize>
          </font>
         </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="styleSheet">
          <string notr="true">color:white;</string>
         </property>

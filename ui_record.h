@@ -95,6 +95,7 @@ public:
         QFont font1;
         font1.setPointSize(16);
         backButton->setFont(font1);
+        backButton->setCursor(QCursor(Qt::PointingHandCursor));
         backButton->setStyleSheet(QString::fromUtf8("background-color: rgb(109, 109, 109);\n"
 "border-left:4px solid rgb(184, 184, 185);\n"
 "border-top:4px solid rgb(184, 184, 185);\n"
@@ -117,6 +118,7 @@ public:
         generalRecordButton->setMinimumSize(QSize(281, 50));
         generalRecordButton->setMaximumSize(QSize(281, 50));
         generalRecordButton->setFont(font1);
+        generalRecordButton->setCursor(QCursor(Qt::PointingHandCursor));
         generalRecordButton->setStyleSheet(QString::fromUtf8("background-color: rgb(109, 109, 109);\n"
 "border-left:4px solid rgb(184, 184, 185);\n"
 "border-top:4px solid rgb(184, 184, 185);\n"
@@ -131,6 +133,7 @@ public:
         controlBreakRecordButton->setMinimumSize(QSize(281, 50));
         controlBreakRecordButton->setMaximumSize(QSize(281, 50));
         controlBreakRecordButton->setFont(font1);
+        controlBreakRecordButton->setCursor(QCursor(Qt::PointingHandCursor));
         controlBreakRecordButton->setStyleSheet(QString::fromUtf8("background-color: rgb(109, 109, 109);\n"
 "border-left:4px solid rgb(184, 184, 185);\n"
 "border-top:4px solid rgb(184, 184, 185);\n"

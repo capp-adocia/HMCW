@@ -100,6 +100,7 @@ public:
         scrollAreaWidgetContents->setObjectName("scrollAreaWidgetContents");
         scrollAreaWidgetContents->setGeometry(QRect(0, 0, 368, 504));
         scrollAreaWidgetContents->setMinimumSize(QSize(0, 0));
+        scrollAreaWidgetContents->setCursor(QCursor(Qt::PointingHandCursor));
         scrollArea->setWidget(scrollAreaWidgetContents);
         widget_6 = new QWidget(widget_3);
         widget_6->setObjectName("widget_6");
@@ -132,6 +133,7 @@ public:
         QFont font;
         font.setPointSize(10);
         queryButton->setFont(font);
+        queryButton->setCursor(QCursor(Qt::PointingHandCursor));
         queryButton->setStyleSheet(QString::fromUtf8("color:white;"));
         hideButton = new QPushButton(widget_6);
         hideButton->setObjectName("hideButton");
@@ -141,6 +143,7 @@ public:
         QFont font1;
         font1.setPointSize(14);
         hideButton->setFont(font1);
+        hideButton->setCursor(QCursor(Qt::PointingHandCursor));
         hideButton->setStyleSheet(QString::fromUtf8("color:white;"));
         lineEdit = new QLineEdit(widget_6);
         lineEdit->setObjectName("lineEdit");
@@ -206,6 +209,7 @@ public:
         object_bar_3->setObjectName("object_bar_3");
         object_bar_3->setMinimumSize(QSize(500, 52));
         object_bar_3->setMaximumSize(QSize(500, 52));
+        object_bar_3->setCursor(QCursor(Qt::PointingHandCursor));
         object_bar_3->setStyleSheet(QString::fromUtf8("background-color: rgb(252, 252, 252);"));
 
         gridLayout_5->addWidget(object_bar_3, 2, 0, 1, 1);
@@ -214,6 +218,7 @@ public:
         object_bar_1->setObjectName("object_bar_1");
         object_bar_1->setMinimumSize(QSize(500, 52));
         object_bar_1->setMaximumSize(QSize(500, 52));
+        object_bar_1->setCursor(QCursor(Qt::PointingHandCursor));
         object_bar_1->setStyleSheet(QString::fromUtf8("background-color: rgb(252, 252, 252);"));
 
         gridLayout_5->addWidget(object_bar_1, 0, 0, 1, 1);
@@ -222,6 +227,7 @@ public:
         object_bar_2->setObjectName("object_bar_2");
         object_bar_2->setMinimumSize(QSize(500, 52));
         object_bar_2->setMaximumSize(QSize(500, 52));
+        object_bar_2->setCursor(QCursor(Qt::PointingHandCursor));
         object_bar_2->setStyleSheet(QString::fromUtf8("background-color: rgb(252, 252, 252);"));
 
         gridLayout_5->addWidget(object_bar_2, 1, 0, 1, 1);
@@ -242,6 +248,7 @@ public:
         object_bar->setObjectName("object_bar");
         object_bar->setMinimumSize(QSize(500, 52));
         object_bar->setMaximumSize(QSize(500, 52));
+        object_bar->setCursor(QCursor(Qt::PointingHandCursor));
         object_bar->setStyleSheet(QString::fromUtf8("background-color: rgb(252, 252, 252);"));
 
         gridLayout_6->addWidget(object_bar, 0, 0, 1, 1);
@@ -465,6 +472,7 @@ public:
         ExeFrameIcon->setGeometry(QRect(370, 305, 74, 64));
         ExeFrameIcon->setMinimumSize(QSize(74, 64));
         ExeFrameIcon->setMaximumSize(QSize(74, 64));
+        ExeFrameIcon->setCursor(QCursor(Qt::PointingHandCursor));
 
         gridLayout_4->addWidget(widget_4, 0, 0, 1, 1);
 

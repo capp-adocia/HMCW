@@ -46,6 +46,9 @@
        <height>16777215</height>
       </size>
      </property>
+     <property name="cursor">
+      <cursorShape>ArrowCursor</cursorShape>
+     </property>
      <property name="styleSheet">
       <string notr="true"/>
      </property>
@@ -113,6 +116,9 @@ border:0;</string>
           <font>
            <pointsize>16</pointsize>
           </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
          </property>
          <property name="styleSheet">
           <string notr="true">background-color: rgb(255, 255, 255);
@@ -2644,6 +2650,9 @@ background-color: rgb(255, 254, 231);</string>
           <font>
            <pointsize>16</pointsize>
           </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
          </property>
          <property name="styleSheet">
           <string notr="true">background-color: rgb(255, 255, 255);

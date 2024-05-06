@@ -123,6 +123,9 @@ color:rgb(255, 255, 255);
              <pointsize>16</pointsize>
             </font>
            </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
            <property name="styleSheet">
             <string notr="true">background-color: rgb(109, 109, 109);
 border-left:4px solid rgb(184, 184, 185);
@@ -176,6 +179,9 @@ border-bottom:4px solid rgb(88, 88, 88);
                 <pointsize>16</pointsize>
                </font>
               </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
               <property name="styleSheet">
                <string notr="true">background-color: rgb(109, 109, 109);
 border-left:4px solid rgb(184, 184, 185);
@@ -207,6 +213,9 @@ border-bottom:4px solid rgb(88, 88, 88);
                <font>
                 <pointsize>16</pointsize>
                </font>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
               </property>
               <property name="styleSheet">
                <string notr="true">background-color: rgb(109, 109, 109);

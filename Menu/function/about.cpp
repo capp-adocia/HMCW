@@ -1,4 +1,4 @@
-#include "about.h"
+#include "Menu/function/about.h"
 #include "ui_about.h"
 
 bool About::isShowLargeScreen = false;
@@ -35,11 +35,7 @@ About::About(QWidget *parent)
     ui->LargeScreendisplayButton->setStyleSheet(buttonStyleSheet);
 
     // 链接跳转
-    // connect(ui->textBrowser, &QTextBrowser::anchorClicked, [](const QUrl& link){
-    //     if (link.scheme() == "http" || link.scheme() == "https") {
-    //         QDesktopServices::openUrl(link);
-    //     }
-    // });
+    ui->textBrowser->setOpenExternalLinks(true);
     // 加载md文档
     ui->textBrowser->setSource(QUrl::fromLocalFile(":/Markdown/About.md"));
 

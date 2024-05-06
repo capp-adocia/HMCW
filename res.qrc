@@ -85,9 +85,9 @@
         <file>Markdown/Suggest.md</file>
         <file>Image/queryIcon.png</file>
         <file>Image/switchExeFrameIcon.png</file>
-        <file>Image/QuestionMark.png</file>
         <file>Image/HMCW.ico</file>
         <file>Image/Alipay.png</file>
         <file>Image/WeChat.png</file>
+        <file>Image/KeepExpect.png</file>
     </qresource>
 </RCC>

@@ -193,13 +193,13 @@
           <widget class="QWidget" name="BillboardDown" native="true">
            <property name="minimumSize">
             <size>
-             <width>50</width>
+             <width>40</width>
              <height>290</height>
             </size>
            </property>
            <property name="maximumSize">
             <size>
-             <width>50</width>
+             <width>40</width>
              <height>290</height>
             </size>
            </property>
@@ -242,6 +242,9 @@
          <font>
           <pointsize>16</pointsize>
          </font>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
         </property>
         <property name="styleSheet">
          <string notr="true">color: rgb(0, 0, 0);

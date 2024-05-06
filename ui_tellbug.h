@@ -112,6 +112,7 @@ public:
         QFont font;
         font.setPointSize(14);
         submitButton->setFont(font);
+        submitButton->setCursor(QCursor(Qt::PointingHandCursor));
 
         gridLayout_7->addWidget(submitButton, 2, 1, 1, 2);
 
@@ -328,11 +329,13 @@ public:
         gridLayout_5->setContentsMargins(0, 0, 0, 0);
         maleRadioButton = new QRadioButton(widget_4);
         maleRadioButton->setObjectName("maleRadioButton");
+        maleRadioButton->setCursor(QCursor(Qt::PointingHandCursor));
 
         gridLayout_5->addWidget(maleRadioButton, 0, 0, 1, 1);
 
         femaleRadioButton = new QRadioButton(widget_4);
         femaleRadioButton->setObjectName("femaleRadioButton");
+        femaleRadioButton->setCursor(QCursor(Qt::PointingHandCursor));
 
         gridLayout_5->addWidget(femaleRadioButton, 0, 1, 1, 1);
 
@@ -379,8 +382,8 @@ public:
 
         BillboardDown = new QWidget(widget_2);
         BillboardDown->setObjectName("BillboardDown");
-        BillboardDown->setMinimumSize(QSize(50, 290));
-        BillboardDown->setMaximumSize(QSize(50, 290));
+        BillboardDown->setMinimumSize(QSize(40, 290));
+        BillboardDown->setMaximumSize(QSize(40, 290));
         BillboardDown->setStyleSheet(QString::fromUtf8("background-color: rgb(249, 255, 230);"));
 
         gridLayout_2->addWidget(BillboardDown, 1, 1, 1, 1);
@@ -411,6 +414,7 @@ public:
         QFont font4;
         font4.setPointSize(16);
         backButton->setFont(font4);
+        backButton->setCursor(QCursor(Qt::PointingHandCursor));
         backButton->setStyleSheet(QString::fromUtf8("color: rgb(0, 0, 0);\n"
 "background-color: rgb(255, 253, 253);"));
 

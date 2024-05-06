@@ -1,4 +1,4 @@
-#include "menu.h"
+#include "Menu/menu.h"
 #include "ui_menu.h"
 
 Menu::Menu(QWidget *parent)
@@ -10,8 +10,10 @@ Menu::Menu(QWidget *parent)
     , recordPage(new Record(this))
     , suggestionPage(new Suggestion(this))
     , tellbugPage(new TellBug(this))
+    // , mousePressed(false)
 {
     ui->setupUi(this);
+    this->installEventFilter(this);
     // 页面初始化
     //透明
     setAttribute(Qt::WA_TranslucentBackground);
@@ -92,6 +94,45 @@ void Menu::keyPressEvent(QKeyEvent *event)
         this->hide();
     }
 }
+
+// bool Menu::eventFilter(QObject *obj, QEvent *event)
+// {
+//     // 处理自定义窗口拖动逻辑
+//     if(obj == this) {
+//         switch (event->type()) {
+//         case QEvent::MouseButtonPress: {
+
+//             qDebug()<<"键盘按压了";
+//             QMouseEvent *mouseEvent = static_cast<QMouseEvent*>(event);
+//             QPoint pos = mouseEvent->pos();
+//             QRect rect = this->rect();
+//             // 检查鼠标是否在窗口的边框区域
+//             if(pos.x() <= rect.left() + 30 || pos.x() >= rect.right() - 30 ||
+//                 pos.y() <= rect.top() + 160 || pos.y() >= rect.bottom() - 30) {
+//                 mousePressed = true;
+//                 mousePressPos = pos;
+//                 return true;
+//             }
+//             break;
+//         }
+//         case QEvent::MouseMove:
+//             if (mousePressed) {
+//                 int dx = static_cast<QMouseEvent*>(event)->pos().x() - mousePressPos.x();
+//                 int dy = static_cast<QMouseEvent*>(event)->pos().y() - mousePressPos.y();
+//                 move(x()+dx, y()+dy);
+//                 return true;
+//             }
+//             break;
+//         case QEvent::MouseButtonRelease:
+//             mousePressed = false;
+//             return true;
+//         default:
+//             break;
+//         }
+//     }
+//     return QObject::eventFilter(obj, event);
+// }
+
 
 Menu::~Menu()
 {

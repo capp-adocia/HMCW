@@ -1,4 +1,4 @@
-#include "objectframe.h"
+#include "Frame/objectframe.h"
 
 Objectframe::Objectframe(QWidget *parent, const QString &objectName) :
     QFrame(parent)

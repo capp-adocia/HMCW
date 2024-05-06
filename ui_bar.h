@@ -344,7 +344,7 @@ public:
         label_14->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter);
         levelLabel = new QLabel(health_bar);
         levelLabel->setObjectName("levelLabel");
-        levelLabel->setGeometry(QRect(290, 20, 40, 15));
+        levelLabel->setGeometry(QRect(290, 13, 40, 15));
         QSizePolicy sizePolicy1(QSizePolicy::Policy::Preferred, QSizePolicy::Policy::Preferred);
         sizePolicy1.setHorizontalStretch(0);
         sizePolicy1.setVerticalStretch(0);
@@ -390,6 +390,7 @@ public:
         frame_7->setObjectName("frame_7");
         frame_7->setMinimumSize(QSize(60, 60));
         frame_7->setMaximumSize(QSize(60, 60));
+        frame_7->setCursor(QCursor(Qt::ArrowCursor));
         frame_7->setStyleSheet(QString::fromUtf8(""));
         frame_7->setFrameShape(QFrame::StyledPanel);
         frame_7->setFrameShadow(QFrame::Raised);
@@ -439,6 +440,7 @@ public:
         frame_3->setObjectName("frame_3");
         frame_3->setMinimumSize(QSize(60, 60));
         frame_3->setMaximumSize(QSize(60, 60));
+        frame_3->setCursor(QCursor(Qt::ArrowCursor));
         frame_3->setStyleSheet(QString::fromUtf8(""));
         frame_3->setFrameShape(QFrame::StyledPanel);
         frame_3->setFrameShadow(QFrame::Raised);
@@ -449,6 +451,7 @@ public:
         frame_6->setObjectName("frame_6");
         frame_6->setMinimumSize(QSize(60, 60));
         frame_6->setMaximumSize(QSize(60, 60));
+        frame_6->setCursor(QCursor(Qt::ArrowCursor));
         frame_6->setStyleSheet(QString::fromUtf8(""));
         frame_6->setFrameShape(QFrame::StyledPanel);
         frame_6->setFrameShadow(QFrame::Raised);
@@ -459,6 +462,7 @@ public:
         frame_1->setObjectName("frame_1");
         frame_1->setMinimumSize(QSize(60, 60));
         frame_1->setMaximumSize(QSize(60, 60));
+        frame_1->setCursor(QCursor(Qt::ArrowCursor));
         frame_1->setStyleSheet(QString::fromUtf8(""));
         frame_1->setFrameShape(QFrame::StyledPanel);
         frame_1->setFrameShadow(QFrame::Raised);
@@ -469,6 +473,7 @@ public:
         frame_9->setObjectName("frame_9");
         frame_9->setMinimumSize(QSize(60, 60));
         frame_9->setMaximumSize(QSize(60, 60));
+        frame_9->setCursor(QCursor(Qt::ArrowCursor));
         frame_9->setStyleSheet(QString::fromUtf8(""));
         frame_9->setFrameShape(QFrame::StyledPanel);
         frame_9->setFrameShadow(QFrame::Raised);
@@ -479,6 +484,7 @@ public:
         frame_5->setObjectName("frame_5");
         frame_5->setMinimumSize(QSize(60, 60));
         frame_5->setMaximumSize(QSize(60, 60));
+        frame_5->setCursor(QCursor(Qt::ArrowCursor));
         frame_5->setStyleSheet(QString::fromUtf8(""));
         frame_5->setFrameShape(QFrame::StyledPanel);
         frame_5->setFrameShadow(QFrame::Raised);
@@ -490,6 +496,7 @@ public:
         frame_8->setObjectName("frame_8");
         frame_8->setMinimumSize(QSize(60, 60));
         frame_8->setMaximumSize(QSize(60, 60));
+        frame_8->setCursor(QCursor(Qt::ArrowCursor));
         frame_8->setStyleSheet(QString::fromUtf8(""));
         frame_8->setFrameShape(QFrame::StyledPanel);
         frame_8->setFrameShadow(QFrame::Raised);
@@ -501,6 +508,7 @@ public:
         frame_2->setObjectName("frame_2");
         frame_2->setMinimumSize(QSize(60, 60));
         frame_2->setMaximumSize(QSize(60, 60));
+        frame_2->setCursor(QCursor(Qt::ArrowCursor));
         frame_2->setStyleSheet(QString::fromUtf8(""));
         frame_2->setFrameShape(QFrame::StyledPanel);
         frame_2->setFrameShadow(QFrame::Raised);
@@ -511,6 +519,7 @@ public:
         frame_4->setObjectName("frame_4");
         frame_4->setMinimumSize(QSize(60, 60));
         frame_4->setMaximumSize(QSize(60, 60));
+        frame_4->setCursor(QCursor(Qt::ArrowCursor));
         frame_4->setStyleSheet(QString::fromUtf8(""));
         frame_4->setFrameShape(QFrame::StyledPanel);
         frame_4->setFrameShadow(QFrame::Raised);

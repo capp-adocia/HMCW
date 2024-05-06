@@ -1,9 +1,6 @@
-#include "queryapp.h"
+#include "Help/queryapp.h"
 
-Queryapp::Queryapp()
-{
-
-}
+Queryapp::Queryapp() {}
 
 void Queryapp::searchDirectory(const QDir &dir, QStringList &foundFilePaths) {
     QStringList fileList = dir.entryList(QDir::Dirs | QDir::Files | QDir::NoDotAndDotDot);

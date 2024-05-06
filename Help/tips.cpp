@@ -1,4 +1,4 @@
-#include "tips.h"
+#include "Help/tips.h"
 #include "ui_tips.h"
 
 QList<Tips*> Tips::allTipsObject;

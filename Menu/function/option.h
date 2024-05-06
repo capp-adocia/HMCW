@@ -33,6 +33,8 @@ public slots:
     void Save();
     void checkTime();
     void StartOption(int state); // 是否启用定时提醒休息功能
+    void SkipOrStopMeal(const QString& mealCategory, bool isSkip = false); // 当跳过吃饭时触发这个槽函数
+    void SkipBreak(bool isSkip = false); // 当跳过休息时触发这个槽函数
 private:
     Ui::Option *ui;
     QMap<QSlider*, QLabel*> sliderLabelMap; // 把滑块和标签映射

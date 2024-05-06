@@ -29,6 +29,8 @@ signals:
 public slots:
 protected:
     void keyPressEvent(QKeyEvent *event) override;
+    // bool eventFilter(QObject *obj, QEvent *event) override; // 拖拽存在bug待解决
+
 private:
     Ui::Menu *ui;
     QVector<QWidget*> pages;
@@ -40,6 +42,8 @@ private:
     Suggestion *suggestionPage;
     TellBug *tellbugPage;
     QueryImgLabel *queryImgLabel;
+    // QPoint mousePressPos; // 保存鼠标位置
+    // bool mousePressed;
 };
 
 #endif // MENU_H

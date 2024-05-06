@@ -139,6 +139,9 @@ color:white;</string>
                    <pointsize>14</pointsize>
                   </font>
                  </property>
+                 <property name="cursor">
+                  <cursorShape>PointingHandCursor</cursorShape>
+                 </property>
                  <property name="text">
                   <string>提交</string>
                  </property>
@@ -856,6 +859,9 @@ color:black;
                      </property>
                      <item row="0" column="0">
                       <widget class="QRadioButton" name="maleRadioButton">
+                       <property name="cursor">
+                        <cursorShape>PointingHandCursor</cursorShape>
+                       </property>
                        <property name="text">
                         <string>Boy</string>
                        </property>
@@ -863,6 +869,9 @@ color:black;
                      </item>
                      <item row="0" column="1">
                       <widget class="QRadioButton" name="femaleRadioButton">
+                       <property name="cursor">
+                        <cursorShape>PointingHandCursor</cursorShape>
+                       </property>
                        <property name="text">
                         <string>Girl</string>
                        </property>
@@ -937,13 +946,13 @@ color:black;
           <widget class="QWidget" name="BillboardDown" native="true">
            <property name="minimumSize">
             <size>
-             <width>50</width>
+             <width>40</width>
              <height>290</height>
             </size>
            </property>
            <property name="maximumSize">
             <size>
-             <width>50</width>
+             <width>40</width>
              <height>290</height>
             </size>
            </property>
@@ -1028,6 +1037,9 @@ color:black;
          <font>
           <pointsize>16</pointsize>
          </font>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
         </property>
         <property name="styleSheet">
          <string notr="true">color: rgb(0, 0, 0);

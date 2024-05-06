@@ -132,7 +132,8 @@ OBJECTS       = release/achievementframe.o \
 		release/moc_rest.o \
 		release/moc_signalmanger.o
 
-DIST          = Image/寰俊鍥剧墖_20240505105514.jpg \
+DIST          = Image/KeepExpect.png \
+		Image/寰俊鍥剧墖_20240505105514.jpg \
 		Image/寰俊鍥剧墖_20240505105521.jpg \
 		ico.rc Frame\achievementframe.h \
 		Frame\customframe.h \
@@ -223,7 +224,6 @@ compiler_rcc_clean:
 release/qrc_res.cpp: res.qrc \
 		D:/Qt/6.7.0/mingw_64/bin/rcc.exe \
 		Image/whiteBorder.png \
-		Image/QuestionMark.png \
 		Image/health.png \
 		Image/queryIcon.png \
 		Image/darkWhiteBorder_half.png \
@@ -231,6 +231,7 @@ release/qrc_res.cpp: res.qrc \
 		Image/whiteBorderHalf_health.png \
 		Image/TextRockBackground.png \
 		Image/half_health.png \
+		Image/KeepExpect.png \
 		Image/switchExeFrameIcon.png \
 		Image/soilBackground.png \
 		Image/Alipay.png \
@@ -4258,6 +4259,8 @@ release/moc_rest.cpp: Rest/rest.h \
 		D:/Qt/6.7.0/mingw_64/include/QtGui/QKeyEvent \
 		D:/Qt/6.7.0/mingw_64/include/QtCore/QRandomGenerator \
 		D:/Qt/6.7.0/mingw_64/include/QtCore/qrandom.h \
+		D:/Qt/6.7.0/mingw_64/include/QtCore/QSettings \
+		D:/Qt/6.7.0/mingw_64/include/QtCore/qsettings.h \
 		release/moc_predefs.h \
 		D:/Qt/6.7.0/mingw_64/bin/moc.exe
 	D:\Qt\6.7.0\mingw_64\bin\moc.exe $(DEFINES) --include C:/Users/26364/Documents/QT_APP/DeskBar/release/moc_predefs.h -ID:/Qt/6.7.0/mingw_64/mkspecs/win32-g++ -IC:/Users/26364/Documents/QT_APP/DeskBar -ID:/Qt/6.7.0/mingw_64/include -ID:/Qt/6.7.0/mingw_64/include/QtWidgets -ID:/Qt/6.7.0/mingw_64/include/QtGui -ID:/Qt/6.7.0/mingw_64/include/QtCore -ID:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ -ID:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 -ID:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward -ID:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include -ID:/Qt/Tools/mingw1120_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed -ID:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include Rest\rest.h -o release\moc_rest.cpp
@@ -7964,8 +7967,7 @@ release/backpack.o: ObjectBar/backpack.cpp ObjectBar/backpack.h \
 		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qabstractbutton.h \
 		D:/Qt/6.7.0/mingw_64/include/QtWidgets/QScrollArea \
 		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qscrollarea.h \
-		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qabstractscrollarea.h \
-		D:/Qt/6.7.0/mingw_64/include/QtWidgets/QSpacerItem
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qabstractscrollarea.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\backpack.o ObjectBar\backpack.cpp
 
 release/bar.o: ObjectBar/bar.cpp ObjectBar/bar.h \
@@ -8708,6 +8710,8 @@ release/rest.o: Rest/rest.cpp Rest/rest.h \
 		D:/Qt/6.7.0/mingw_64/include/QtGui/QKeyEvent \
 		D:/Qt/6.7.0/mingw_64/include/QtCore/QRandomGenerator \
 		D:/Qt/6.7.0/mingw_64/include/QtCore/qrandom.h \
+		D:/Qt/6.7.0/mingw_64/include/QtCore/QSettings \
+		D:/Qt/6.7.0/mingw_64/include/QtCore/qsettings.h \
 		ui_rest.h \
 		D:/Qt/6.7.0/mingw_64/include/QtCore/QVariant \
 		D:/Qt/6.7.0/mingw_64/include/QtWidgets/QApplication \

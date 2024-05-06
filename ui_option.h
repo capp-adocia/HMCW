@@ -27,6 +27,15 @@ public:
     QGridLayout *gridLayout;
     QWidget *widget_5;
     QGridLayout *gridLayout_5;
+    QSpacerItem *verticalSpacer_2;
+    QSpacerItem *verticalSpacer;
+    QPushButton *backButton;
+    QSpacerItem *horizontalSpacer_3;
+    QSpacerItem *horizontalSpacer_2;
+    QWidget *widget_4;
+    QGridLayout *gridLayout_3;
+    QCheckBox *startCheckBox;
+    QSpacerItem *horizontalSpacer;
     QWidget *widget;
     QGridLayout *gridLayout_2;
     QLabel *label_2;
@@ -53,15 +62,6 @@ public:
     QLabel *label;
     QLabel *label_9;
     QLabel *label_11;
-    QPushButton *backButton;
-    QSpacerItem *horizontalSpacer_2;
-    QWidget *widget_4;
-    QGridLayout *gridLayout_3;
-    QCheckBox *startCheckBox;
-    QSpacerItem *horizontalSpacer;
-    QSpacerItem *verticalSpacer;
-    QSpacerItem *verticalSpacer_2;
-    QSpacerItem *horizontalSpacer_3;
 
     void setupUi(QWidget *Option)
     {
@@ -79,11 +79,61 @@ public:
         widget_5->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
         gridLayout_5 = new QGridLayout(widget_5);
         gridLayout_5->setObjectName("gridLayout_5");
+        verticalSpacer_2 = new QSpacerItem(20, 40, QSizePolicy::Policy::Minimum, QSizePolicy::Policy::Expanding);
+
+        gridLayout_5->addItem(verticalSpacer_2, 4, 1, 1, 1);
+
+        verticalSpacer = new QSpacerItem(20, 40, QSizePolicy::Policy::Minimum, QSizePolicy::Policy::Expanding);
+
+        gridLayout_5->addItem(verticalSpacer, 2, 1, 1, 1);
+
+        backButton = new QPushButton(widget_5);
+        backButton->setObjectName("backButton");
+        backButton->setMinimumSize(QSize(600, 50));
+        backButton->setMaximumSize(QSize(600, 50));
+        QFont font;
+        font.setPointSize(16);
+        backButton->setFont(font);
+        backButton->setCursor(QCursor(Qt::PointingHandCursor));
+        backButton->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
+
+        gridLayout_5->addWidget(backButton, 3, 1, 1, 1);
+
+        horizontalSpacer_3 = new QSpacerItem(104, 20, QSizePolicy::Policy::Expanding, QSizePolicy::Policy::Minimum);
+
+        gridLayout_5->addItem(horizontalSpacer_3, 1, 0, 1, 1);
+
+        horizontalSpacer_2 = new QSpacerItem(104, 20, QSizePolicy::Policy::Expanding, QSizePolicy::Policy::Minimum);
+
+        gridLayout_5->addItem(horizontalSpacer_2, 1, 2, 1, 1);
+
+        widget_4 = new QWidget(widget_5);
+        widget_4->setObjectName("widget_4");
+        widget_4->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255,0);"));
+        gridLayout_3 = new QGridLayout(widget_4);
+        gridLayout_3->setObjectName("gridLayout_3");
+        startCheckBox = new QCheckBox(widget_4);
+        startCheckBox->setObjectName("startCheckBox");
+        startCheckBox->setMinimumSize(QSize(90, 0));
+        startCheckBox->setFont(font);
+        startCheckBox->setCursor(QCursor(Qt::PointingHandCursor));
+        startCheckBox->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255,0);\n"
+"color: rgb(255, 255, 255);"));
+
+        gridLayout_3->addWidget(startCheckBox, 0, 1, 1, 1);
+
+        horizontalSpacer = new QSpacerItem(40, 20, QSizePolicy::Policy::Expanding, QSizePolicy::Policy::Minimum);
+
+        gridLayout_3->addItem(horizontalSpacer, 0, 0, 1, 1);
+
+
+        gridLayout_5->addWidget(widget_4, 0, 1, 1, 1);
+
         widget = new QWidget(widget_5);
         widget->setObjectName("widget");
-        QFont font;
-        font.setPointSize(9);
-        widget->setFont(font);
+        QFont font1;
+        font1.setPointSize(9);
+        widget->setFont(font1);
         widget->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255,0);"));
         gridLayout_2 = new QGridLayout(widget);
         gridLayout_2->setObjectName("gridLayout_2");
@@ -92,9 +142,9 @@ public:
         gridLayout_2->setContentsMargins(0, 0, 0, 0);
         label_2 = new QLabel(widget);
         label_2->setObjectName("label_2");
-        QFont font1;
-        font1.setPointSize(12);
-        label_2->setFont(font1);
+        QFont font2;
+        font2.setPointSize(12);
+        label_2->setFont(font2);
         label_2->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255,0);\n"
 "color: rgb(255, 255, 255);"));
 
@@ -102,7 +152,7 @@ public:
 
         label_10 = new QLabel(widget);
         label_10->setObjectName("label_10");
-        label_10->setFont(font1);
+        label_10->setFont(font2);
         label_10->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255,0);\n"
 "color: rgb(255, 255, 255);"));
 
@@ -187,6 +237,7 @@ public:
         dinnerSlider->setMaximum(72000);
         dinnerSlider->setSingleStep(60);
         dinnerSlider->setPageStep(600);
+        dinnerSlider->setValue(57600);
         dinnerSlider->setSliderPosition(57600);
         dinnerSlider->setOrientation(Qt::Horizontal);
         dinnerSlider->setInvertedAppearance(false);
@@ -260,7 +311,7 @@ public:
         breakfastSlider->setGeometry(QRect(0, 0, 279, 48));
         breakfastSlider->setMinimumSize(QSize(279, 48));
         breakfastSlider->setMaximumSize(QSize(279, 48));
-        breakfastSlider->setFont(font);
+        breakfastSlider->setFont(font1);
         breakfastSlider->setStyleSheet(QString::fromUtf8("QSlider::groove:horizontal {\n"
 "    height: 48px;                   /* \350\256\276\347\275\256\350\275\250\351\201\223\347\232\204\351\253\230\345\272\246 */\n"
 "    margin: 0px 0px;                 /* \350\256\276\347\275\256\350\275\250\351\201\223\347\232\204\345\244\226\350\276\271\350\267\235 */\n"
@@ -370,8 +421,8 @@ public:
         lunchSlider->setMaximum(46800);
         lunchSlider->setSingleStep(60);
         lunchSlider->setPageStep(600);
-        lunchSlider->setValue(39652);
-        lunchSlider->setSliderPosition(39652);
+        lunchSlider->setValue(39600);
+        lunchSlider->setSliderPosition(39600);
         lunchSlider->setOrientation(Qt::Horizontal);
         lunchSlider->setInvertedAppearance(false);
         lunchSlider->setInvertedControls(false);
@@ -390,7 +441,7 @@ public:
 
         label_6 = new QLabel(widget);
         label_6->setObjectName("label_6");
-        label_6->setFont(font1);
+        label_6->setFont(font2);
         label_6->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255,0);\n"
 "color: rgb(255, 255, 255);"));
 
@@ -398,7 +449,7 @@ public:
 
         label = new QLabel(widget);
         label->setObjectName("label");
-        label->setFont(font1);
+        label->setFont(font2);
         label->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255,0);\n"
 "color: rgb(255, 255, 255);"));
 
@@ -406,7 +457,7 @@ public:
 
         label_9 = new QLabel(widget);
         label_9->setObjectName("label_9");
-        label_9->setFont(font1);
+        label_9->setFont(font2);
         label_9->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255,0);\n"
 "color: rgb(255, 255, 255);"));
 
@@ -414,7 +465,7 @@ public:
 
         label_11 = new QLabel(widget);
         label_11->setObjectName("label_11");
-        label_11->setFont(font1);
+        label_11->setFont(font2);
         label_11->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255,0);\n"
 "color: rgb(255, 255, 255);"));
 
@@ -422,54 +473,6 @@ public:
 
 
         gridLayout_5->addWidget(widget, 1, 1, 1, 1);
-
-        backButton = new QPushButton(widget_5);
-        backButton->setObjectName("backButton");
-        backButton->setMinimumSize(QSize(600, 50));
-        backButton->setMaximumSize(QSize(600, 50));
-        QFont font2;
-        font2.setPointSize(16);
-        backButton->setFont(font2);
-        backButton->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
-
-        gridLayout_5->addWidget(backButton, 3, 1, 1, 1);
-
-        horizontalSpacer_2 = new QSpacerItem(104, 20, QSizePolicy::Policy::Expanding, QSizePolicy::Policy::Minimum);
-
-        gridLayout_5->addItem(horizontalSpacer_2, 1, 2, 1, 1);
-
-        widget_4 = new QWidget(widget_5);
-        widget_4->setObjectName("widget_4");
-        widget_4->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255,0);"));
-        gridLayout_3 = new QGridLayout(widget_4);
-        gridLayout_3->setObjectName("gridLayout_3");
-        startCheckBox = new QCheckBox(widget_4);
-        startCheckBox->setObjectName("startCheckBox");
-        startCheckBox->setMinimumSize(QSize(90, 0));
-        startCheckBox->setFont(font2);
-        startCheckBox->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255,0);\n"
-"color: rgb(255, 255, 255);"));
-
-        gridLayout_3->addWidget(startCheckBox, 0, 1, 1, 1);
-
-        horizontalSpacer = new QSpacerItem(40, 20, QSizePolicy::Policy::Expanding, QSizePolicy::Policy::Minimum);
-
-        gridLayout_3->addItem(horizontalSpacer, 0, 0, 1, 1);
-
-
-        gridLayout_5->addWidget(widget_4, 0, 1, 1, 1);
-
-        verticalSpacer = new QSpacerItem(20, 40, QSizePolicy::Policy::Minimum, QSizePolicy::Policy::Expanding);
-
-        gridLayout_5->addItem(verticalSpacer, 2, 1, 1, 1);
-
-        verticalSpacer_2 = new QSpacerItem(20, 40, QSizePolicy::Policy::Minimum, QSizePolicy::Policy::Expanding);
-
-        gridLayout_5->addItem(verticalSpacer_2, 4, 1, 1, 1);
-
-        horizontalSpacer_3 = new QSpacerItem(104, 20, QSizePolicy::Policy::Expanding, QSizePolicy::Policy::Minimum);
-
-        gridLayout_5->addItem(horizontalSpacer_3, 1, 0, 1, 1);
 
 
         gridLayout->addWidget(widget_5, 0, 0, 1, 1);
@@ -483,20 +486,20 @@ public:
     void retranslateUi(QWidget *Option)
     {
         Option->setWindowTitle(QCoreApplication::translate("Option", "Form", nullptr));
-        label_2->setText(QCoreApplication::translate("Option", "\344\274\221\346\201\257\346\227\266\351\225\277 5\345\210\206\351\222\237\345\210\2601\345\260\217\346\227\266", nullptr));
-        label_10->setText(QCoreApplication::translate("Option", "\346\231\232\351\244\220\346\227\266\351\227\264  4\347\202\271 \345\210\2608\347\202\271", nullptr));
+        backButton->setText(QCoreApplication::translate("Option", "\345\256\214\346\210\220", nullptr));
+        startCheckBox->setText(QCoreApplication::translate("Option", "\345\220\257\347\224\250", nullptr));
+        label_2->setText(QCoreApplication::translate("Option", "\344\274\221\346\201\257\346\227\266\351\225\277 5\345\210\206\351\222\237 - 1\345\260\217\346\227\266", nullptr));
+        label_10->setText(QCoreApplication::translate("Option", "\346\231\232\351\244\220\346\227\266\351\227\264  16\347\202\271 - 20\347\202\271", nullptr));
         mealTimeLabel->setText(QCoreApplication::translate("Option", "\347\224\250\351\244\220\346\227\266\351\227\264", nullptr));
         dinnerLabel->setText(QCoreApplication::translate("Option", "\346\231\232\351\244\220", nullptr));
         breakTimeLabel->setText(QCoreApplication::translate("Option", "\344\274\221\346\201\257\346\227\266\351\227\264", nullptr));
         breakfastLabel->setText(QCoreApplication::translate("Option", "\346\227\251\351\244\220", nullptr));
         workTimeLabel->setText(QCoreApplication::translate("Option", "\345\267\245\344\275\234\346\227\266\351\227\264", nullptr));
         lunchLabel->setText(QCoreApplication::translate("Option", "\345\215\210\351\244\220", nullptr));
-        label_6->setText(QCoreApplication::translate("Option", "\346\227\251\351\244\220\346\227\266\351\227\264 \344\273\216 7 \347\202\271\345\210\260 9\347\202\271", nullptr));
-        label->setText(QCoreApplication::translate("Option", "\345\267\245\344\275\234\346\227\266\351\225\277 \345\215\212\345\260\217\346\227\266 \345\210\2603\345\260\217\346\227\266", nullptr));
-        label_9->setText(QCoreApplication::translate("Option", "\345\215\210\351\244\220\346\227\266\351\227\264 \344\273\216 11 \347\202\271\345\210\260 13\347\202\271", nullptr));
-        label_11->setText(QCoreApplication::translate("Option", "\347\224\250\351\244\220\346\227\266\351\225\277 20min-1\345\260\217\346\227\266", nullptr));
-        backButton->setText(QCoreApplication::translate("Option", "\345\256\214\346\210\220", nullptr));
-        startCheckBox->setText(QCoreApplication::translate("Option", "\345\220\257\347\224\250", nullptr));
+        label_6->setText(QCoreApplication::translate("Option", "\346\227\251\351\244\220\346\227\266\351\227\264 \344\273\216 7 \347\202\271 - 9\347\202\271", nullptr));
+        label->setText(QCoreApplication::translate("Option", "\345\267\245\344\275\234\346\227\266\351\225\277 0.5\345\260\217\346\227\266 - 3\345\260\217\346\227\266", nullptr));
+        label_9->setText(QCoreApplication::translate("Option", "\345\215\210\351\244\220\346\227\266\351\227\264 \344\273\216 11\347\202\271 - 13\347\202\271", nullptr));
+        label_11->setText(QCoreApplication::translate("Option", "\347\224\250\351\244\220\346\227\266\351\225\277 20min - 1\345\260\217\346\227\266", nullptr));
     } // retranslateUi
 
 };

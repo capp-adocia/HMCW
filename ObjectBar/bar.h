@@ -53,6 +53,8 @@ private slots:
     void updateHungry_UP(QTime eatingTime); // 更新饱食度图片(增加)
     void updateHungry_DOWN(QTime intervalTime); // 更新饱食度图片(减少)
     void upDateProgressBar(); // 更新经验条
+    void resetHungryState(); // 重置饱食度图片
+    void resetHeartState(); // 重置爱心图片
 private:
     Ui::Bar *ui;
     static constexpr QSize BarWidget = QSize(611,120); // 整个窗口的尺寸

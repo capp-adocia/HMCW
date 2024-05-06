@@ -1,4 +1,4 @@
-#include "suggestion.h"
+#include "Menu/function/suggestion.h"
 #include "ui_suggestion.h"
 
 Suggestion::Suggestion(QWidget *parent)
@@ -31,13 +31,9 @@ Suggestion::Suggestion(QWidget *parent)
     ui->textBrowser->setStyleSheet("QWidget#textBrowser{border-image:url(:/Image/TextBillboardUp.png);}");
     ui->backButton->setStyleSheet(buttonStyleSheet);
 
+    // 链接跳转
+    ui->textBrowser->setOpenExternalLinks(true);
     // 加载md文档
-    // connect(ui->textBrowser, &QTextBrowser::anchorClicked, [](const QUrl& link){
-    //     if (link.scheme() == "http" || link.scheme() == "https") {
-    //         QDesktopServices::openUrl(link);
-    //     }
-    // });
-
     ui->textBrowser->setSource(QUrl::fromLocalFile(":/Markdown/Suggest.md"));
     ui->BillboardUp->raise();
 }

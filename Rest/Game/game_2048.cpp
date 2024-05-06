@@ -1,4 +1,4 @@
-#include "game_2048.h"
+#include "Rest/Game/game_2048.h"
 #include "ui_game_2048.h"
 
 Game_2048::Game_2048(QWidget *parent)

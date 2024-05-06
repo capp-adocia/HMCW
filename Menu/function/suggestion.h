@@ -4,6 +4,7 @@
 #include <QWidget>
 #include <QPushButton>
 #include <SignalManager/signalmanger.h>
+#include <QDesktopServices>
 
 namespace Ui {
 class Suggestion;

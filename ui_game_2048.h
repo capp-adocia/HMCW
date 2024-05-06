@@ -251,6 +251,7 @@ public:
         QFont font;
         font.setPointSize(15);
         reStartButton->setFont(font);
+        reStartButton->setCursor(QCursor(Qt::PointingHandCursor));
         reStartButton->setStyleSheet(QString::fromUtf8("color:white;"));
 
         gridLayout_3->addWidget(reStartButton, 0, 1, 1, 1);

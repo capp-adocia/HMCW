@@ -1,4 +1,4 @@
-#include "tellbug.h"
+#include "Menu/function/tellbug.h"
 #include "ui_tellbug.h"
 
 TellBug::TellBug(QWidget *parent)

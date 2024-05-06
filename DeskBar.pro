@@ -82,6 +82,7 @@ RESOURCES += \
 RC_FILE = ico.rc
 
 DISTFILES += \
+    Image/KeepExpect.png \
     Image/微信图片_20240505105514.jpg \
     Image/微信图片_20240505105521.jpg \
     ico.rc

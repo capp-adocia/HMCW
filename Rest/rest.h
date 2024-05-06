@@ -7,6 +7,7 @@
 #include <Help/tips.h>
 #include <QMessageBox>
 #include <Rest/Game/game_2048.h>
+#include <QSettings>
 
 namespace Ui {
 class Rest;
@@ -32,6 +33,9 @@ private:
     Tips *stopWorkTips;
     Tips *stopBreakTips;
     Game_2048 *game_2048Page; // 2048游戏页面
+    bool isBreakfastTime; // 判断是否执行了吃饭跳过
+    bool isLunchTime;
+    bool isDinnerTime;
 };
 
 #endif // REST_H

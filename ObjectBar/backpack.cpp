@@ -1,4 +1,4 @@
-#include "backpack.h"
+#include "ObjectBar/backpack.h"
 #include "ui_backpack.h"
 
 Backpack::Backpack(QWidget *parent)
@@ -75,7 +75,7 @@ Backpack::Backpack(QWidget *parent)
     QPixmap pixmap(":/Image/queryIcon.png");
     ui->searchIconLabel->setPixmap(pixmap.scaled(ui->searchIconLabel->width() - 4,ui->searchIconLabel->height() - 4, Qt::KeepAspectRatio, Qt::SmoothTransformation));
     // 问号图片 (功能待定)
-    ui->characterLabel->setStyleSheet("QLabel#characterLabel{border-image:url(:/Image/QuestionMark.png);}");
+    ui->characterLabel->setStyleSheet("QLabel#characterLabel{border-image:url(:/Image/KeepExpect.png);}");
 
     ui->ExeFrameIcon->setIcon(QIcon(":/Image/switchExeFrameIcon.png"));
     ui->ExeFrameIcon->setIconSize(QSize(64, 64)); // 设置图标大小

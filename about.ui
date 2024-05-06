@@ -78,6 +78,9 @@
           <pointsize>16</pointsize>
          </font>
         </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="styleSheet">
          <string notr="true">color: rgb(0, 0, 0);
 background-color: rgb(255, 253, 253);</string>
@@ -166,13 +169,13 @@ background-color: rgb(255, 253, 253);</string>
           <widget class="QWidget" name="BillboardDown" native="true">
            <property name="minimumSize">
             <size>
-             <width>50</width>
+             <width>40</width>
              <height>290</height>
             </size>
            </property>
            <property name="maximumSize">
             <size>
-             <width>50</width>
+             <width>40</width>
              <height>290</height>
             </size>
            </property>
@@ -245,6 +248,9 @@ background-color: rgb(255, 253, 253);</string>
                </property>
                <item row="0" column="0">
                 <widget class="QPushButton" name="LargeScreendisplayButton">
+                 <property name="cursor">
+                  <cursorShape>PointingHandCursor</cursorShape>
+                 </property>
                  <property name="text">
                   <string>大屏浏览</string>
                  </property>

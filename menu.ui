@@ -10,6 +10,14 @@
     <height>683</height>
    </rect>
   </property>
+  <property name="font">
+   <font>
+    <pointsize>9</pointsize>
+   </font>
+  </property>
+  <property name="cursor">
+   <cursorShape>ArrowCursor</cursorShape>
+  </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
@@ -17,6 +25,30 @@
    <string notr="true">background-color: rgba(29, 29, 29, 0.5);</string>
   </property>
   <layout class="QFormLayout" name="formLayout">
+   <property name="labelAlignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="formAlignment">
+    <set>Qt::AlignHCenter|Qt::AlignTop</set>
+   </property>
+   <property name="horizontalSpacing">
+    <number>0</number>
+   </property>
+   <property name="verticalSpacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
    <item row="0" column="0" colspan="2">
     <widget class="QStackedWidget" name="stackedWidget">
      <property name="styleSheet">
@@ -162,6 +194,9 @@
                  <kerning>true</kerning>
                 </font>
                </property>
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
+               </property>
                <property name="styleSheet">
                 <string notr="true"/>
                </property>
@@ -279,6 +314,9 @@
                        <pointsize>16</pointsize>
                       </font>
                      </property>
+                     <property name="cursor">
+                      <cursorShape>PointingHandCursor</cursorShape>
+                     </property>
                      <property name="styleSheet">
                       <string notr="true"/>
                      </property>
@@ -341,6 +379,9 @@
                       <font>
                        <pointsize>16</pointsize>
                       </font>
+                     </property>
+                     <property name="cursor">
+                      <cursorShape>PointingHandCursor</cursorShape>
                      </property>
                      <property name="styleSheet">
                       <string notr="true"/>
@@ -405,6 +446,9 @@
                        <family>Microsoft YaHei UI</family>
                        <pointsize>16</pointsize>
                       </font>
+                     </property>
+                     <property name="cursor">
+                      <cursorShape>PointingHandCursor</cursorShape>
                      </property>
                      <property name="styleSheet">
                       <string notr="true"/>
@@ -505,6 +549,9 @@
                        <pointsize>16</pointsize>
                       </font>
                      </property>
+                     <property name="cursor">
+                      <cursorShape>PointingHandCursor</cursorShape>
+                     </property>
                      <property name="styleSheet">
                       <string notr="true"/>
                      </property>
@@ -568,6 +615,9 @@
                        <pointsize>16</pointsize>
                       </font>
                      </property>
+                     <property name="cursor">
+                      <cursorShape>PointingHandCursor</cursorShape>
+                     </property>
                      <property name="styleSheet">
                       <string notr="true"/>
                      </property>
@@ -630,6 +680,9 @@
                       <font>
                        <pointsize>16</pointsize>
                       </font>
+                     </property>
+                     <property name="cursor">
+                      <cursorShape>PointingHandCursor</cursorShape>
                      </property>
                      <property name="styleSheet">
                       <string notr="true"/>
@@ -702,6 +755,9 @@
                 <font>
                  <pointsize>16</pointsize>
                 </font>
+               </property>
+               <property name="cursor">
+                <cursorShape>PointingHandCursor</cursorShape>
                </property>
                <property name="styleSheet">
                 <string notr="true"/>

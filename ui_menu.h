@@ -75,9 +75,18 @@ public:
         if (Menu->objectName().isEmpty())
             Menu->setObjectName("Menu");
         Menu->resize(1005, 683);
+        QFont font;
+        font.setPointSize(9);
+        Menu->setFont(font);
+        Menu->setCursor(QCursor(Qt::ArrowCursor));
         Menu->setStyleSheet(QString::fromUtf8("background-color: rgba(29, 29, 29, 0.5);"));
         formLayout = new QFormLayout(Menu);
         formLayout->setObjectName("formLayout");
+        formLayout->setLabelAlignment(Qt::AlignCenter);
+        formLayout->setFormAlignment(Qt::AlignHCenter|Qt::AlignTop);
+        formLayout->setHorizontalSpacing(0);
+        formLayout->setVerticalSpacing(0);
+        formLayout->setContentsMargins(0, 0, 0, 0);
         stackedWidget = new QStackedWidget(Menu);
         stackedWidget->setObjectName("stackedWidget");
         stackedWidget->setStyleSheet(QString::fromUtf8("background-color: rgba(29, 29, 29, 0);"));
@@ -119,11 +128,12 @@ public:
         saveButton->setObjectName("saveButton");
         saveButton->setMinimumSize(QSize(600, 50));
         saveButton->setMaximumSize(QSize(600, 50));
-        QFont font;
-        font.setPointSize(16);
-        font.setBold(false);
-        font.setKerning(true);
-        saveButton->setFont(font);
+        QFont font1;
+        font1.setPointSize(16);
+        font1.setBold(false);
+        font1.setKerning(true);
+        saveButton->setFont(font1);
+        saveButton->setCursor(QCursor(Qt::PointingHandCursor));
         saveButton->setStyleSheet(QString::fromUtf8(""));
 
         gridLayout->addWidget(saveButton, 0, 0, 1, 1);
@@ -160,9 +170,10 @@ public:
         achievementButton->setObjectName("achievementButton");
         achievementButton->setMinimumSize(QSize(281, 50));
         achievementButton->setMaximumSize(QSize(281, 50));
-        QFont font1;
-        font1.setPointSize(16);
-        achievementButton->setFont(font1);
+        QFont font2;
+        font2.setPointSize(16);
+        achievementButton->setFont(font2);
+        achievementButton->setCursor(QCursor(Qt::PointingHandCursor));
         achievementButton->setStyleSheet(QString::fromUtf8(""));
 
         gridLayout_8->addWidget(achievementButton, 0, 0, 1, 1);
@@ -183,7 +194,8 @@ public:
         suggestionButton->setObjectName("suggestionButton");
         suggestionButton->setMinimumSize(QSize(281, 50));
         suggestionButton->setMaximumSize(QSize(281, 50));
-        suggestionButton->setFont(font1);
+        suggestionButton->setFont(font2);
+        suggestionButton->setCursor(QCursor(Qt::PointingHandCursor));
         suggestionButton->setStyleSheet(QString::fromUtf8(""));
 
         gridLayout_9->addWidget(suggestionButton, 0, 0, 1, 1);
@@ -204,10 +216,11 @@ public:
         optionButton->setObjectName("optionButton");
         optionButton->setMinimumSize(QSize(281, 50));
         optionButton->setMaximumSize(QSize(281, 50));
-        QFont font2;
-        font2.setFamilies({QString::fromUtf8("Microsoft YaHei UI")});
-        font2.setPointSize(16);
-        optionButton->setFont(font2);
+        QFont font3;
+        font3.setFamilies({QString::fromUtf8("Microsoft YaHei UI")});
+        font3.setPointSize(16);
+        optionButton->setFont(font3);
+        optionButton->setCursor(QCursor(Qt::PointingHandCursor));
         optionButton->setStyleSheet(QString::fromUtf8(""));
 
         gridLayout_7->addWidget(optionButton, 0, 0, 1, 1);
@@ -240,7 +253,8 @@ public:
         tellBugButton->setObjectName("tellBugButton");
         tellBugButton->setMinimumSize(QSize(0, 50));
         tellBugButton->setMaximumSize(QSize(16777215, 50));
-        tellBugButton->setFont(font1);
+        tellBugButton->setFont(font2);
+        tellBugButton->setCursor(QCursor(Qt::PointingHandCursor));
         tellBugButton->setStyleSheet(QString::fromUtf8(""));
 
         gridLayout_10->addWidget(tellBugButton, 0, 0, 1, 1);
@@ -261,7 +275,8 @@ public:
         recordButton->setObjectName("recordButton");
         recordButton->setMinimumSize(QSize(0, 50));
         recordButton->setMaximumSize(QSize(16777215, 50));
-        recordButton->setFont(font1);
+        recordButton->setFont(font2);
+        recordButton->setCursor(QCursor(Qt::PointingHandCursor));
         recordButton->setStyleSheet(QString::fromUtf8(""));
 
         gridLayout_11->addWidget(recordButton, 0, 0, 1, 1);
@@ -282,7 +297,8 @@ public:
         aboutButton->setObjectName("aboutButton");
         aboutButton->setMinimumSize(QSize(0, 50));
         aboutButton->setMaximumSize(QSize(16777215, 50));
-        aboutButton->setFont(font1);
+        aboutButton->setFont(font2);
+        aboutButton->setCursor(QCursor(Qt::PointingHandCursor));
         aboutButton->setStyleSheet(QString::fromUtf8(""));
 
         gridLayout_12->addWidget(aboutButton, 0, 0, 1, 1);
@@ -310,7 +326,8 @@ public:
         exitButton->setObjectName("exitButton");
         exitButton->setMinimumSize(QSize(600, 50));
         exitButton->setMaximumSize(QSize(600, 50));
-        exitButton->setFont(font1);
+        exitButton->setFont(font2);
+        exitButton->setCursor(QCursor(Qt::PointingHandCursor));
         exitButton->setStyleSheet(QString::fromUtf8(""));
 
         gridLayout_5->addWidget(exitButton, 0, 0, 1, 1);
@@ -331,9 +348,9 @@ public:
         label = new QLabel(widget_4);
         label->setObjectName("label");
         label->setMaximumSize(QSize(16777215, 40));
-        QFont font3;
-        font3.setPointSize(18);
-        label->setFont(font3);
+        QFont font4;
+        font4.setPointSize(18);
+        label->setFont(font4);
         label->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
         label->setAlignment(Qt::AlignCenter);
 

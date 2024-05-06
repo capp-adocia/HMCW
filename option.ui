@@ -44,6 +44,135 @@
       <string notr="true">color: rgb(255, 255, 255);</string>
      </property>
      <layout class="QGridLayout" name="gridLayout_5">
+      <item row="4" column="1">
+       <spacer name="verticalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="2" column="1">
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="3" column="1">
+       <widget class="QPushButton" name="backButton">
+        <property name="minimumSize">
+         <size>
+          <width>600</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>600</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+         </font>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>完成</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <spacer name="horizontalSpacer_3">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>104</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="1" column="2">
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>104</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="0" column="1">
+       <widget class="QWidget" name="widget_4" native="true">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgba(255, 255, 255,0);</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_3">
+         <item row="0" column="1">
+          <widget class="QCheckBox" name="startCheckBox">
+           <property name="minimumSize">
+            <size>
+             <width>90</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>16</pointsize>
+            </font>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgba(255, 255, 255,0);
+color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>启用</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+      </item>
       <item row="1" column="1">
        <widget class="QWidget" name="widget" native="true">
         <property name="font">
@@ -85,7 +214,7 @@
 color: rgb(255, 255, 255);</string>
            </property>
            <property name="text">
-            <string>休息时长 5分钟到1小时</string>
+            <string>休息时长 5分钟 - 1小时</string>
            </property>
           </widget>
          </item>
@@ -101,7 +230,7 @@ color: rgb(255, 255, 255);</string>
 color: rgb(255, 255, 255);</string>
            </property>
            <property name="text">
-            <string>晚餐时间  4点 到8点</string>
+            <string>晚餐时间  16点 - 20点</string>
            </property>
           </widget>
          </item>
@@ -294,6 +423,9 @@ QSlider::handle:horizontal {
             </property>
             <property name="pageStep">
              <number>600</number>
+            </property>
+            <property name="value">
+             <number>57600</number>
             </property>
             <property name="sliderPosition">
              <number>57600</number>
@@ -771,10 +903,10 @@ QSlider::handle:horizontal {
              <number>600</number>
             </property>
             <property name="value">
-             <number>39652</number>
+             <number>39600</number>
             </property>
             <property name="sliderPosition">
-             <number>39652</number>
+             <number>39600</number>
             </property>
             <property name="orientation">
              <enum>Qt::Horizontal</enum>
@@ -836,7 +968,7 @@ border:0;</string>
 color: rgb(255, 255, 255);</string>
            </property>
            <property name="text">
-            <string>早餐时间 从 7 点到 9点</string>
+            <string>早餐时间 从 7 点 - 9点</string>
            </property>
           </widget>
          </item>
@@ -852,7 +984,7 @@ color: rgb(255, 255, 255);</string>
 color: rgb(255, 255, 255);</string>
            </property>
            <property name="text">
-            <string>工作时长 半小时 到3小时</string>
+            <string>工作时长 0.5小时 - 3小时</string>
            </property>
           </widget>
          </item>
@@ -868,7 +1000,7 @@ color: rgb(255, 255, 255);</string>
 color: rgb(255, 255, 255);</string>
            </property>
            <property name="text">
-            <string>午餐时间 从 11 点到 13点</string>
+            <string>午餐时间 从 11点 - 13点</string>
            </property>
           </widget>
          </item>
@@ -884,135 +1016,12 @@ color: rgb(255, 255, 255);</string>
 color: rgb(255, 255, 255);</string>
            </property>
            <property name="text">
-            <string>用餐时长 20min-1小时</string>
+            <string>用餐时长 20min - 1小时</string>
            </property>
           </widget>
          </item>
         </layout>
        </widget>
-      </item>
-      <item row="3" column="1">
-       <widget class="QPushButton" name="backButton">
-        <property name="minimumSize">
-         <size>
-          <width>600</width>
-          <height>50</height>
-         </size>
-        </property>
-        <property name="maximumSize">
-         <size>
-          <width>600</width>
-          <height>50</height>
-         </size>
-        </property>
-        <property name="font">
-         <font>
-          <pointsize>16</pointsize>
-         </font>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">color: rgb(255, 255, 255);</string>
-        </property>
-        <property name="text">
-         <string>完成</string>
-        </property>
-       </widget>
-      </item>
-      <item row="1" column="2">
-       <spacer name="horizontalSpacer_2">
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>104</width>
-          <height>20</height>
-         </size>
-        </property>
-       </spacer>
-      </item>
-      <item row="0" column="1">
-       <widget class="QWidget" name="widget_4" native="true">
-        <property name="styleSheet">
-         <string notr="true">background-color: rgba(255, 255, 255,0);</string>
-        </property>
-        <layout class="QGridLayout" name="gridLayout_3">
-         <item row="0" column="1">
-          <widget class="QCheckBox" name="startCheckBox">
-           <property name="minimumSize">
-            <size>
-             <width>90</width>
-             <height>0</height>
-            </size>
-           </property>
-           <property name="font">
-            <font>
-             <pointsize>16</pointsize>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">background-color: rgba(255, 255, 255,0);
-color: rgb(255, 255, 255);</string>
-           </property>
-           <property name="text">
-            <string>启用</string>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="0">
-          <spacer name="horizontalSpacer">
-           <property name="orientation">
-            <enum>Qt::Horizontal</enum>
-           </property>
-           <property name="sizeHint" stdset="0">
-            <size>
-             <width>40</width>
-             <height>20</height>
-            </size>
-           </property>
-          </spacer>
-         </item>
-        </layout>
-       </widget>
-      </item>
-      <item row="2" column="1">
-       <spacer name="verticalSpacer">
-        <property name="orientation">
-         <enum>Qt::Vertical</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>20</width>
-          <height>40</height>
-         </size>
-        </property>
-       </spacer>
-      </item>
-      <item row="4" column="1">
-       <spacer name="verticalSpacer_2">
-        <property name="orientation">
-         <enum>Qt::Vertical</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>20</width>
-          <height>40</height>
-         </size>
-        </property>
-       </spacer>
-      </item>
-      <item row="1" column="0">
-       <spacer name="horizontalSpacer_3">
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>104</width>
-          <height>20</height>
-         </size>
-        </property>
-       </spacer>
       </item>
      </layout>
     </widget>

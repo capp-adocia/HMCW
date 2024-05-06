@@ -110,8 +110,8 @@ public:
 
         BillboardDown = new QWidget(widget_2);
         BillboardDown->setObjectName("BillboardDown");
-        BillboardDown->setMinimumSize(QSize(50, 290));
-        BillboardDown->setMaximumSize(QSize(50, 290));
+        BillboardDown->setMinimumSize(QSize(40, 290));
+        BillboardDown->setMaximumSize(QSize(40, 290));
         BillboardDown->setStyleSheet(QString::fromUtf8("background-color: rgb(249, 255, 230);"));
 
         gridLayout_2->addWidget(BillboardDown, 1, 1, 1, 1);
@@ -130,6 +130,7 @@ public:
         QFont font;
         font.setPointSize(16);
         backButton->setFont(font);
+        backButton->setCursor(QCursor(Qt::PointingHandCursor));
         backButton->setStyleSheet(QString::fromUtf8("color: rgb(0, 0, 0);\n"
 "background-color: rgb(255, 253, 253);"));
 

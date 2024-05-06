@@ -1,4 +1,4 @@
-#include "rest.h"
+#include "Rest/rest.h"
 #include "ui_rest.h"
 
 Rest::Rest(QWidget *parent)
@@ -13,6 +13,9 @@ Rest::Rest(QWidget *parent)
     , stopWorkTips(new Tips())
     , stopBreakTips(new Tips())
     , game_2048Page(new Game_2048(this))
+    , isBreakfastTime(true)
+    , isLunchTime(true)
+    , isDinnerTime(true)
 {
     ui->setupUi(this);
     setWindowFlags(Qt::WindowStaysOnTopHint | Qt::FramelessWindowHint);
@@ -73,7 +76,57 @@ Rest::Rest(QWidget *parent)
         // 更新统计信息中的跳过休息次数
         emit SignalManager::instance().updateSkipBreak();
         game_2048Page->resetGameState();
-        this->close();
+        this->hide();
+
+        int currentTime = QTime::currentTime().hour() * 3600 + QTime::currentTime().minute() * 60 + QTime::currentTime().second();
+        QSettings settings("config.ini", QSettings::IniFormat);
+        settings.beginGroup("General");
+        bool startOption = settings.value("startOption").toBool();
+
+        if(startOption)
+        {
+            int breakfastStartTime = settings.value("breakfastSlider").toInt();
+            int lunchStartTime = settings.value("lunchSlider").toInt();
+            int dinnerStartTime = settings.value("dinnerSlider").toInt();
+            int mealTime = settings.value("mealTimeSlider").toInt();
+
+            /* 如果是吃饭时跳过 */
+            // 如果当前时间处于吃饭的开始与吃饭结束之间，那么就发送信号更新状态
+            if(currentTime > breakfastStartTime && currentTime < breakfastStartTime + mealTime && isBreakfastTime)
+            {
+                emit SignalManager::instance().stopBreakfast();
+                // 停止进餐
+                emit SignalManager::instance().SkipMeal("breakfast",true);
+                // 重置饱食度状态
+                emit SignalManager::instance().resetHungryState();
+                isBreakfastTime = false;
+            }
+            else if(currentTime > lunchStartTime && currentTime < lunchStartTime + mealTime && isLunchTime)
+            {
+                emit SignalManager::instance().stopLunch();
+                emit SignalManager::instance().SkipMeal("lunch",true);
+                // 重置饱食度状态
+                emit SignalManager::instance().resetHungryState();
+                isLunchTime = false;
+            }
+            else if(currentTime > dinnerStartTime && currentTime < dinnerStartTime + mealTime && isDinnerTime)
+            {
+                emit SignalManager::instance().stopDinner();
+                emit SignalManager::instance().SkipMeal("dinner",true);
+                // 重置饱食度状态
+                emit SignalManager::instance().resetHungryState();
+                isDinnerTime = false;
+            }
+            /* 休息跳过 */
+            // 如果是到休息时间了，但用户点击了跳过 那么就切换到工作状态，重置爱心图片
+            else
+            {
+                emit SignalManager::instance().SkipBreak(true);
+                emit SignalManager::instance().resetHeartState();
+            }
+        }
+        settings.endGroup();
+
     });
     ui->RestStackedWidget->addWidget(game_2048Page);
     // ui->RestStackedWidget->setCurrentWidget(ui->rest01);

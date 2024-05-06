@@ -40,10 +40,8 @@ public:
     QVBoxLayout *verticalLayout;
     QWidget *widget_3;
     QGridLayout *gridLayout_2;
-    QPushButton *skipButton;
-    QSpacerItem *horizontalSpacer_2;
-    QSpacerItem *horizontalSpacer;
     QSpacerItem *verticalSpacer;
+    QSpacerItem *horizontalSpacer;
     QTabWidget *tabWidget;
     QWidget *amusement;
     QGridLayout *gridLayout_6;
@@ -51,6 +49,9 @@ public:
     QWidget *relaxBody;
     QGridLayout *gridLayout_7;
     QPushButton *pushButton;
+    QPushButton *skipButton;
+    QSpacerItem *horizontalSpacer_2;
+    QSpacerItem *verticalSpacer_2;
 
     void setupUi(QWidget *Rest)
     {
@@ -123,29 +124,13 @@ public:
         gridLayout_2->setSpacing(0);
         gridLayout_2->setObjectName("gridLayout_2");
         gridLayout_2->setContentsMargins(0, 10, 0, 0);
-        skipButton = new QPushButton(widget_3);
-        skipButton->setObjectName("skipButton");
-        skipButton->setMinimumSize(QSize(281, 50));
-        skipButton->setMaximumSize(QSize(281, 50));
-        QFont font2;
-        font2.setPointSize(15);
-        skipButton->setFont(font2);
-        skipButton->setStyleSheet(QString::fromUtf8("background-color: rgb(165, 165, 165);\n"
-"color: rgb(255, 255, 255);"));
+        verticalSpacer = new QSpacerItem(20, 40, QSizePolicy::Policy::Minimum, QSizePolicy::Policy::Expanding);
 
-        gridLayout_2->addWidget(skipButton, 2, 2, 1, 1);
-
-        horizontalSpacer_2 = new QSpacerItem(40, 20, QSizePolicy::Policy::Expanding, QSizePolicy::Policy::Minimum);
-
-        gridLayout_2->addItem(horizontalSpacer_2, 2, 3, 1, 1);
+        gridLayout_2->addItem(verticalSpacer, 6, 2, 1, 1);
 
         horizontalSpacer = new QSpacerItem(40, 20, QSizePolicy::Policy::Expanding, QSizePolicy::Policy::Minimum);
 
         gridLayout_2->addItem(horizontalSpacer, 2, 0, 1, 1);
-
-        verticalSpacer = new QSpacerItem(20, 40, QSizePolicy::Policy::Minimum, QSizePolicy::Policy::Expanding);
-
-        gridLayout_2->addItem(verticalSpacer, 5, 2, 1, 1);
 
         tabWidget = new QTabWidget(widget_3);
         tabWidget->setObjectName("tabWidget");
@@ -161,7 +146,10 @@ public:
         game_2048->setObjectName("game_2048");
         game_2048->setMinimumSize(QSize(281, 50));
         game_2048->setMaximumSize(QSize(281, 50));
+        QFont font2;
+        font2.setPointSize(15);
         game_2048->setFont(font2);
+        game_2048->setCursor(QCursor(Qt::PointingHandCursor));
         game_2048->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);"));
 
         gridLayout_6->addWidget(game_2048, 0, 0, 1, 1);
@@ -181,7 +169,26 @@ public:
 
         tabWidget->addTab(relaxBody, QString());
 
-        gridLayout_2->addWidget(tabWidget, 3, 0, 1, 4);
+        gridLayout_2->addWidget(tabWidget, 4, 0, 1, 4);
+
+        skipButton = new QPushButton(widget_3);
+        skipButton->setObjectName("skipButton");
+        skipButton->setMinimumSize(QSize(281, 50));
+        skipButton->setMaximumSize(QSize(281, 50));
+        skipButton->setFont(font2);
+        skipButton->setCursor(QCursor(Qt::PointingHandCursor));
+        skipButton->setStyleSheet(QString::fromUtf8("background-color: rgb(165, 165, 165);\n"
+"color: rgb(255, 255, 255);"));
+
+        gridLayout_2->addWidget(skipButton, 2, 2, 1, 1);
+
+        horizontalSpacer_2 = new QSpacerItem(40, 20, QSizePolicy::Policy::Expanding, QSizePolicy::Policy::Minimum);
+
+        gridLayout_2->addItem(horizontalSpacer_2, 2, 3, 1, 1);
+
+        verticalSpacer_2 = new QSpacerItem(20, 40, QSizePolicy::Policy::Minimum, QSizePolicy::Policy::Expanding);
+
+        gridLayout_2->addItem(verticalSpacer_2, 3, 2, 1, 1);
 
 
         verticalLayout->addWidget(widget_3);
@@ -208,11 +215,11 @@ public:
         label_3->setText(QCoreApplication::translate("Rest", "\344\274\221\346\201\257\344\270\255......", nullptr));
         label->setText(QCoreApplication::translate("Rest", "\345\274\200\345\247\213\344\274\221\346\201\257\345\220\247\357\274\201", nullptr));
         label_2->setText(QCoreApplication::translate("Rest", "\346\224\276\346\235\276\350\272\253\344\275\223\357\274\214\345\212\237\350\203\275\345\276\205\345\274\200\345\217\221......", nullptr));
-        skipButton->setText(QCoreApplication::translate("Rest", "\350\267\263\350\277\207\346\255\244\346\254\241\344\274\221\346\201\257", nullptr));
         game_2048->setText(QCoreApplication::translate("Rest", "2048\345\220\257\345\212\250", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(amusement), QCoreApplication::translate("Rest", "\344\274\221\351\227\262\346\270\270\346\210\217", nullptr));
         pushButton->setText(QCoreApplication::translate("Rest", "\345\276\205\345\274\200\345\217\221......", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(relaxBody), QCoreApplication::translate("Rest", "\346\224\276\346\235\276\350\272\253\344\275\223", nullptr));
+        skipButton->setText(QCoreApplication::translate("Rest", "\350\267\263\350\277\207\346\255\244\346\254\241\344\274\221\346\201\257", nullptr));
     } // retranslateUi
 
 };

@@ -99,6 +99,11 @@ Bar::Bar(QWidget *parent)
         QCoreApplication::quit();
     });
     ui->toolButton->installEventFilter(this);
+
+    // 重置饱食度图片
+    connect(&SignalManager::instance(),&SignalManager::resetHungryState,this,&Bar::resetHungryState);
+    // 重置爱心图片
+    connect(&SignalManager::instance(),&SignalManager::resetHeartState,this,&Bar::resetHeartState);
 }
 
 
@@ -637,6 +642,26 @@ void Bar::upDateProgressBar()
     progressBarIndex++;
 }
 
+void Bar::resetHungryState()
+{
+    // 重置为全为正常的饱食度图片
+    this->hungryIndex = hungryLabels.length() - 1;
+    for(auto hungryLabel : hungryLabels)
+    {
+        hungryLabel->setPixmap(hungry_pixmap);
+    }
+}
+
+void Bar::resetHeartState()
+{
+    // 重置为全为正常的爱心图片
+    this->heartIndex = heartLabels.length() - 1;
+    for(auto heartLabel : heartLabels)
+    {
+        heartLabel->setPixmap(health_pixmap);
+    }
+}
+
 void Bar::hideObjectBar()
 {
     // 右击 toolButton 时,隐藏窗口,只显示 tool
@@ -649,7 +674,7 @@ void Bar::hideObjectBar()
         ui->tool->move(8,1);// 移动到第一个位置
         ui->tool->show();
         // 将窗口的宽度和高度设置为与 tool 的宽度和高度相同,并考虑 DPI 倍数
-        setFixedSize((ui->tool->width() * dpiRatio) - 10,ui->tool->height() * dpiRatio);
+        setFixedSize((ui->tool->width() * dpiRatio),ui->tool->height() * dpiRatio);
         this->isHideObjectBar = true;
     }
     else

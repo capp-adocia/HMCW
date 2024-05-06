@@ -1,4 +1,4 @@
-#include "record.h"
+#include "Menu/function/record.h"
 #include "ui_record.h"
 
 Record::Record(QWidget *parent)
@@ -9,7 +9,6 @@ Record::Record(QWidget *parent)
     , QueryUpdataCount(0)
     , ResearchCount(0)
     , LaunchAppCount(0)
-
     , AllEatingCount(0)
     , BreakFastCount(0)
     , LunchCount(0)

@@ -72,6 +72,7 @@ public:
         QFont font;
         font.setPointSize(16);
         backButton->setFont(font);
+        backButton->setCursor(QCursor(Qt::PointingHandCursor));
         backButton->setStyleSheet(QString::fromUtf8("color: rgb(0, 0, 0);\n"
 "background-color: rgb(255, 253, 253);"));
 
@@ -100,8 +101,8 @@ public:
 
         BillboardDown = new QWidget(widget_2);
         BillboardDown->setObjectName("BillboardDown");
-        BillboardDown->setMinimumSize(QSize(50, 290));
-        BillboardDown->setMaximumSize(QSize(50, 290));
+        BillboardDown->setMinimumSize(QSize(40, 290));
+        BillboardDown->setMaximumSize(QSize(40, 290));
         BillboardDown->setStyleSheet(QString::fromUtf8("background-color: rgb(249, 255, 230);"));
 
         gridLayout_2->addWidget(BillboardDown, 1, 1, 1, 1);
@@ -129,6 +130,7 @@ public:
         gridLayout_4->setContentsMargins(0, 0, 0, 0);
         LargeScreendisplayButton = new QPushButton(widget_4);
         LargeScreendisplayButton->setObjectName("LargeScreendisplayButton");
+        LargeScreendisplayButton->setCursor(QCursor(Qt::PointingHandCursor));
 
         gridLayout_4->addWidget(LargeScreendisplayButton, 0, 0, 1, 1);
 

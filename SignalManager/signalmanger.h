@@ -1,6 +1,6 @@
 #ifndef SIGNALMANGER_H
 #define SIGNALMANGER_H
-// 管理全局信号 单例模式
+// 管理全局信号
 #include <QObject>
 #include <QTime>
 
@@ -8,7 +8,12 @@ class SignalManager : public QObject {
     Q_OBJECT
 
 public:
-    static SignalManager& instance();
+    // 单例
+    static SignalManager& instance()
+    {
+        static SignalManager instance; // 只初始化一次
+        return instance;
+    };
 
 signals:
     void saveSettings(); // 用于通知主菜单保存设置
@@ -27,6 +32,10 @@ signals:
     void breakingUpdataHealth(QTime breakTime); // 休息时，增加生命值
     void HungryRemoveState(QTime eatingTime);  // 增加饱食度 传递进食时长为参数
     void HungryState(QTime intervalTime);     // 减少饱食度 传递距离下次吃饭的时长为参数
+    void resetHungryState(); // 重置饱食度状态，恢复正常
+    void resetHeartState(); // 重置爱心状态，恢复正常
+    void SkipMeal(const QString& mealCategory, bool isSkip); // 如果是吃饭时被跳过，那么就发送这个信号，交给Option类处理
+    void SkipBreak(bool isSkip);                          // 如果是工作后休息被跳过，那么就发送这个信号，交给Option类处理
     void customFrame_loadSetting(); // Objectframe 当点击它时就会触发
     void queryImageLabelReset(); // 查询图标当两次点击的都是自己那么就需要重置storageframe和objectframe里面的变量queryImgLabelClicked的标识
     void ReloadObjectFrame(); // 当有快捷方式被拖入Bar时，更新objectframe的图标及其信息

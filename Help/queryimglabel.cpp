@@ -1,4 +1,4 @@
-#include "queryimglabel.h"
+#include "Help/queryimglabel.h"
 
 QueryImgLabel *QueryImgLabel::m_lastClickedLabel = nullptr; // 存储上一次点击的对象
 QString QueryImgLabel::originalStyleSheet = QStringLiteral(

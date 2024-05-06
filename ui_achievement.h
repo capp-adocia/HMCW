@@ -129,6 +129,7 @@ public:
         tabWidget->setObjectName("tabWidget");
         tabWidget->setMinimumSize(QSize(900, 0));
         tabWidget->setMaximumSize(QSize(900, 16777215));
+        tabWidget->setCursor(QCursor(Qt::ArrowCursor));
         tabWidget->setStyleSheet(QString::fromUtf8(""));
         GeneralTab = new QWidget();
         GeneralTab->setObjectName("GeneralTab");
@@ -159,6 +160,7 @@ public:
         QFont font1;
         font1.setPointSize(16);
         backButton->setFont(font1);
+        backButton->setCursor(QCursor(Qt::PointingHandCursor));
         backButton->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
 "color: rgb(0, 0, 0);\n"
 "border:0;"));
@@ -904,6 +906,7 @@ public:
         backButton_2->setMinimumSize(QSize(0, 50));
         backButton_2->setMaximumSize(QSize(16777215, 50));
         backButton_2->setFont(font1);
+        backButton_2->setCursor(QCursor(Qt::PointingHandCursor));
         backButton_2->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
 "color: rgb(0, 0, 0);\n"
 "border:0;"));
