@@ -54,7 +54,7 @@
 ## 联系方式
 
 -  球球: 请通过 2636427505 联系我。
--  球球email: 请发送邮件至 [2636427505@qq.com](mailto:2636427505@qq.com) 联系我。
+-  球球email: 请发送邮件至 [2636427505@qq.com](https://mail.qq.com/) 联系我。
 -  B站: **是Kapa呀**
 -  ......
 
@@ -123,7 +123,7 @@ This is a desktop widget with a Minecraft style, similar to the Windows taskbar,
 
 ## Contact Information
 - QQ: Please contact me at 2636427505.
-- QQ email: Please send an email to 2636427505@qq.com to contact me.
+- QQ email: Please send an email to [2636427505@qq.com](https://mail.qq.com/) to contact me.
 - Bilibili: It's Kapa
 - ......
 
