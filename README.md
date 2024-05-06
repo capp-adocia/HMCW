@@ -5,7 +5,7 @@
 ## 声明
 
 - *本软件为开源免费软件。我坚决反对任何个人或组织将此软件用于商业目的并收取费用。一旦发现有人以任何形式收费，请不要相信他们。*
-- ** 本软件目前仅适用于Windows平台，其他平台暂未考虑，敬请期待...... **
+- **本软件目前仅适用于Windows平台，其他平台暂未考虑，敬请期待......**
 
 ## 介绍 && 使用说明
 
@@ -76,7 +76,7 @@ This is a desktop widget with a Minecraft style, similar to the Windows taskbar,
 ## Statement
 
 - *This software is open-source and free to use. I strongly oppose any individual or organization using this software for commercial purposes and charging fees. Should you encounter anyone charging for this software in any form, please do not trust them.*
-- ** This software is currently only available for the Windows platform, with other platforms not considered at the moment. Stay tuned... **
+- **This software is currently only available for the Windows platform, with other platforms not considered at the moment. Stay tuned...**
 
 ## Introduction && User Guide
 
