@@ -6,3 +6,4 @@ save/
 *.qmake.stash
 *.qtc_clangd
 *.ini
+ui_*.h

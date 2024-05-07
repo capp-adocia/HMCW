@@ -51,7 +51,7 @@ HEADERS += \
     ObjectBar/bar.h \
     Rest/Game/game_2048.h \
     Rest/rest.h \
-    SignalManager/signalmanger.h
+    SignalManager/signalmanger.h \
 
 FORMS += \
     Help/tips.ui \
