@@ -38,7 +38,6 @@ TellBug::TellBug(QWidget *parent)
     ui->mailEdit->setStyleSheet("QWidget#mailEdit{border-image:url(:/Image/TextBillboardUp.png);}");
     ui->comboBox->setStyleSheet("QWidget#comboBox{border-image:url(:/Image/TextBillboardUp.png);}");
     ui->plainTextEdit->setStyleSheet("QWidget#plainTextEdit{border-image:url(:/Image/TextRockBackground.png);}");
-    ui->passWordEdit->setStyleSheet("QWidget#passWordEdit{border-image:url(:/Image/TextBillboardUp.png);}");
 
     // 点击提交按钮时发送邮件
     connect(ui->submitButton, &QPushButton::clicked, [this]() {
