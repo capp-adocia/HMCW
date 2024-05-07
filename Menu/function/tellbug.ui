@@ -194,48 +194,6 @@ color:white;</string>
                   <property name="bottomMargin">
                    <number>0</number>
                   </property>
-                  <item row="0" column="0">
-                   <widget class="QLabel" name="label">
-                    <property name="minimumSize">
-                     <size>
-                      <width>50</width>
-                      <height>35</height>
-                     </size>
-                    </property>
-                    <property name="maximumSize">
-                     <size>
-                      <width>50</width>
-                      <height>35</height>
-                     </size>
-                    </property>
-                    <property name="sizeIncrement">
-                     <size>
-                      <width>0</width>
-                      <height>0</height>
-                     </size>
-                    </property>
-                    <property name="font">
-                     <font>
-                      <pointsize>14</pointsize>
-                     </font>
-                    </property>
-                    <property name="styleSheet">
-                     <string notr="true">background-color: rgba(233, 255, 251,0.6);
-border-radius:10px;
-color:black;
-                               border-left:4px solid rgb(184, 184, 185);
-                               border-top:4px solid rgb(184, 184, 185);
-                               border-right:4px solid rgb(88, 88, 88);
-                              border-bottom:4px solid rgb(88, 88, 88);</string>
-                    </property>
-                    <property name="text">
-                     <string>名字</string>
-                    </property>
-                    <property name="alignment">
-                     <set>Qt::AlignCenter</set>
-                    </property>
-                   </widget>
-                  </item>
                   <item row="0" column="1">
                    <widget class="QLineEdit" name="nameEdit">
                     <property name="minimumSize">
@@ -265,173 +223,7 @@ color:white;</string>
                     </property>
                    </widget>
                   </item>
-                  <item row="1" column="0">
-                   <widget class="QLabel" name="label_4">
-                    <property name="minimumSize">
-                     <size>
-                      <width>50</width>
-                      <height>35</height>
-                     </size>
-                    </property>
-                    <property name="maximumSize">
-                     <size>
-                      <width>50</width>
-                      <height>35</height>
-                     </size>
-                    </property>
-                    <property name="font">
-                     <font>
-                      <pointsize>14</pointsize>
-                     </font>
-                    </property>
-                    <property name="styleSheet">
-                     <string notr="true">background-color: rgba(233, 255, 251,0.6);
-border-radius:10px;
-color:black;
-                               border-left:4px solid rgb(184, 184, 185);
-                               border-top:4px solid rgb(184, 184, 185);
-                               border-right:4px solid rgb(88, 88, 88);
-                              border-bottom:4px solid rgb(88, 88, 88);</string>
-                    </property>
-                    <property name="text">
-                     <string>邮箱</string>
-                    </property>
-                    <property name="alignment">
-                     <set>Qt::AlignCenter</set>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="1" column="1">
-                   <widget class="QLineEdit" name="mailEdit">
-                    <property name="minimumSize">
-                     <size>
-                      <width>50</width>
-                      <height>35</height>
-                     </size>
-                    </property>
-                    <property name="maximumSize">
-                     <size>
-                      <width>190</width>
-                      <height>35</height>
-                     </size>
-                    </property>
-                    <property name="font">
-                     <font>
-                      <pointsize>14</pointsize>
-                      <fontweight>Medium</fontweight>
-                     </font>
-                    </property>
-                    <property name="styleSheet">
-                     <string notr="true">background-color: rgb(233, 255, 251);
-color:white;</string>
-                    </property>
-                    <property name="text">
-                     <string/>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="2" column="0">
-                   <widget class="QLabel" name="label_6">
-                    <property name="minimumSize">
-                     <size>
-                      <width>50</width>
-                      <height>35</height>
-                     </size>
-                    </property>
-                    <property name="maximumSize">
-                     <size>
-                      <width>50</width>
-                      <height>35</height>
-                     </size>
-                    </property>
-                    <property name="font">
-                     <font>
-                      <pointsize>14</pointsize>
-                     </font>
-                    </property>
-                    <property name="styleSheet">
-                     <string notr="true">background-color: rgba(233, 255, 251,0.6);
-border-radius:10px;
-color:black;
-                               border-left:4px solid rgb(184, 184, 185);
-                               border-top:4px solid rgb(184, 184, 185);
-                               border-right:4px solid rgb(88, 88, 88);
-                              border-bottom:4px solid rgb(88, 88, 88);</string>
-                    </property>
-                    <property name="text">
-                     <string>密码</string>
-                    </property>
-                    <property name="alignment">
-                     <set>Qt::AlignCenter</set>
-                    </property>
-                   </widget>
-                  </item>
                   <item row="2" column="1">
-                   <widget class="QLineEdit" name="passWordEdit">
-                    <property name="minimumSize">
-                     <size>
-                      <width>50</width>
-                      <height>35</height>
-                     </size>
-                    </property>
-                    <property name="maximumSize">
-                     <size>
-                      <width>190</width>
-                      <height>35</height>
-                     </size>
-                    </property>
-                    <property name="font">
-                     <font>
-                      <pointsize>14</pointsize>
-                      <fontweight>Medium</fontweight>
-                     </font>
-                    </property>
-                    <property name="styleSheet">
-                     <string notr="true">background-color: rgb(233, 255, 251);
-color:white;</string>
-                    </property>
-                    <property name="text">
-                     <string/>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="3" column="0">
-                   <widget class="QLabel" name="label_3">
-                    <property name="minimumSize">
-                     <size>
-                      <width>50</width>
-                      <height>35</height>
-                     </size>
-                    </property>
-                    <property name="maximumSize">
-                     <size>
-                      <width>50</width>
-                      <height>35</height>
-                     </size>
-                    </property>
-                    <property name="font">
-                     <font>
-                      <pointsize>14</pointsize>
-                     </font>
-                    </property>
-                    <property name="styleSheet">
-                     <string notr="true">background-color: rgba(233, 255, 251,0.6);
-border-radius:10px;
-color:black;
-                               border-left:4px solid rgb(184, 184, 185);
-                               border-top:4px solid rgb(184, 184, 185);
-                               border-right:4px solid rgb(88, 88, 88);
-                              border-bottom:4px solid rgb(88, 88, 88);</string>
-                    </property>
-                    <property name="text">
-                     <string>年龄</string>
-                    </property>
-                    <property name="alignment">
-                     <set>Qt::AlignCenter</set>
-                    </property>
-                   </widget>
-                  </item>
-                  <item row="3" column="1">
                    <widget class="QComboBox" name="comboBox">
                     <property name="minimumSize">
                      <size>
@@ -791,8 +583,8 @@ color:black;
                     </item>
                    </widget>
                   </item>
-                  <item row="4" column="0">
-                   <widget class="QLabel" name="label_2">
+                  <item row="1" column="0">
+                   <widget class="QLabel" name="label_4">
                     <property name="minimumSize">
                      <size>
                       <width>50</width>
@@ -820,14 +612,79 @@ color:black;
                               border-bottom:4px solid rgb(88, 88, 88);</string>
                     </property>
                     <property name="text">
-                     <string>性别</string>
+                     <string>邮箱</string>
                     </property>
                     <property name="alignment">
                      <set>Qt::AlignCenter</set>
                     </property>
                    </widget>
                   </item>
-                  <item row="4" column="1">
+                  <item row="2" column="0">
+                   <widget class="QLabel" name="label_3">
+                    <property name="minimumSize">
+                     <size>
+                      <width>50</width>
+                      <height>35</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>50</width>
+                      <height>35</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>14</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgba(233, 255, 251,0.6);
+border-radius:10px;
+color:black;
+                               border-left:4px solid rgb(184, 184, 185);
+                               border-top:4px solid rgb(184, 184, 185);
+                               border-right:4px solid rgb(88, 88, 88);
+                              border-bottom:4px solid rgb(88, 88, 88);</string>
+                    </property>
+                    <property name="text">
+                     <string>年龄</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="1">
+                   <widget class="QLineEdit" name="mailEdit">
+                    <property name="minimumSize">
+                     <size>
+                      <width>50</width>
+                      <height>35</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>190</width>
+                      <height>35</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>14</pointsize>
+                      <fontweight>Medium</fontweight>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgb(233, 255, 251);
+color:white;</string>
+                    </property>
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="1">
                    <widget class="QWidget" name="widget_4" native="true">
                     <property name="minimumSize">
                      <size>
@@ -878,6 +735,84 @@ color:black;
                       </widget>
                      </item>
                     </layout>
+                   </widget>
+                  </item>
+                  <item row="3" column="0">
+                   <widget class="QLabel" name="label_2">
+                    <property name="minimumSize">
+                     <size>
+                      <width>50</width>
+                      <height>35</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>50</width>
+                      <height>35</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>14</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgba(233, 255, 251,0.6);
+border-radius:10px;
+color:black;
+                               border-left:4px solid rgb(184, 184, 185);
+                               border-top:4px solid rgb(184, 184, 185);
+                               border-right:4px solid rgb(88, 88, 88);
+                              border-bottom:4px solid rgb(88, 88, 88);</string>
+                    </property>
+                    <property name="text">
+                     <string>性别</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="0">
+                   <widget class="QLabel" name="label">
+                    <property name="minimumSize">
+                     <size>
+                      <width>50</width>
+                      <height>35</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>50</width>
+                      <height>35</height>
+                     </size>
+                    </property>
+                    <property name="sizeIncrement">
+                     <size>
+                      <width>0</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>14</pointsize>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgba(233, 255, 251,0.6);
+border-radius:10px;
+color:black;
+                               border-left:4px solid rgb(184, 184, 185);
+                               border-top:4px solid rgb(184, 184, 185);
+                               border-right:4px solid rgb(88, 88, 88);
+                              border-bottom:4px solid rgb(88, 88, 88);</string>
+                    </property>
+                    <property name="text">
+                     <string>名字</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
                    </widget>
                   </item>
                  </layout>

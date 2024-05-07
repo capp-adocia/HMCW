@@ -54,18 +54,18 @@ HEADERS += \
     SignalManager/signalmanger.h
 
 FORMS += \
-    about.ui \
-    achievement.ui \
-    backpack.ui \
-    bar.ui \
-    game_2048.ui \
-    menu.ui \
-    option.ui \
-    record.ui \
-    rest.ui \
-    suggestion.ui \
-    tellbug.ui \
-    tips.ui
+    Help/tips.ui \
+    Menu/function/about.ui \
+    Menu/function/achievement.ui \
+    Menu/function/option.ui \
+    Menu/function/record.ui \
+    Menu/function/suggestion.ui \
+    Menu/function/tellbug.ui \
+    Menu/menu.ui \
+    ObjectBar/backpack.ui \
+    ObjectBar/bar.ui \
+    Rest/Game/game_2048.ui \
+    Rest/rest.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
@@ -82,7 +82,6 @@ RESOURCES += \
 RC_FILE = ico.rc
 
 DISTFILES += \
-    Image/KeepExpect.png \
     Image/微信图片_20240505105514.jpg \
     Image/微信图片_20240505105521.jpg \
     ico.rc
