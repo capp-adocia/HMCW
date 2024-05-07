@@ -1,12 +1,12 @@
 #include <Help/help_function.h>
 
-QString getIconFromExecutable(const QString &exePath) {
+const QString getIconFromExecutable(const QString &exePath) {
     QFileInfo fileInfo(exePath);
     if (fileInfo.exists() && fileInfo.isFile()) {
         QFileIconProvider iconProvider;
         QIcon icon = iconProvider.icon(fileInfo);
         if (!icon.isNull()) {
-            QPixmap pixmap = icon.pixmap(QSize(512, 512)); // 根据需要调整图标大小
+            QPixmap pixmap = icon.pixmap(QSize(512, 512)); // 图标大小
             if (!pixmap.isNull()) {
                 QString saveFolderPath = QDir::currentPath() + "/save/";
                 QDir saveDir(saveFolderPath);
@@ -23,7 +23,7 @@ QString getIconFromExecutable(const QString &exePath) {
     return QString();
 }
 
-QString resolveLinkTarget(const QString &linkPath) {
+const QString resolveLinkTarget(const QString &linkPath) {
     HRESULT hres;
     QString targetPath;
 

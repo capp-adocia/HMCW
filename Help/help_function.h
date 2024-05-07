@@ -14,7 +14,7 @@
 #include <QProcess>
 #include <QDir>
 
-QString getIconFromExecutable(const QString &exePath);
-QString resolveLinkTarget(const QString &linkPath);
+const QString getIconFromExecutable(const QString &exePath);
+const QString resolveLinkTarget(const QString &linkPath);
 
 #endif // HELP_FUNCTION_H

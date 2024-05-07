@@ -34,7 +34,7 @@ public:
 public slots:
     void SwitchTabWidget(int index);
     // 响应更新成就信号
-    void updateUseTimeAchievementState(const QString &achievementName);
+    void updateAchievementState(const QString &achievementName);
 
 
 protected:

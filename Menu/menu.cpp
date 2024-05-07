@@ -61,8 +61,12 @@ Menu::Menu(QWidget *parent)
     // 保存并退出程序
     connect(ui->exitButton,&QPushButton::clicked,[=]{
         emit SignalManager::instance().saveSettings();
-        QCoreApplication::quit();
+
+        emit SignalManager::instance().Exit();
     });
+    // 接受退出信号
+    connect(&SignalManager::instance(),&SignalManager::Exit,this,QCoreApplication::quit);
+
     // **** 连接signalManager的信号 发出信号 ****
     // 按钮触碰点击样式
     QVector<QPushButton*> buttons;
@@ -85,6 +89,7 @@ Menu::Menu(QWidget *parent)
     }
     QString styleSheet = "QWidget#mainMenu{background-image: url(:/Image/soilBackground.png);}";
     ui->mainMenu->setStyleSheet(styleSheet);
+
 }
 
 void Menu::keyPressEvent(QKeyEvent *event)

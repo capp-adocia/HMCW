@@ -78,7 +78,7 @@ Achievement::Achievement(QWidget *parent)
     connect(ui->tabWidget, &QTabWidget::currentChanged,this, &Achievement::SwitchTabWidget);
 
     // 连接成就完成信号
-    connect(&SignalManager::instance(),&SignalManager::AchievementFinshed,this,&Achievement::updateUseTimeAchievementState);
+    connect(&SignalManager::instance(),&SignalManager::AchievementFinshed,this,&Achievement::updateAchievementState);
     // 初始化标签label
     generalIconLabel = new QLabel(GeneralWidgetTip);
     generalNameLabel = new QLabel(GeneralWidgetTip);
@@ -307,7 +307,7 @@ void Achievement::SwitchTabWidget(int index)
 
 }
 
-void Achievement::updateUseTimeAchievementState(const QString& achievementName)
+void Achievement::updateAchievementState(const QString& achievementName)
 {
     for(AchievementFrame* achievement : achievementVector)
     {
@@ -315,7 +315,7 @@ void Achievement::updateUseTimeAchievementState(const QString& achievementName)
         {
             achievement->setAchievementIsFinshed(true);
             achievement->updatePixmap();
-            // 待优化，不应该在重新绘制一次，浪费性能
+            // 待优化 浪费性能
             DrawTipWidget(achievement);
             tip->StartTips(achievement->getAchievementIcon(),achievement->getAchievementName()+" 已达成!",achievement->getAchievementDescription(),true);
             // 保存是否达成成就

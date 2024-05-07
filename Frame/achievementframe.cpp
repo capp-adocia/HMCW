@@ -89,22 +89,22 @@ std::pair<int, int> AchievementFrame::getPosition()
     return std::make_pair(xPosition, yPosition);
 }
 
-QString& AchievementFrame::getAchievementName()
+const QString& AchievementFrame::getAchievementName() const
 {
     return FrameName;
 }
 
-QString& AchievementFrame::getAchievementDescription()
+const QString& AchievementFrame::getAchievementDescription() const
 {
     return description;
 }
 
-QString& AchievementFrame::getAchievementIcon()
+const QString& AchievementFrame::getAchievementIcon() const
 {
     return isFinshed ? FinshedIcon : icon;
 }
 
-QString& AchievementFrame::getAchievementStyle()
+const QString& AchievementFrame::getAchievementStyle() const
 {
     return isFinshed ? FinshedAchievementStyle : NoFinshedAchievementStyle;
 }

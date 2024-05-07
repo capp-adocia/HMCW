@@ -19,10 +19,10 @@ public:
     void setAchievementFinshIcon(const QString& FinshedIconResource); // 实现成就图标
     void setAchievementIsFinshed(bool isFinshed);
     std::pair<int, int> getPosition(); // 返回坐标
-    QString& getAchievementName();
-    QString& getAchievementDescription();
-    QString& getAchievementIcon();
-    QString& getAchievementStyle();
+    const QString& getAchievementName() const;
+    const QString& getAchievementDescription() const;
+    const QString& getAchievementIcon() const;
+    const QString& getAchievementStyle() const;
     // 成就样式表
     static QString NoFinshedAchievementStyle;
     static QString FinshedAchievementStyle;

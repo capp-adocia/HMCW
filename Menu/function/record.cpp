@@ -210,6 +210,8 @@ void Record::InitDrawLabel()
     ui->scrollAreaWidgetContents_2->setLayout(gridLayout2);
 }
 
+/* 通用 */
+
 void Record::updateRunningTime()
 {
     UseTime += 1; // 将当前运行时长累加到总时长中
@@ -320,8 +322,7 @@ void Record::updateLaunchAppCount()
 }
 
 
-/////////////////////////////////////////////////////////////////////////////////////////
-
+/* 时间管理 */
 
 void Record::updateAllEatingCount()
 {
@@ -404,7 +405,7 @@ void Record::updateSkipBreakCount()
 {
     ControlBreakaLabelVector[6]->setText(QString::number(++SkipBreakCount));
     settings.setValue("Achievement/SkipBreakCount",SkipBreakCount);
-    switch(BreakCount)
+    switch(SkipBreakCount)
     {
     case 1:
         emit SignalManager::instance().AchievementFinshed("Traitor");

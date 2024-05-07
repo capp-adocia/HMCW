@@ -24,6 +24,8 @@ Rest::Rest(QWidget *parent)
 
     // 点击获取焦点
     setFocusPolicy(Qt::ClickFocus);
+    // 连接退出信号
+    connect(&SignalManager::instance(),&SignalManager::Exit,this,QCoreApplication::quit);
 
     connect(&SignalManager::instance(),&SignalManager::breakfastTime,[=]{
         breakfastTimeTips->StartTips(":/Image/empty_hungry.png","早餐到!","该吃早餐了");

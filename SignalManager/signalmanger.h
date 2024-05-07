@@ -16,6 +16,7 @@ public:
     };
 
 signals:
+    void Exit(); // 当执行退出操作时，发出这个信号，每个独立窗口类都需要做出响应处理
     void saveSettings(); // 用于通知主菜单保存设置
     void back(); // 用于通知主菜单返回主页面
     void switchOption(); // 用于通知主菜单返回到选项页面
@@ -55,8 +56,9 @@ signals:
 
 
 private:
-    SignalManager(); // 私有构造函数
-    Q_DISABLE_COPY(SignalManager)
+    SignalManager(); // 私有化
+    SignalManager(const SignalManager&) = delete;
+    SignalManager& operator=(const SignalManager&) = delete;
 };
 
 #endif // SIGNALMANGER_H

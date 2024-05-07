@@ -17,7 +17,8 @@ Tips::Tips(QWidget *parent)
     setAttribute(Qt::WA_TranslucentBackground);
     // 设置默认样式
     setAchieveProgressStyle();
-
+    // 接受退出信号
+    connect(&SignalManager::instance(),&SignalManager::Exit,this,QCoreApplication::quit);
 }
 
 void Tips::StartTips(const QString &url, const QString &achievementTitleText, const QString &achievementText, bool isAchievementStyle)

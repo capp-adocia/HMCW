@@ -21,7 +21,7 @@ class CustomFrame : public QFrame {
 public:
     explicit CustomFrame(QWidget *parent);
     ~CustomFrame();
-    QFrame* getParentFrame() const;
+    QFrame *getParentFrame() const;
     void setObjectBarName(const QString &objectName); // 保存物品栏的名字
     void loadIconPath();
     void loadFilePath();

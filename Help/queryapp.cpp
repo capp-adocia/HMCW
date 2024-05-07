@@ -8,12 +8,15 @@ void Queryapp::searchDirectory(const QDir &dir, QStringList &foundFilePaths) {
         QString filePath = dir.absoluteFilePath(currentFileName);
         QFileInfo fileInfo(filePath);
 
-        if (fileInfo.isDir()) {
+        if (fileInfo.isDir())
+        {
             searchDirectory(QDir(filePath), foundFilePaths); // 递归搜索子目录
-        } else if (fileInfo.isFile() && fileInfo.suffix() == "exe") {
-                iconPaths.append(getIconFromExecutable(filePath)); // 将转化的图标路径添加到列表中
-                // 完整路径
-                foundFilePaths.append(filePath); // 将找到的文件exe路径添加到列表中
+        }
+        else if (fileInfo.isFile() && fileInfo.suffix() == "exe")
+        {
+            iconPaths.append(getIconFromExecutable(filePath)); // 将转化的图标路径添加到列表中
+            // 完整路径
+            foundFilePaths.append(filePath); // 将找到的文件exe路径添加到列表中
         }
     }
     // 在遍历完所有目录和文件后停止递归

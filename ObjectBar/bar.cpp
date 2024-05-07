@@ -95,8 +95,12 @@ Bar::Bar(QWidget *parent)
     connect(hideAction, &QAction::triggered, this, [=]() {
         this->hide();  // 隐藏当前窗口
     });
+    // 退出信号的连接
+    connect(&SignalManager::instance(),&SignalManager::Exit,this,&QCoreApplication::quit);
+
     connect(quit, &QAction::triggered, this, [=](){
-        QCoreApplication::quit();
+        // 所有窗口销毁
+        emit SignalManager::instance().Exit();
     });
     ui->toolButton->installEventFilter(this);
 
@@ -688,11 +692,13 @@ void Bar::hideObjectBar()
 
 Bar::~Bar()
 {
-    for (int i = 0; i < 9; i++) {
+    for (int i = 0; i < 9; i++)
+    {
         delete customPanes[i];
         customPanes[i] = nullptr;
     }
-    if(menu){
+    if(menu)
+    {
         delete menu;
         menu = nullptr;
     }

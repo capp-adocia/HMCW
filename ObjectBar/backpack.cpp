@@ -102,6 +102,8 @@ Backpack::Backpack(QWidget *parent)
             this->isExeQueryIconsHide = true;
         }
     });
+    // 接受退出信号
+    connect(&SignalManager::instance(),&SignalManager::Exit,this,QCoreApplication::quit);
 }
 
 bool Backpack::eventFilter(QObject *obj, QEvent *event)
@@ -143,6 +145,10 @@ bool Backpack::eventFilter(QObject *obj, QEvent *event)
 void Backpack::keyPressEvent(QKeyEvent *event)
 {
     if(event->key() == Qt::Key_E)
+    {
+        this->hide();
+    }
+    else if(event->key() == Qt::Key_Escape)
     {
         this->hide();
     }

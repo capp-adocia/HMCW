@@ -416,7 +416,7 @@ QSlider::handle:horizontal {
              <number>57600</number>
             </property>
             <property name="maximum">
-             <number>72000</number>
+             <number>80000</number>
             </property>
             <property name="singleStep">
              <number>60</number>

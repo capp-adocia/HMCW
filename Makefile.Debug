@@ -132,9 +132,7 @@ OBJECTS       = debug/achievementframe.o \
 		debug/moc_rest.o \
 		debug/moc_signalmanger.o
 
-DIST          = Image/寰俊鍥剧墖_20240505105514.jpg \
-		Image/寰俊鍥剧墖_20240505105521.jpg \
-		ico.rc Frame\achievementframe.h \
+DIST          = ico.rc Frame\achievementframe.h \
 		Frame\customframe.h \
 		Frame\objectframe.h \
 		Frame\storageframe.h \
@@ -6036,7 +6034,22 @@ debug/tips.o: Help/tips.cpp Help/tips.h \
 		D:/Qt/6.7.0/mingw_64/include/QtCore/QTime \
 		D:/Qt/6.7.0/mingw_64/include/QtCore/qdatetime.h \
 		D:/Qt/6.7.0/mingw_64/include/QtCore/qcalendar.h \
-		ui_tips.h
+		ui_tips.h \
+		D:/Qt/6.7.0/mingw_64/include/QtCore/QVariant \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/QApplication \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qapplication.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/QGridLayout \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qgridlayout.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qlayout.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qlayoutitem.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qboxlayout.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/QLabel \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qlabel.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qframe.h \
+		D:/Qt/6.7.0/mingw_64/include/QtGui/qpicture.h \
+		D:/Qt/6.7.0/mingw_64/include/QtGui/qtextdocument.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/QSpacerItem \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/QWidget
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\tips.o Help\tips.cpp
 
 debug/about.o: Menu/function/about.cpp Menu/function/about.h \
@@ -6235,7 +6248,26 @@ debug/about.o: Menu/function/about.cpp Menu/function/about.h \
 		D:/Qt/6.7.0/mingw_64/include/QtCore/qcalendar.h \
 		D:/Qt/6.7.0/mingw_64/include/QtGui/QDesktopServices \
 		D:/Qt/6.7.0/mingw_64/include/QtGui/qdesktopservices.h \
-		ui_about.h
+		ui_about.h \
+		D:/Qt/6.7.0/mingw_64/include/QtCore/QVariant \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/QApplication \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qapplication.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/QGridLayout \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qgridlayout.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qlayout.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qlayoutitem.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qboxlayout.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/QSpacerItem \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/QTextBrowser \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qtextbrowser.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qtextedit.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qabstractscrollarea.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qframe.h \
+		D:/Qt/6.7.0/mingw_64/include/QtGui/qtextdocument.h \
+		D:/Qt/6.7.0/mingw_64/include/QtGui/qtextoption.h \
+		D:/Qt/6.7.0/mingw_64/include/QtGui/qtextcursor.h \
+		D:/Qt/6.7.0/mingw_64/include/QtGui/qtextformat.h \
+		D:/Qt/6.7.0/mingw_64/include/QtGui/qpen.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\about.o Menu\function\about.cpp
 
 debug/achievement.o: Menu/function/achievement.cpp Menu/function/achievement.h \
@@ -6455,7 +6487,20 @@ debug/achievement.o: Menu/function/achievement.cpp Menu/function/achievement.h \
 		D:/Qt/6.7.0/mingw_64/include/QtCore/qvariantanimation.h \
 		D:/Qt/6.7.0/mingw_64/include/QtCore/qabstractanimation.h \
 		D:/Qt/6.7.0/mingw_64/include/QtCore/qeasingcurve.h \
-		ui_achievement.h
+		ui_achievement.h \
+		D:/Qt/6.7.0/mingw_64/include/QtCore/QVariant \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/QApplication \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qapplication.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/QGridLayout \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qgridlayout.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qlayout.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qlayoutitem.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qboxlayout.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/QScrollArea \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qscrollarea.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qabstractscrollarea.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/QTabWidget \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qtabwidget.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\achievement.o Menu\function\achievement.cpp
 
 debug/option.o: Menu/function/option.cpp Menu/function/option.h \
@@ -6669,7 +6714,21 @@ debug/option.o: Menu/function/option.cpp Menu/function/option.h \
 		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qabstractslider.h \
 		D:/Qt/6.7.0/mingw_64/include/QtWidgets/QCheckBox \
 		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qcheckbox.h \
-		ui_option.h
+		ui_option.h \
+		D:/Qt/6.7.0/mingw_64/include/QtCore/QVariant \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/QApplication \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qapplication.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/QGridLayout \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qgridlayout.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qlayout.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qlayoutitem.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qboxlayout.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/QLabel \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qlabel.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qframe.h \
+		D:/Qt/6.7.0/mingw_64/include/QtGui/qpicture.h \
+		D:/Qt/6.7.0/mingw_64/include/QtGui/qtextdocument.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/QSpacerItem
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\option.o Menu\function\option.cpp
 
 debug/record.o: Menu/function/record.cpp Menu/function/record.h \
@@ -6886,7 +6945,21 @@ debug/record.o: Menu/function/record.cpp Menu/function/record.h \
 		D:/Qt/6.7.0/mingw_64/include/QtCore/qvariantanimation.h \
 		D:/Qt/6.7.0/mingw_64/include/QtCore/qabstractanimation.h \
 		D:/Qt/6.7.0/mingw_64/include/QtCore/qeasingcurve.h \
-		ui_record.h
+		ui_record.h \
+		D:/Qt/6.7.0/mingw_64/include/QtCore/QVariant \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/QApplication \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qapplication.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/QGridLayout \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qgridlayout.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qlayout.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qlayoutitem.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qboxlayout.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/QScrollArea \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qscrollarea.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qabstractscrollarea.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/QSpacerItem \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/QStackedWidget \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qstackedwidget.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\record.o Menu\function\record.cpp
 
 debug/suggestion.o: Menu/function/suggestion.cpp Menu/function/suggestion.h \
@@ -7085,7 +7158,26 @@ debug/suggestion.o: Menu/function/suggestion.cpp Menu/function/suggestion.h \
 		D:/Qt/6.7.0/mingw_64/include/QtCore/qcalendar.h \
 		D:/Qt/6.7.0/mingw_64/include/QtGui/QDesktopServices \
 		D:/Qt/6.7.0/mingw_64/include/QtGui/qdesktopservices.h \
-		ui_suggestion.h
+		ui_suggestion.h \
+		D:/Qt/6.7.0/mingw_64/include/QtCore/QVariant \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/QApplication \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qapplication.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/QGridLayout \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qgridlayout.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qlayout.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qlayoutitem.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qboxlayout.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/QSpacerItem \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/QTextBrowser \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qtextbrowser.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qtextedit.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qabstractscrollarea.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qframe.h \
+		D:/Qt/6.7.0/mingw_64/include/QtGui/qtextdocument.h \
+		D:/Qt/6.7.0/mingw_64/include/QtGui/qtextoption.h \
+		D:/Qt/6.7.0/mingw_64/include/QtGui/qtextcursor.h \
+		D:/Qt/6.7.0/mingw_64/include/QtGui/qtextformat.h \
+		D:/Qt/6.7.0/mingw_64/include/QtGui/qpen.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\suggestion.o Menu\function\suggestion.cpp
 
 debug/tellbug.o: Menu/function/tellbug.cpp Menu/function/tellbug.h \
@@ -7294,7 +7386,52 @@ debug/tellbug.o: Menu/function/tellbug.cpp Menu/function/tellbug.h \
 		D:/Qt/6.7.0/mingw_64/include/QtCore/qvariantanimation.h \
 		D:/Qt/6.7.0/mingw_64/include/QtCore/qabstractanimation.h \
 		D:/Qt/6.7.0/mingw_64/include/QtCore/qeasingcurve.h \
-		ui_tellbug.h
+		ui_tellbug.h \
+		D:/Qt/6.7.0/mingw_64/include/QtCore/QVariant \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/QApplication \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qapplication.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/QComboBox \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qcombobox.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qstyleoption.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qabstractspinbox.h \
+		D:/Qt/6.7.0/mingw_64/include/QtGui/qvalidator.h \
+		D:/Qt/6.7.0/mingw_64/include/QtCore/qregularexpression.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qslider.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qabstractslider.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qstyle.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qtabbar.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qtabwidget.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qrubberband.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qframe.h \
+		D:/Qt/6.7.0/mingw_64/include/QtCore/qabstractitemmodel.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/QGridLayout \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qgridlayout.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qlayout.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qlayoutitem.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qboxlayout.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/QLabel \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qlabel.h \
+		D:/Qt/6.7.0/mingw_64/include/QtGui/qpicture.h \
+		D:/Qt/6.7.0/mingw_64/include/QtGui/qtextdocument.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/QLineEdit \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qlineedit.h \
+		D:/Qt/6.7.0/mingw_64/include/QtGui/qtextcursor.h \
+		D:/Qt/6.7.0/mingw_64/include/QtGui/qtextformat.h \
+		D:/Qt/6.7.0/mingw_64/include/QtGui/qpen.h \
+		D:/Qt/6.7.0/mingw_64/include/QtGui/qtextoption.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/QPlainTextEdit \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qplaintextedit.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qtextedit.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qabstractscrollarea.h \
+		D:/Qt/6.7.0/mingw_64/include/QtGui/qabstracttextdocumentlayout.h \
+		D:/Qt/6.7.0/mingw_64/include/QtGui/qtextlayout.h \
+		D:/Qt/6.7.0/mingw_64/include/QtGui/qglyphrun.h \
+		D:/Qt/6.7.0/mingw_64/include/QtGui/qrawfont.h \
+		D:/Qt/6.7.0/mingw_64/include/QtGui/qfontdatabase.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/QRadioButton \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qradiobutton.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/QSpacerItem
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\tellbug.o Menu\function\tellbug.cpp
 
 debug/menu.o: Menu/menu.cpp Menu/menu.h \
@@ -7538,7 +7675,23 @@ debug/menu.o: Menu/menu.cpp Menu/menu.h \
 		D:/Qt/6.7.0/mingw_64/include/QtGui/QEnterEvent \
 		D:/Qt/6.7.0/mingw_64/include/QtWidgets/QToolTip \
 		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qtooltip.h \
-		ui_menu.h
+		ui_menu.h \
+		D:/Qt/6.7.0/mingw_64/include/QtCore/QVariant \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/QApplication \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qapplication.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/QFormLayout \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qformlayout.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/QLayout \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qlayout.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qlayoutitem.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qboxlayout.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qgridlayout.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/QGridLayout \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/QHBoxLayout \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/QSpacerItem \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/QStackedWidget \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qstackedwidget.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/QVBoxLayout
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\menu.o Menu\menu.cpp
 
 debug/backpack.o: ObjectBar/backpack.cpp ObjectBar/backpack.h \
@@ -7803,7 +7956,19 @@ debug/backpack.o: ObjectBar/backpack.cpp ObjectBar/backpack.h \
 		D:/Qt/6.7.0/mingw_64/include/QtWidgets/QMessageBox \
 		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qmessagebox.h \
 		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
-		ui_backpack.h
+		ui_backpack.h \
+		D:/Qt/6.7.0/mingw_64/include/QtCore/QVariant \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/QGridLayout \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/QLineEdit \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qlineedit.h \
+		D:/Qt/6.7.0/mingw_64/include/QtGui/qtextcursor.h \
+		D:/Qt/6.7.0/mingw_64/include/QtGui/qtextformat.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/QPushButton \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qpushbutton.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qabstractbutton.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/QScrollArea \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qscrollarea.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qabstractscrollarea.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\backpack.o ObjectBar\backpack.cpp
 
 debug/bar.o: ObjectBar/bar.cpp ObjectBar/bar.h \
@@ -8104,7 +8269,12 @@ debug/bar.o: ObjectBar/bar.cpp ObjectBar/bar.h \
 		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qprogressbar.h \
 		D:/Qt/6.7.0/mingw_64/include/QtWidgets/QSystemTrayIcon \
 		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qsystemtrayicon.h \
-		ui_bar.h
+		ui_bar.h \
+		D:/Qt/6.7.0/mingw_64/include/QtCore/QVariant \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/QGridLayout \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/QToolButton \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qtoolbutton.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/QVBoxLayout
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\bar.o ObjectBar\bar.cpp
 
 debug/game_2048.o: Rest/Game/game_2048.cpp Rest/Game/game_2048.h \
@@ -8309,7 +8479,20 @@ debug/game_2048.o: Rest/Game/game_2048.cpp Rest/Game/game_2048.h \
 		D:/Qt/6.7.0/mingw_64/include/QtCore/QTimer \
 		D:/Qt/6.7.0/mingw_64/include/QtCore/qtimer.h \
 		D:/Qt/6.7.0/mingw_64/include/QtCore/qbasictimer.h \
-		ui_game_2048.h
+		ui_game_2048.h \
+		D:/Qt/6.7.0/mingw_64/include/QtCore/QVariant \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/QApplication \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qapplication.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/QFrame \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/QGridLayout \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qgridlayout.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qlayout.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qlayoutitem.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qboxlayout.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/QPushButton \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qpushbutton.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qabstractbutton.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/QSpacerItem
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\game_2048.o Rest\Game\game_2048.cpp
 
 debug/rest.o: Rest/rest.cpp Rest/rest.h \
@@ -8530,7 +8713,24 @@ debug/rest.o: Rest/rest.cpp Rest/rest.h \
 		D:/Qt/6.7.0/mingw_64/include/QtCore/qrandom.h \
 		D:/Qt/6.7.0/mingw_64/include/QtCore/QSettings \
 		D:/Qt/6.7.0/mingw_64/include/QtCore/qsettings.h \
-		ui_rest.h
+		ui_rest.h \
+		D:/Qt/6.7.0/mingw_64/include/QtCore/QVariant \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/QApplication \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qapplication.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/QGridLayout \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qgridlayout.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qlayout.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qlayoutitem.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qboxlayout.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/QPushButton \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qpushbutton.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qabstractbutton.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/QSpacerItem \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/QStackedWidget \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qstackedwidget.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/QTabWidget \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/qtabwidget.h \
+		D:/Qt/6.7.0/mingw_64/include/QtWidgets/QVBoxLayout
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\rest.o Rest\rest.cpp
 
 debug/signalmanger.o: SignalManager/signalmanger.cpp SignalManager/signalmanger.h \
