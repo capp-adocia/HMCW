@@ -8,3 +8,6 @@ save/
 *.ini
 ui_*.h
 User*
+Makefile
+*Debug
+*Release
