@@ -9,5 +9,5 @@ save/
 ui_*.h
 User*
 Makefile
-*Debug
-*Release
+Makefile.Debug
+Makefile.Release
