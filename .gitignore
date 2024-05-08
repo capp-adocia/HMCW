@@ -7,3 +7,4 @@ save/
 *.qtc_clangd
 *.ini
 ui_*.h
+User*
