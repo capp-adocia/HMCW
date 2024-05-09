@@ -11,6 +11,7 @@
 #include <QTimer>
 #include <QSlider>
 #include <QCheckBox>
+#include <optional>
 
 namespace Ui {
 class Option;
@@ -23,8 +24,8 @@ public:
     explicit Option(QWidget *parent = nullptr);
     ~Option();
     void Init();
-    std::tuple<QTime, QTime> setTimeLabel(QSlider *Slider, bool returnPair);
-    QTime setTimeLabel(QSlider *Slider); // 把Slider的值转化为时间 传给label显示
+    std::pair<QTime, QTime> getLabelTime(QSlider *Slider, bool returnPair = false); // 返回一个时间或一对时间
+
 signals:
     void back();
     void start(bool isStart); // 发送一个信号用来告诉option是否启用定时提醒功能

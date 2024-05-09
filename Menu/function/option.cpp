@@ -99,10 +99,10 @@ void Option::Init()
         // 读取设置
         it.key()->setValue(settings.value(it.key()->objectName(), it.key()->value()).toInt());
         // 设置标签里的值
-        it.value()->setText(setTimeLabel(it.key()).toString("hh:mm:ss"));
+        it.value()->setText(getLabelTime(it.key()).first.toString("hh:mm:ss"));
         connect(it.key(),&QSlider::valueChanged,[this, it]{
             // 监听QSlider的变化
-            it.value()->setText(setTimeLabel(it.key()).toString("hh:mm:ss"));
+            it.value()->setText(getLabelTime(it.key()).first.toString("hh:mm:ss"));
         });
     }
     // 读取并设置 startOption
@@ -134,28 +134,17 @@ void Option::Save()
     this->close();
 }
 
-// 用于设置时间标签 秒数转时间显示到标签上
-// 重载版本1: 返回单个时间值
-QTime Option::setTimeLabel(QSlider *Slider)
+// 返回单个时间值 或 返回一对时间值
+std::pair<QTime, QTime> Option::getLabelTime(QSlider *Slider, bool returnPair)
 {
-    QTime time(0, 0, 0);
-    time = time.addSecs(Slider->value());
-    return time;
-}
-
-// 重载版本2: 返回一对时间值
-std::tuple<QTime, QTime> Option::setTimeLabel(QSlider *Slider, bool returnPair)
-{
-    if (returnPair) {
-        QTime startTime(0, 0, 0);
-        startTime = startTime.addSecs(Slider->value());
-        QTime maxTime(0, 0, 0);
-        maxTime = maxTime.addSecs(Slider->maximum());
-        return std::make_tuple(startTime, maxTime);
-    } else {
-        // 返回空时间
-        return std::make_tuple(QTime(), QTime());
+    QTime startTime = QTime(0, 0, 0).addSecs(Slider->value());
+    if (returnPair)
+    {
+        QTime maxTime = QTime(0, 0, 0).addSecs(Slider->maximum());
+        return std::make_pair(startTime, maxTime);
     }
+    // 返回单个时间
+    return std::make_pair(startTime, QTime()); // 仅访问第一个值
 }
 
 void Option::checkTime()
@@ -186,11 +175,12 @@ void Option::checkTime()
     settings.endGroup();
     PreCurrentTime = currentTime;
 
-    QTime workTime = setTimeLabel(ui->workTimeSlider);
-    QTime breakTime = setTimeLabel(ui->breakTimeSlider);
+    QTime workTime = getLabelTime(ui->workTimeSlider).first;
+    QTime breakTime = getLabelTime(ui->breakTimeSlider).first;
+    int currentSec = currentTime.hour()*3600+currentTime.minute()*60+currentTime.second();
 
     // 检查当前时间是否在用户设置的早餐时间范围内
-    if (currentTime >= std::get<0>(setTimeLabel(ui->breakfastSlider,true)) && currentTime <= std::get<1>(setTimeLabel(ui->breakfastSlider,true))) {
+    if (currentTime >= getLabelTime(ui->breakfastSlider,true).first && currentTime <= getLabelTime(ui->breakfastSlider,true).second) {
         // 如果之前没有发送过早餐信号
         if (!m_breakfastSignalSent)
         {
@@ -202,12 +192,12 @@ void Option::checkTime()
             is_UpdateBreakfaskHungryImg = false;
             m_breakfastSignalSent = true;// 标记已发送过早餐信号
             is_mealing = true;// 正在吃饭 这个用来判断是否可以开始工作了
-            this->currentTimeSec = currentTime.hour()*3600+currentTime.minute()*60+currentTime.second();// 记录刚开始行为的时间
+            this->currentTimeSec = currentSec;// 记录刚开始行为的时间
             emit SignalManager::instance().updateAllEating(); // 向统计信息更新进餐总次数
             emit SignalManager::instance().updateBreakFast(); // 更新统计信息里的早餐次数
         }
         // 发送行为结束信号 如果当前时间 >= 开始时间 + 行为时间 则结束时间
-        if (currentTime.hour()*3600+currentTime.minute()*60+currentTime.second() >= this->currentTimeSec + ui->mealTimeSlider->value())
+        if (currentSec >= this->currentTimeSec + ui->mealTimeSlider->value())
         {
             SkipOrStopMeal("breakfast");
         }
@@ -219,7 +209,7 @@ void Option::checkTime()
         is_UpdateLunchHungryImg = false;
     }
     //检查当前时间是否在用户设置的午餐时间范围内
-    if (currentTime >= std::get<0>(setTimeLabel(ui->lunchSlider,true)) && currentTime <= std::get<1>(setTimeLabel(ui->lunchSlider,true)))
+    if (currentTime >= getLabelTime(ui->lunchSlider,true).first && currentTime <= getLabelTime(ui->lunchSlider,true).second)
     {
         // 如果之前没有发送过早餐信号
         if (!m_lunchSignalSent) {
@@ -230,12 +220,12 @@ void Option::checkTime()
             is_UpdateLunchHungryImg = false;
             m_lunchSignalSent = true;
             is_mealing = true;
-            this->currentTimeSec = currentTime.hour()*3600+currentTime.minute()*60+currentTime.second();// 记录刚开始行为的时间
+            this->currentTimeSec = currentSec;// 记录刚开始行为的时间
             emit SignalManager::instance().updateAllEating();
             emit SignalManager::instance().updateLunch(); // 更新统计信息里的午餐次数
         }
         // 发送行为结束信号 如果当前时间 >= 开始时间 + 行为时间 则结束时间
-        if (currentTime.hour()*3600+currentTime.minute()*60+currentTime.second() >= this->currentTimeSec+ui->mealTimeSlider->value())
+        if (currentSec >= this->currentTimeSec + ui->mealTimeSlider->value())
         {
             SkipOrStopMeal("lunch");
         }
@@ -248,7 +238,7 @@ void Option::checkTime()
     }
 
     //检查当前时间是否在用户设置的晚餐餐时间范围内
-    if (currentTime >= std::get<0>(setTimeLabel(ui->dinnerSlider,true)) && currentTime <= std::get<1>(setTimeLabel(ui->dinnerSlider,true))) {
+    if (currentTime >= getLabelTime(ui->dinnerSlider,true).first && currentTime <= getLabelTime(ui->dinnerSlider,true).second) {
         // 如果之前没有发送过早餐信号
         if (!m_dinnerSignalSent) {
             emit SignalManager::instance().dinnerTime();
@@ -258,12 +248,12 @@ void Option::checkTime()
             is_UpdateDinnerHungryImg = false;
             m_dinnerSignalSent = true;
             is_mealing = true;
-            this->currentTimeSec = currentTime.hour()*3600+currentTime.minute()*60+currentTime.second();// 记录刚开始行为的时间
+            this->currentTimeSec = currentSec;// 记录刚开始行为的时间
             emit SignalManager::instance().updateAllEating();
             emit SignalManager::instance().updateDinner(); // 更新统计信息里的晚餐次数
         }
         // 发送行为结束信号 如果当前时间 >= 开始时间 + 吃饭行为时间 则结束时间
-        if (currentTime.hour()*3600+currentTime.minute()*60+currentTime.second() >= this->currentTimeSec+ui->mealTimeSlider->value())
+        if (currentSec >= this->currentTimeSec+ui->mealTimeSlider->value())
         {
             SkipOrStopMeal("dinner");
         }
