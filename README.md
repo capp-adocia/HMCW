@@ -9,7 +9,7 @@
 
 ## 介绍 && 使用说明
 
-- 简单来说有四大功能模块组成：
+- 简单来说有三大功能模块组成：
 >
 > - 开始的物品栏。
 >>
@@ -56,7 +56,7 @@
 
 -  球球: 请通过 2636427505 联系我。
 -  球球email: 请发送邮件至 [2636427505@qq.com](https://mail.qq.com/) 联系我。
--  B站: **是Kapa呀**
+-  B站: **是Kapa呀**（有需要的可以关注(๑•́ ₃ •̀๑)ｴｰ）
 -  ......
 
 ## 赞助和捐赠
@@ -80,7 +80,7 @@ This is a desktop widget with a Minecraft style, similar to the Windows taskbar,
 
 ## Introduction && User Guide
 
-- Simply put, it consists of four main functional modules:
+- Simply put, it consists of three main functional modules:
 >
 > - Inventory Bar at Start
 >>
@@ -127,7 +127,7 @@ This is a desktop widget with a Minecraft style, similar to the Windows taskbar,
 
 - QQ: Please contact me at 2636427505.
 - QQ email: Please send an email to [2636427505@qq.com](https://mail.qq.com/) to contact me.
-- Bilibili: **是Kapa呀**
+- Bilibili: **是Kapa呀**(Those interested can follow(๑•́ ₃ •̀๑)ｴｰ)
 - ......
 
 ## Sponsorships and Donations
