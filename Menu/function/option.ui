@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>850</width>
-    <height>560</height>
+    <width>808</width>
+    <height>567</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -416,7 +416,7 @@ QSlider::handle:horizontal {
              <number>57600</number>
             </property>
             <property name="maximum">
-             <number>80000</number>
+             <number>72000</number>
             </property>
             <property name="singleStep">
              <number>60</number>

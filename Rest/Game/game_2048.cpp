@@ -70,7 +70,7 @@ Game_2048::Game_2048(QWidget *parent)
 
 void Game_2048::randomInitPosition()
 {
-    for(auto label : labelVector)
+    for(auto &label : labelVector)
     {
         label->setStyleSheet(originalStyleSheet);
         label->setText("");

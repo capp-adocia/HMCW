@@ -636,7 +636,7 @@ void Bar::upDateProgressBar()
         ui->levelLabel->setStyleSheet("color:rgb(80, 180, 88);");
         ui->levelLabel->setFixedHeight(40);
         // 重置所有经验条
-        for(auto progressBarLabel : progressBarLabels)
+        for(auto &progressBarLabel : progressBarLabels)
         {
             progressBarLabel->setFixedSize(0, 0);
         }
@@ -650,7 +650,7 @@ void Bar::resetHungryState()
 {
     // 重置为全为正常的饱食度图片
     this->hungryIndex = hungryLabels.length() - 1;
-    for(auto hungryLabel : hungryLabels)
+    for(auto &hungryLabel : hungryLabels)
     {
         hungryLabel->setPixmap(hungry_pixmap);
     }
@@ -660,7 +660,7 @@ void Bar::resetHeartState()
 {
     // 重置为全为正常的爱心图片
     this->heartIndex = heartLabels.length() - 1;
-    for(auto heartLabel : heartLabels)
+    for(auto &heartLabel : heartLabels)
     {
         heartLabel->setPixmap(health_pixmap);
     }

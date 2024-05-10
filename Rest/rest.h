@@ -36,6 +36,7 @@ private:
     bool isBreakfastTime; // 判断是否执行了吃饭跳过
     bool isLunchTime;
     bool isDinnerTime;
+    int CurrentStartTimeSec; // 当前启动秒数
 };
 
 #endif // REST_H

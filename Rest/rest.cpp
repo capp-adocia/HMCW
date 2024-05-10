@@ -16,6 +16,7 @@ Rest::Rest(QWidget *parent)
     , isBreakfastTime(true)
     , isLunchTime(true)
     , isDinnerTime(true)
+    , CurrentStartTimeSec(0)
 {
     ui->setupUi(this);
     setWindowFlags(Qt::WindowStaysOnTopHint | Qt::FramelessWindowHint);
@@ -73,6 +74,10 @@ Rest::Rest(QWidget *parent)
         // qDebug()<<"休息结束了 开始工作吧";
     });
 
+    connect(&SignalManager::instance(),&SignalManager::SendStartTimeSec,[this](const int& Sec){
+        this->CurrentStartTimeSec = Sec;
+    });
+
     // 用户点击跳过按钮 关闭当前窗口
     connect(ui->skipButton,&QPushButton::clicked,[=]{
         // 更新统计信息中的跳过休息次数
@@ -94,7 +99,7 @@ Rest::Rest(QWidget *parent)
 
             /* 如果是吃饭时跳过 */
             // 如果当前时间处于吃饭的开始与吃饭结束之间，那么就发送信号更新状态
-            if(currentTime > breakfastStartTime && currentTime < breakfastStartTime + mealTime && isBreakfastTime)
+            if((currentTime > breakfastStartTime) && (currentTime < CurrentStartTimeSec + mealTime) && isBreakfastTime && (currentTime < 32400))
             {
                 emit SignalManager::instance().stopBreakfast();
                 // 停止进餐
@@ -102,22 +107,25 @@ Rest::Rest(QWidget *parent)
                 // 重置饱食度状态
                 emit SignalManager::instance().resetHungryState();
                 isBreakfastTime = false;
+                isDinnerTime = true;
             }
-            else if(currentTime > lunchStartTime && currentTime < lunchStartTime + mealTime && isLunchTime)
+            else if((currentTime > lunchStartTime) && (currentTime < CurrentStartTimeSec + mealTime) && isLunchTime && (currentTime < 50400))
             {
                 emit SignalManager::instance().stopLunch();
                 emit SignalManager::instance().SkipMeal("lunch",true);
                 // 重置饱食度状态
                 emit SignalManager::instance().resetHungryState();
                 isLunchTime = false;
+                isBreakfastTime = true;
             }
-            else if(currentTime > dinnerStartTime && currentTime < dinnerStartTime + mealTime && isDinnerTime)
+            else if((currentTime > dinnerStartTime) && (currentTime < CurrentStartTimeSec + mealTime) && isDinnerTime && (currentTime < 80000))
             {
                 emit SignalManager::instance().stopDinner();
                 emit SignalManager::instance().SkipMeal("dinner",true);
                 // 重置饱食度状态
                 emit SignalManager::instance().resetHungryState();
                 isDinnerTime = false;
+                isLunchTime = true;
             }
             /* 休息跳过 */
             // 如果是到休息时间了，但用户点击了跳过 那么就切换到工作状态，重置爱心图片
@@ -130,6 +138,7 @@ Rest::Rest(QWidget *parent)
         settings.endGroup();
 
     });
+
     ui->RestStackedWidget->addWidget(game_2048Page);
     // ui->RestStackedWidget->setCurrentWidget(ui->rest01);
     // ui->RestStackedWidget->setCurrentWidget(game_2048Page);

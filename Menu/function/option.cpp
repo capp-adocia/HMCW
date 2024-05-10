@@ -195,6 +195,7 @@ void Option::checkTime()
             this->currentTimeSec = currentSec;// 记录刚开始行为的时间
             emit SignalManager::instance().updateAllEating(); // 向统计信息更新进餐总次数
             emit SignalManager::instance().updateBreakFast(); // 更新统计信息里的早餐次数
+            emit SignalManager::instance().SendStartTimeSec(currentSec); // 发送当前启动秒数
         }
         // 发送行为结束信号 如果当前时间 >= 开始时间 + 行为时间 则结束时间
         if (currentSec >= this->currentTimeSec + ui->mealTimeSlider->value())
@@ -223,6 +224,7 @@ void Option::checkTime()
             this->currentTimeSec = currentSec;// 记录刚开始行为的时间
             emit SignalManager::instance().updateAllEating();
             emit SignalManager::instance().updateLunch(); // 更新统计信息里的午餐次数
+            emit SignalManager::instance().SendStartTimeSec(currentSec); // 发送当前启动秒数
         }
         // 发送行为结束信号 如果当前时间 >= 开始时间 + 行为时间 则结束时间
         if (currentSec >= this->currentTimeSec + ui->mealTimeSlider->value())
@@ -251,6 +253,8 @@ void Option::checkTime()
             this->currentTimeSec = currentSec;// 记录刚开始行为的时间
             emit SignalManager::instance().updateAllEating();
             emit SignalManager::instance().updateDinner(); // 更新统计信息里的晚餐次数
+            emit SignalManager::instance().SendStartTimeSec(currentSec); // 发送当前启动秒数
+
         }
         // 发送行为结束信号 如果当前时间 >= 开始时间 + 吃饭行为时间 则结束时间
         if (currentSec >= this->currentTimeSec+ui->mealTimeSlider->value())
@@ -275,6 +279,7 @@ void Option::checkTime()
             // 给Bar发送信号 减少爱心图像
             emit SignalManager::instance().workingUpdataHealth(workTime);
             emit SignalManager::instance().updateWorking(); // 向统计信息更新工作次数
+            emit SignalManager::instance().SendStartTimeSec(currentSec); // 发送当前启动秒数
         }
         // 根据开始时间和工作时间判断是否继续工作
         if (currentTime >= (this->currentTime.addSecs(workTime.hour() * 3600 + workTime.minute() * 60 + workTime.second()))) {
@@ -346,7 +351,7 @@ void Option::SkipOrStopMeal(const QString& mealCategory, bool isSkip)
     {
         if(!is_UpdateBreakfaskHungryImg && is_mealing)
         {
-            emit SignalManager::instance().stopBreakfast(); // 只发送了一次
+            emit SignalManager::instance().stopBreakfast();
             is_mealing = false;
             // 给Bar发送信号 减少饱食度 传递距离下次吃饭的时长为参数
             QTime intervalTime = QTime(0, 0, 0).addSecs(ui->lunchSlider->value() - this->currentTimeSec + ui->mealTimeSlider->value());
@@ -360,7 +365,7 @@ void Option::SkipOrStopMeal(const QString& mealCategory, bool isSkip)
         {
             emit SignalManager::instance().stopLunch();
             is_mealing = false;
-            // 给Bar发送信号 减少饱食度 传递距离下次吃饭的时长为参数 只发送一次
+            // 给Bar发送信号 减少饱食度 传递距离下次吃饭的时长为参数
             QTime intervalTime = QTime(0, 0, 0).addSecs(ui->dinnerSlider->value() - this->currentTimeSec + ui->mealTimeSlider->value());
             emit SignalManager::instance().HungryState(intervalTime);
             is_UpdateLunchHungryImg = true;
@@ -368,11 +373,11 @@ void Option::SkipOrStopMeal(const QString& mealCategory, bool isSkip)
     }
     else if(mealCategory == "dinner")
     {
-        if(!is_UpdateDinnerHungryImg && is_mealing)
+        if((!is_UpdateDinnerHungryImg && is_mealing) || isSkip)
         {
             emit SignalManager::instance().stopDinner();
             is_mealing = false;
-            // 给Bar发送信号 减少饱食度 传递距离下次吃饭的时长为参数 只发送一次 时间间隔 = 24小时秒数 - 当前秒数 + 早餐秒数
+            // 给Bar发送信号 减少饱食度 传递距离下次吃饭的时长为参数  时间间隔 = 24小时秒数 - 当前秒数 + 早餐秒数
             QTime intervalTime = QTime(0, 0, 0).addSecs(86399 - (this->currentTimeSec + ui->mealTimeSlider->value()) + (ui->breakfastSlider->value()));
             emit SignalManager::instance().HungryState(intervalTime);
             is_UpdateDinnerHungryImg = true;

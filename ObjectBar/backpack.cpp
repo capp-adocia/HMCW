@@ -247,14 +247,14 @@ void Backpack::InitQuery()
         ui->queryButton->setEnabled(true); // 如果正在搜索就不能点击
     });
     // 连接清空查询图标的状态信号
-    for(auto objectframe : objectframe){
+    for(auto &objectframe : objectframe){
         connect(objectframe,&Objectframe::objectFrameClick,this,&Backpack::resetState);
         objectframe->loadSettings();
         // 当不同源的frame拖拽时连接的信号 重置源对象
         connect(objectframe,&Objectframe::StorageFrameToObjectFrameDrag,this,&Backpack::ResetStorageFrame);
     }
     // Backpack 和 storageframe 更新图标
-    for(auto storageframe : storageframe){
+    for(auto &storageframe : storageframe){
         connect(storageframe,&Storageframe::storageFrameClick,this,&Backpack::resetState);
         storageframe->loadSettings();
         // 当不同源的frame拖拽时连接的信号 重置源对象
@@ -493,7 +493,7 @@ void Backpack::DrawIcon(const QStringList &filePaths, const QStringList &iconPat
 void Backpack::switchLabelState(QueryImgLabel *clickedLabel){
     // 点击不同查询图片来切换点击状态
 
-    for(auto queryImgLabel : queryImgLabelVector)
+    for(auto &queryImgLabel : queryImgLabelVector)
     {
         queryImgLabel->setStyleSheet(QueryImgLabel::originalStyleSheet); // 正常样式
         if (clickedLabel == queryImgLabel) {
@@ -503,17 +503,17 @@ void Backpack::switchLabelState(QueryImgLabel *clickedLabel){
 }
 
 void Backpack::resetState(){
-    for(auto queryImgLabel : queryImgLabelVector)
+    for(auto &queryImgLabel : queryImgLabelVector)
     {
         queryImgLabel->setStyleSheet(QueryImgLabel::originalStyleSheet); // 正常样式
     }
-    for(auto objectframe : objectframe)
+    for(auto &objectframe : objectframe)
     {
         // 先重置所有的路径，再加载这样防止queryframe可以多次放置
         objectframe->resetObjectFrame();
         objectframe->loadSettings();
     }
-    for(auto storageframe : storageframe)
+    for(auto &storageframe : storageframe)
     {
         // 先重置所有的路径，再加载这样防止queryframe可以多次放置
         storageframe->resetStorageFrame();
