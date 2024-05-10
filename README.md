@@ -9,7 +9,7 @@
 
 ## 介绍 && 使用说明
 
-- 简单来说有四大功能模块组成：
+- 简单来说有三大功能模块组成：
 >
 > - 开始的物品栏。
 >>
@@ -80,7 +80,7 @@ This is a desktop widget with a Minecraft style, similar to the Windows taskbar,
 
 ## Introduction && User Guide
 
-- Simply put, it consists of four main functional modules:
+- Simply put, it consists of three main functional modules:
 >
 > - Inventory Bar at Start
 >>
