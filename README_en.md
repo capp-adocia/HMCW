@@ -63,3 +63,8 @@ This is a desktop widget with a Minecraft style, similar to the Windows taskbar,
 - ......
 
 ## Sponsorships and Donations
+
+**WeChat** or **Alipay**
+Note: If the image does not load, please enable the accelerator, otherwise the image will not load.
+
+![微信(WeChat)](Image/WeChat.png)                ![支付宝(Alipay)](Image/Alipay.png)
