@@ -1,6 +1,6 @@
-*Current language:English*
+*Current language --> English*
 <br>
-*Switch to **[Chinese](https://github.com/capp-adocia/HMCW/blob/main/README.md)***
+*Switch to --> **[Chinese](https://github.com/capp-adocia/HMCW/blob/main/README.md)***
 # HMCW
 
 This is a desktop widget with a Minecraft style, similar to the Windows taskbar, that can be used to save and launch various programs. Although it doesn't have all the functions of the Windows taskbar, it can be considered a simplified version. Additionally, I've added some extra features to this tool, such as program file search and scheduled breaks. If you're interested, why not give it a try!
