@@ -1,4 +1,4 @@
-*Current language*：**Enlish**
+*Current language*：**English**
 <br>
 **Switch to [Chinese](https://github.com/capp-adocia/HMCW/edit/main/README_cn.md)**
 # HMCW
