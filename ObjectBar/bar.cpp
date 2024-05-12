@@ -229,7 +229,7 @@ void Bar::createPixmap(){
 
     //创建爱心
     // 添加10个爱心图片到 hp_bar
-    for (int i = 0; i < 10; ++i) {
+    for (quint8 i = 0; i < 10; ++i) {
         //最左边是第1个
         QLabel *heartLabel = new QLabel(ui->hp_bar);
         heartLabel->setFixedSize(heartSize);
@@ -237,8 +237,8 @@ void Bar::createPixmap(){
         health_pixmap = health_pixmap.scaled(heartSize, Qt::KeepAspectRatio, Qt::SmoothTransformation);
         heartLabel->setPixmap(health_pixmap);
         // 设置爱心图片的位置
-        int x = i * heartSize.width(); // 爱心之间没有间距
-        int y = (ui->hp_bar->height() - heartSize.height()) / 2; // 垂直居中
+        qint8 x = i * heartSize.width(); // 爱心之间没有间距
+        qint8 y = (ui->hp_bar->height() - heartSize.height()) / 2; // 垂直居中
         heartLabel->move(x, y);
         // 添加的顺序是从左到右
         heartLabels.append(heartLabel);// 将 QLabel 添加到向量中
@@ -248,7 +248,7 @@ void Bar::createPixmap(){
     // 添加10个饥饿图片到 hungry_bar
     int x;
     int y;
-    for (int i = 9; i >= 0; --i) {
+    for (quint8 i = 9; i >= 0; --i) {
         // 最右边是第1个
         QLabel *hungryLabel = new QLabel(ui->hungry_bar);
         hungryLabel->setFixedSize(hungrySize);
@@ -266,7 +266,7 @@ void Bar::createPixmap(){
 
     // 添加进度条
     // 遍历 ui->exp_bar 中的子部件按顺序添加 progressBarLabel
-    for (int i = 1; i <= 16; ++i) {
+    for (quint8 i = 1; i <= 16; ++i) {
         QString labelObjectName = QString("label_%1").arg(QString::number(i).rightJustified(2, '0')); // 构建子部件的对象名称，例如 label_01
         QLabel* parentLabel = ui->exp_bar->findChild<QLabel*>(labelObjectName);
         if (parentLabel) {
@@ -692,7 +692,7 @@ void Bar::hideObjectBar()
 
 Bar::~Bar()
 {
-    for (int i = 0; i < 9; i++)
+    for (quint8 i = 0; i < 9; i++)
     {
         delete customPanes[i];
         customPanes[i] = nullptr;

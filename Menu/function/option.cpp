@@ -177,7 +177,7 @@ void Option::checkTime()
 
     QTime workTime = getLabelTime(ui->workTimeSlider).first;
     QTime breakTime = getLabelTime(ui->breakTimeSlider).first;
-    int currentSec = currentTime.hour()*3600+currentTime.minute()*60+currentTime.second();
+    quint32 currentSec = currentTime.hour()*3600+currentTime.minute()*60+currentTime.second();
 
     // 检查当前时间是否在用户设置的早餐时间范围内
     if (currentTime >= getLabelTime(ui->breakfastSlider,true).first && currentTime <= getLabelTime(ui->breakfastSlider,true).second) {

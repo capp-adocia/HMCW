@@ -178,7 +178,7 @@ void Backpack::InitFrames()
     QHBoxLayout *hBoxLayout2 = new QHBoxLayout(ui->object_bar_1);
     QHBoxLayout *hBoxLayout3 = new QHBoxLayout(ui->object_bar_2);
     QHBoxLayout *hBoxLayout4 = new QHBoxLayout(ui->object_bar_3);
-    for (qint8 i = 0; i < 9; ++i) {
+    for (quint8 i = 0; i < 9; ++i) {
         objectframe[i] = new Objectframe(ui->object_bar, QStringLiteral("objectFrame_%1").arg(i + 1));
         objectframe[i]->setStyleSheet(Obj_Sto_StyleSheet);
         objectframe[i]->setFixedSize(fixedWidth, fixedHeight);
@@ -186,7 +186,7 @@ void Backpack::InitFrames()
         objectsFrameVector.append(objectframe[i]);
     }
 
-    for(qint8 i = 0; i < 27; i++){
+    for(quint8 i = 0; i < 27; i++){
         if(i < 9){
             // 创建 Storageframe 对象，并传递对象名
             storageframe[i] = new Storageframe(ui->object_bar_1, QStringLiteral("storageframe_%1").arg(i + 1));
@@ -270,9 +270,9 @@ void Backpack::AllExeFound(const QStringList &filePaths, const QStringList &icon
     settings.clear();
 
     // 保存 exe 文件路径和图标路径
-    int previousSize = 0;
+    quint8 previousSize = 0;
     settings.beginWriteArray("Paths");
-    for (int i = 0; i < filePaths.size(); ++i) {
+    for (quint8 i = 0; i < filePaths.size(); ++i) {
         settings.setArrayIndex(i + previousSize);
         settings.setValue("ExePath", filePaths.at(i));
         settings.setValue("IconPath", iconPaths.at(i));
@@ -292,11 +292,11 @@ void Backpack::LoadingAllIcon()
 {
 
     QSettings settings("config2.ini", QSettings::IniFormat);
-    int size = settings.beginReadArray("Paths");
+    size_t size = settings.beginReadArray("Paths");
     QStringList filePaths;
     QStringList iconPaths;
     bool isIconExist = true;
-    for(long long i = 0;i < size;++i)
+    for(size_t i = 0;i < size;++i)
     {
         settings.setArrayIndex(i);
         QString exePath = settings.value("ExePath").toString();
@@ -321,11 +321,11 @@ void Backpack::FilterIcon(const QString &fileName)
     if(fileName != "")
     {
         QSettings settings("config2.ini", QSettings::IniFormat);
-        int size = settings.beginReadArray("Paths");
+        size_t size = settings.beginReadArray("Paths");
 
         QStringList filePaths;
         QStringList iconPaths;
-        for (long long i = 0; i < size; ++i)
+        for (size_t i = 0; i < size; ++i)
         {
             settings.setArrayIndex(i);
             QString exePath = settings.value("ExePath").toString();
@@ -360,7 +360,7 @@ void Backpack::ClickStartQuery() // 点击query查询按钮后在ui->scrollAreaW
     msgBox.setInformativeText("请问是否要更新显示应用程序文件?\n注意这个过程至少需要5分钟，请不要关闭程序");
     msgBox.setStandardButtons(QMessageBox::Ok | QMessageBox::Cancel);
     msgBox.setDefaultButton(QMessageBox::Ok);
-    int ret = msgBox.exec();
+    quint16 ret = msgBox.exec();
     if (ret == QMessageBox::Ok)
     {
         // 禁止用户在查询的过程中使用搜索功能
@@ -383,7 +383,7 @@ void Backpack::ClickStartQuery() // 点击query查询按钮后在ui->scrollAreaW
         }
 
         // 创建进度条和标签 上一个从左到右滚动，下一个从右到左滚动
-        for(qint8 i = 0;i < 16;i++)
+        for(quint8 i = 0;i < 16;i++)
         {
             QProgressBar *progressBar = new QProgressBar(ui->scrollAreaWidgetContents);
             progressBar->setRange(0, 0); // 设置为无限循环模式
@@ -459,12 +459,12 @@ void Backpack::DrawIcon(const QStringList &filePaths, const QStringList &iconPat
                     // 设置样式
                     iconLabel->setIconAndFile(iconPath,filePaths.at(i * 5 + j));
 
-                    for (qint8 i = 0; i < 9; i++) {
+                    for (quint8 i = 0; i < 9; i++) {
                         connect(iconLabel, &QueryImgLabel::imageClicked, [this, filePaths, iconPath, i, iconLabel]() {
                             objectframe[i]->ListeningIconPath(iconPath,iconLabel->getFilePath()); // 绑定信号 如果图片点击了就其他可以接受到
                         });
                     }
-                    for (qint8 i = 0; i < 27; i++) {
+                    for (quint8 i = 0; i < 27; i++) {
                         connect(iconLabel, &QueryImgLabel::imageClicked, [this, filePaths, iconPath, i, iconLabel]() {
                             storageframe[i]->ListeningIconPath(iconPath,iconLabel->getFilePath()); // 绑定信号 如果图片点击了就其他可以接受到
                         });

@@ -112,16 +112,16 @@ void Record::InitDrawLabel()
      /* 存储的是数字类型的变量 */
     QList<long long> GeneralUnits = {UseTime, QueryUpdataCount , ResearchCount, LaunchAppCount};
 
-    for (int i = 0; i < labels.size(); ++i) {
+    for (quint8 i = 0; i < labels.size(); ++i) {
         QLabel *label = new QLabel(labels[i]);
         QLabel *unitLabel = nullptr;
 
         if (i == 0) {
             long long totalSeconds = GeneralUnits[i];
-            int days = totalSeconds / (3600 * 24);
-            int hours = (totalSeconds % (3600 * 24)) / 3600;
-            int minutes = (totalSeconds % 3600) / 60;
-            int seconds = totalSeconds % 60;
+            qint32 days = totalSeconds / (3600 * 24);
+            qint32 hours = (totalSeconds % (3600 * 24)) / 3600;
+            qint32 minutes = (totalSeconds % 3600) / 60;
+            qint32 seconds = totalSeconds % 60;
 
             // 构建使用时长字符串
             QString usageTime = QString("%1天 %2时 %3分 %4秒").arg(days).arg(hours, 2, 10, QChar('0'))
@@ -177,7 +177,7 @@ void Record::InitDrawLabel()
     /* 存储的是数字类型的变量 */
     QList<long long> ControlBreakUnits = {AllEatingCount,BreakFastCount,LunchCount,DinnerCount,WorkingCount,BreakCount,SkipBreakCount};
 
-    for (int i = 0; i < Breaklabels.size(); ++i) {
+    for (quint8 i = 0; i < Breaklabels.size(); ++i) {
         QLabel *label = new QLabel(Breaklabels[i]);
         QLabel *unitLabel = nullptr;
 
@@ -216,10 +216,10 @@ void Record::updateRunningTime()
 {
     UseTime += 1; // 将当前运行时长累加到总时长中
     // 更新时间标签
-    int days = UseTime / (3600 * 24);
-    int hours = (UseTime % (3600 * 24)) / 3600;
-    int minutes = (UseTime % 3600) / 60;
-    int seconds = UseTime % 60;
+    quint32 days = UseTime / (3600 * 24);
+    quint32 hours = (UseTime % (3600 * 24)) / 3600;
+    quint32 minutes = (UseTime % 3600) / 60;
+    quint32 seconds = UseTime % 60;
 
     // 构建使用时长字符串
     QString usageTime = QString("%1天 %2时 %3分 %4秒").arg(days).arg(hours, 2, 10, QChar('0'))

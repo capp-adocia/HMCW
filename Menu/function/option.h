@@ -11,7 +11,6 @@
 #include <QTimer>
 #include <QSlider>
 #include <QCheckBox>
-#include <optional>
 
 namespace Ui {
 class Option;
@@ -43,7 +42,7 @@ private:
     bool m_breakfastSignalSent; // 判断是否发送了早餐信号
     bool m_lunchSignalSent;
     bool m_dinnerSignalSent;
-    int currentTimeSec; // 记录当前秒数
+    quint32 currentTimeSec; // 记录当前秒数
     QTime currentTime; // 记录当前时间
     bool is_mealing; // 是否在吃饭
     bool is_recordWorkStart; // 是否记录了工作开始的时间
