@@ -12,7 +12,7 @@ class Queryapp : public QThread
 {
     Q_OBJECT
 public:
-    Queryapp();
+    explicit Queryapp();
     void searchDirectory(const QDir &dir, QStringList &foundFilePaths);
     void setDirPath_fileName(const QString &dirPath); // 修改路径名
 public slots:

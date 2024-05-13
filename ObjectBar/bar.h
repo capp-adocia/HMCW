@@ -31,7 +31,7 @@ class Bar : public QMainWindow
     Q_OBJECT
 
 public:
-    Bar(QWidget *parent = nullptr);
+    explicit Bar(QWidget *parent = nullptr);
     ~Bar();
     void createPixmap(); // 创建图片
     qreal dpiRatio; // 屏幕 DPI

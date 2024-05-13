@@ -12,7 +12,7 @@ class QueryImgLabel : public QLabel
 {
     Q_OBJECT
 public:
-    QueryImgLabel(QWidget *parent = nullptr);
+    explicit QueryImgLabel(QWidget *parent = nullptr);
     void setIconAndFile(const QString &iconPath, const QString &filePath);
     QString getFilePath() const;
     static QueryImgLabel *m_lastClickedLabel; // 全局静态成员变量 存储前一次对象

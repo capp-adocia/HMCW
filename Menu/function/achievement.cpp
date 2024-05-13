@@ -55,6 +55,7 @@ Achievement::Achievement(QWidget *parent)
                                "}";
     ui->backButton->setStyleSheet(ButtonStyleSheet);
     ui->backButton_2->setStyleSheet(ButtonStyleSheet);
+
     // 绘制成就
     DrawAchievement();
 
@@ -215,6 +216,7 @@ void Achievement::DrawAchievement()
             achievementFrame->installEventFilter(this);
         }
     }
+
 }
 
 void Achievement::DrawTipWidget(AchievementFrame *achievementFrame)

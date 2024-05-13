@@ -36,7 +36,7 @@ Menu::Menu(QWidget *parent)
     buttons.push_back(ui->suggestionButton);
     buttons.push_back(ui->tellBugButton);
 
-    for (int i = 0; i < pages.size(); ++i)
+    for (quint8 i = 0; i < pages.size(); ++i)
     {
         QWidget* page = pages[i];
         QPushButton* button = buttons[i];

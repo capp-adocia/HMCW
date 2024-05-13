@@ -27,23 +27,18 @@ AchievementFrame::AchievementFrame(QWidget *parent)
     setAttribute(Qt::WA_TranslucentBackground);
 }
 
-void AchievementFrame::setPositon(int &x,int &y)
+
+void AchievementFrame::setPositon(int &x, int &y) // 坐标
 {
     xPosition = x;
     yPosition = y;
 }
 
-void AchievementFrame::setAchievementName(const QString& FrameName)
-{
-    this->FrameName = FrameName;
-}
+void AchievementFrame::setAchievementName(const QString& FrameName) { this->FrameName = FrameName; } // 成就名
 
-void AchievementFrame::setAchievementDescription(const QString& description)
-{
-    this->description = description;
-}
+void AchievementFrame::setAchievementDescription(const QString& description) { this->description = description; } // 成就描述
 
-void AchievementFrame::setAchievementIcon(const QString& IconResource)
+void AchievementFrame::setAchievementIcon(const QString& IconResource) // 成就图标
 {
     this->icon = IconResource;
     updatePixmap();
@@ -74,37 +69,16 @@ void AchievementFrame::updatePixmap()
     iconLabel->setFixedSize(80, 80);
 }
 
-void AchievementFrame::setAchievementFinshIcon(const QString& FinshedIconResource)
-{
-    this->FinshedIcon = FinshedIconResource;
-}
+void AchievementFrame::setAchievementFinshIcon(const QString& FinshedIconResource) { this->FinshedIcon = FinshedIconResource; } // 实现成就图标
 
-void AchievementFrame::setAchievementIsFinshed(bool isFinshed)
-{
-    this->isFinshed = isFinshed;
-}
+void AchievementFrame::setAchievementIsFinshed(bool isFinshed) { this->isFinshed = isFinshed; }
 
-std::pair<int, int> AchievementFrame::getPosition()
-{
-    return std::make_pair(xPosition, yPosition);
-}
+const std::pair<int, int> AchievementFrame::getPosition() const { return std::make_pair(xPosition, yPosition); } // 返回坐标
 
-const QString& AchievementFrame::getAchievementName() const
-{
-    return FrameName;
-}
+const QString& AchievementFrame::getAchievementName() const { return FrameName; }
 
-const QString& AchievementFrame::getAchievementDescription() const
-{
-    return description;
-}
+const QString& AchievementFrame::getAchievementDescription() const { return description; }
 
-const QString& AchievementFrame::getAchievementIcon() const
-{
-    return isFinshed ? FinshedIcon : icon;
-}
+const QString& AchievementFrame::getAchievementIcon() const { return isFinshed ? FinshedIcon : icon; }
 
-const QString& AchievementFrame::getAchievementStyle() const
-{
-    return isFinshed ? FinshedAchievementStyle : NoFinshedAchievementStyle;
-}
+const QString& AchievementFrame::getAchievementStyle() const { return isFinshed ? FinshedAchievementStyle : NoFinshedAchievementStyle; }

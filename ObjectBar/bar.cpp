@@ -237,8 +237,8 @@ void Bar::createPixmap(){
         health_pixmap = health_pixmap.scaled(heartSize, Qt::KeepAspectRatio, Qt::SmoothTransformation);
         heartLabel->setPixmap(health_pixmap);
         // 设置爱心图片的位置
-        qint8 x = i * heartSize.width(); // 爱心之间没有间距
-        qint8 y = (ui->hp_bar->height() - heartSize.height()) / 2; // 垂直居中
+        int x = i * heartSize.width(); // 爱心之间没有间距
+        int y = (ui->hp_bar->height() - heartSize.height()) / 2; // 垂直居中
         heartLabel->move(x, y);
         // 添加的顺序是从左到右
         heartLabels.append(heartLabel);// 将 QLabel 添加到向量中
@@ -248,7 +248,7 @@ void Bar::createPixmap(){
     // 添加10个饥饿图片到 hungry_bar
     int x;
     int y;
-    for (quint8 i = 9; i >= 0; --i) {
+    for (qint8 i = 9; i >= 0; --i) {
         // 最右边是第1个
         QLabel *hungryLabel = new QLabel(ui->hungry_bar);
         hungryLabel->setFixedSize(hungrySize);

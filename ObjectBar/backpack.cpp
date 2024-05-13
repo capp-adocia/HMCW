@@ -360,7 +360,7 @@ void Backpack::ClickStartQuery() // 点击query查询按钮后在ui->scrollAreaW
     msgBox.setInformativeText("请问是否要更新显示应用程序文件?\n注意这个过程至少需要5分钟，请不要关闭程序");
     msgBox.setStandardButtons(QMessageBox::Ok | QMessageBox::Cancel);
     msgBox.setDefaultButton(QMessageBox::Ok);
-    quint16 ret = msgBox.exec();
+    int ret = msgBox.exec();
     if (ret == QMessageBox::Ok)
     {
         // 禁止用户在查询的过程中使用搜索功能

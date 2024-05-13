@@ -10,7 +10,7 @@ class AchievementFrame : public QFrame
 {
     Q_OBJECT
 public:
-    AchievementFrame(QWidget *parent = nullptr);
+    explicit AchievementFrame(QWidget *parent = nullptr);
     void setPositon(int &x, int &y); // 坐标
     void setAchievementName(const QString& FrameName); // 成就名
     void setAchievementDescription(const QString& description); // 成就描述
@@ -18,7 +18,7 @@ public:
     void updatePixmap(); // 更新图标
     void setAchievementFinshIcon(const QString& FinshedIconResource); // 实现成就图标
     void setAchievementIsFinshed(bool isFinshed);
-    std::pair<int, int> getPosition(); // 返回坐标
+    const std::pair<int, int> getPosition() const; // 返回坐标
     const QString& getAchievementName() const;
     const QString& getAchievementDescription() const;
     const QString& getAchievementIcon() const;
@@ -26,7 +26,6 @@ public:
     // 成就样式表
     static QString NoFinshedAchievementStyle;
     static QString FinshedAchievementStyle;
-public slots:
 
 protected:
 
